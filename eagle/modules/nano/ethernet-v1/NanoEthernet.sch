@@ -3677,7 +3677,9 @@ general purpose rectifier, 1 A</description>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="6"/>
 <pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="332.74" y1="149.86" x2="332.74" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="149.86" x2="330.2" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="149.86" x2="330.2" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="144.78" x2="332.74" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="2">
@@ -3797,10 +3799,10 @@ general purpose rectifier, 1 A</description>
 <pinref part="P+11" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<wire x1="327.66" y1="147.32" x2="332.74" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="325.12" y1="147.32" x2="327.66" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="P+14" gate="1" pin="+5V"/>
 <pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="332.74" y1="147.32" x2="327.66" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="160.02" x2="104.14" y2="160.02" width="0.1524" layer="91"/>
