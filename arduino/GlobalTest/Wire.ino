@@ -9,6 +9,7 @@ byte wireDeviceID[WIRE_MAX_DEVICES];
 void setupWire() {
   Wire.begin();
   wireUpdateList();
+  setupWireRunner();
 }
 
 void wireWrite(uint8_t address, uint8_t _data ) {

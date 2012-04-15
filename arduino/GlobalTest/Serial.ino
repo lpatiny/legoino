@@ -30,16 +30,20 @@ void serialEvent() {
     // get the new byte:
     char inChar = (char)Serial.read(); 
 
-    if (inChar=='h') {
+    if (inChar=='d') { // show debug info
+      getDebuggerLog(&Serial);
+      serialReset();
+    } 
+    else if (inChar=='f') { // show settings
+      printFreeMemory(&Serial);
+      serialReset();
+    } 
+    else if (inChar=='h') {
       serialPrintHelp();
       serialReset();
     } 
     else if (inChar=='l') { // show log
       getLoggerLog(&Serial);
-      serialReset();
-    } 
-    else if (inChar=='d') { // show debug info
-      getDebuggerLog(&Serial);
       serialReset();
     } 
     else if (inChar=='i') { // show i2c (wire) information
@@ -115,15 +119,23 @@ void serialReset() {
 }
 
 void serialPrintHelp() {
-  Serial.println("(h)elp Menu");
   Serial.println("(d)ebug");
+  Serial.println("(f)ree mem");
+  Serial.println("(h)elp");
   Serial.println("(i)2c");
   Serial.println("(l)og");
   Serial.println("(o)ne wire");
   Serial.println("(s)ettings");
 }
 
-
+/*!
+ @function
+ @abstract   Return available RAM memory
+ @discussion This routine returns the ammount of RAM memory available after
+ initialising the C runtime.
+ @param      
+ @result     Free RAM available.
+ */
 
 
 

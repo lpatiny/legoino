@@ -31,3 +31,19 @@ unsigned int getDistance(byte pin) {
   return 65535;
 }
 
+
+extern unsigned int __bss_end;
+extern unsigned int __heap_start;
+extern void *__brkval;
+
+// function to print a device address
+static void printFreeMemory(Print* output)
+{
+  int free_memory;
+   if((int)__brkval == 0)
+     output->println(((int)&free_memory) - ((int)&__bss_end));
+  else
+     output->println(((int)&free_memory) - ((int)__brkval));
+
+}
+

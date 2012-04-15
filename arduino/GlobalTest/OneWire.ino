@@ -39,7 +39,7 @@ void printOneWireAddress(DeviceAddress deviceAddress, Print* output)
 {
   for (uint8_t i = 0; i < 8; i++)
   {
-    if (deviceAddress[i] < 16) Serial.print("0");
+    if (deviceAddress[i] < 16) output->print("0");
     output->print(deviceAddress[i], HEX);
   }
 }
