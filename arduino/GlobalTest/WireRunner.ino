@@ -1,18 +1,16 @@
 
-#define wire_extension1 B0100000
+#define wire_extension1 B0100001
 #define wire_extension2 B0100111
 
 #define wire_lcd B00100000
 LiquidCrystal lcd(wire_lcd);
+boolean lcdInitialized=false;
 
 unsigned int wireEventStatus=0;
 
+
+
 void setupWireRunner() {
-  if (wireDeviceExists(wire_extension1)) {
-    lcd.begin(16, 2);
-    // Print a message to the LCD.
-    lcd.print("Hello, world!");
-  }
 }
 
 void runWire() {
@@ -35,9 +33,27 @@ void runWire() {
     if (wireEventStatus%2==0) {
       wireWrite(wire_extension2,B00001111);
     }
+  }
+
+  if (wireDeviceExists(wire_lcd)) {
+    if (! lcdInitialized) {
+      lcdInitialized=true;
+      lcd.begin(16, 2);
+      // Print a message to the LCD.
+      lcd.setCursor(0,0);
+      lcd.print("Hello, world!");
+    }
+
+    lcd.setCursor(0,1);
+    lcd.print(wireEventStatus);
   } 
+  else {
+    lcdInitialized=false; 
+  }
 
 
 }
+
+
 
 

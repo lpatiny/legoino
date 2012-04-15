@@ -7,7 +7,7 @@ byte wireDeviceID[WIRE_MAX_DEVICES];
 
 
 void setupWire() {
-  Wire.begin();
+ // Wire.begin();
   wireUpdateList();
   setupWireRunner();
 }
