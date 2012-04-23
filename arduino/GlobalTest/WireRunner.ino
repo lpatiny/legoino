@@ -1,6 +1,6 @@
 
-#define wire_extension1 B0100001
-#define wire_extension2 B0100111
+#define wire_extension1 B00100001
+#define wire_extension2 B00100111
 
 #define wire_lcd B00100000
 LiquidCrystal lcd(wire_lcd);
@@ -45,7 +45,7 @@ void runWire() {
     }
 
     lcd.setCursor(0,1);
-    lcd.print(wireEventStatus);
+    lcd.print(getParameter(20));
   } 
   else {
     lcdInitialized=false; 

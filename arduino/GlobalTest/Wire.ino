@@ -7,7 +7,7 @@ byte wireDeviceID[WIRE_MAX_DEVICES];
 
 
 void setupWire() {
- // Wire.begin();
+  Wire.begin();
   wireUpdateList();
   setupWireRunner();
 }
@@ -41,7 +41,7 @@ void wireInfo(Print* output) {
 }
 
 void wireUpdateList() {
- // 16ms
+  // 16ms
   byte _data;
   byte currentPosition=0;
   // I2C Module Scan, from_id ... to_id
@@ -102,11 +102,12 @@ void wireInsertDevice(byte id, byte newDevice) {
 }
 
 boolean wireDeviceExists(byte id) {
- for (byte i=0; i<numberI2CDevices; i++) {
-  if (wireDeviceID[i]==id) return true;
- }
- return false; 
+  for (byte i=0; i<numberI2CDevices; i++) {
+    if (wireDeviceID[i]==id) return true;
+  }
+  return false; 
 }
+
 
 
 
