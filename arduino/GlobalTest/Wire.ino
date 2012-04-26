@@ -10,6 +10,7 @@ void setupWire() {
   Wire.begin();
   wireUpdateList();
   setupWireRunner();
+  I2CRelay4Setup();
 }
 
 void wireWrite(uint8_t address, uint8_t _data ) {
@@ -38,6 +39,9 @@ void wireInfo(Print* output) {
     output->print(" - ");
     output->println(wireDeviceID[i],BIN);
   }
+
+
+
 }
 
 void wireUpdateList() {
@@ -107,7 +111,6 @@ boolean wireDeviceExists(byte id) {
   }
   return false; 
 }
-
 
 
 

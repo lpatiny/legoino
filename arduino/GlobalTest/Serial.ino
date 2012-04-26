@@ -58,6 +58,10 @@ void serialEvent() {
       printParameters(&Serial);
       serialReset();
     } 
+    else if (inChar=='r') { // show settings
+      I2CRelay4Info(&Serial);
+      I2CRelay4Switch();
+    } 
     else if (inChar==',') { // store value and increment
       if (paramCurrent>0) {
         if (paramSerialValuePosition>0) {
