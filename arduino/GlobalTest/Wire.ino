@@ -10,11 +10,18 @@ void setupWire() {
   Wire.begin();
   wireUpdateList();
   setupWireRunner();
-  I2CRelay4Setup();
 }
 
 void wireWrite(uint8_t address, uint8_t _data ) {
   Wire.beginTransmission(address);
+  Wire.write(_data);
+  Wire.endTransmission();
+}
+
+void wireWrite(uint8_t address, uint8_t reg, uint8_t _data ) // used by 4-relay
+{
+  Wire.beginTransmission(address);
+  Wire.write(reg);
   Wire.write(_data);
   Wire.endTransmission();
 }

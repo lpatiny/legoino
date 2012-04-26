@@ -2,9 +2,13 @@
 #define wire_extension1 B00100001
 #define wire_extension2 B00100111
 
+#define WIRE_RELAY_ID 0b00100101 // 4-Relay 
+#define REGISTER_RELAY_COMMAND 0b00010001 // = 17 = R (elay)
+
 #define wire_lcd B00100000
 LiquidCrystal lcd(wire_lcd);
 boolean lcdInitialized=false;
+boolean relayInitialized = false;
 
 unsigned int wireEventStatus=0;
 
@@ -51,8 +55,29 @@ void runWire() {
     lcdInitialized=false; 
   }
 
+  if (wireDeviceExists(WIRE_RELAY_ID)) {
+    if (!relayInitialized)
+    {
+      relayInitialized = true;
+      wireWrite(WIRE_RELAY_ID, 0x05, 0b00000100); // initialize CONFREG (0x05)
+      wireWrite(WIRE_RELAY_ID, 0x00, 0b00000000); // initialize IOREG (0x00)
+      wireWrite(WIRE_RELAY_ID, 0x0A, getParameter(REGISTER_RELAY_COMMAND)); // pin control
+    }
+    else
+    {
+      wireWrite(WIRE_RELAY_ID, 0x0A, getParameter(REGISTER_RELAY_COMMAND)); // pin control
+    }
+  }
+  else
+  {
+    relayInitialized = false;
+  }
+
+
 
 }
+
+
 
 
 
