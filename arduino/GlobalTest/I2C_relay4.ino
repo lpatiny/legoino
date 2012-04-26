@@ -2,6 +2,8 @@
 
 #define I2C_4RELAY_ID 33
 
+byte commandRegister = 0b00010001; // = 17 = R (elay)
+
 void I2CRelay4Setup()
 {
   //make sure Wire.begin() is running; initiated in the Wire setup
@@ -10,7 +12,7 @@ void I2CRelay4Setup()
   delay(5);
   I2CRelay4SetRegister(I2C_4RELAY_ID, 0x00, 0b00000000); // initialize IOREG (0x00)
   delay(5);
-  I2CRelay4SetRegister(I2C_4RELAY_ID, 0x0A, 0b00001111); // pin control
+  I2CRelay4SetRegister(I2C_4RELAY_ID, 0x0A, 0b00000000); // pin control: TURN OFF
   delay(5); 
   
 }
@@ -22,9 +24,8 @@ void I2CRelay4Info(Print* output)
 
 void I2CRelay4Switch()
 {
-   byte commandByte = 0b00000101;
+   byte commandByte = getParameter(commandRegister);
    I2CRelay4SetRegister(I2C_4RELAY_ID, 0x0A, commandByte);
-
 }
 
 

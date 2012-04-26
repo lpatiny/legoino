@@ -129,6 +129,7 @@ void serialPrintHelp() {
   Serial.println("(i)2c");
   Serial.println("(l)og");
   Serial.println("(o)ne wire");
+  Serial.println("(r)elay command");
   Serial.println("(s)ettings");
 }
 
