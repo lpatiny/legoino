@@ -238,6 +238,7 @@ Source: YH-55-10.pdf</description>
 <rectangle x1="4.445" y1="-1.905" x2="8.255" y2="1.905" layer="41"/>
 <rectangle x1="-8.255" y1="-1.905" x2="-4.445" y2="1.905" layer="42"/>
 <rectangle x1="4.445" y1="-1.905" x2="8.255" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="0" x2="4.445" y2="6.985" layer="43"/>
 </package>
 <package name="DIL16-6">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.6 inch</description>
@@ -722,6 +723,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="41"/>
 <rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="42"/>
 <rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="3.81" x2="4.445" y2="10.795" layer="43"/>
 </package>
 <package name="W5100">
 <wire x1="27.94" y1="-15.24" x2="27.94" y2="-10.16" width="0.127" layer="21"/>
@@ -772,6 +774,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="41"/>
 <rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="42"/>
 <rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="3.81" x2="4.445" y2="10.795" layer="43"/>
 </package>
 <package name="RJ12-STRAIGHT-RGB">
 <wire x1="-6.877" y1="10.819" x2="6.877" y2="10.819" width="0.2032" layer="21"/>
@@ -802,6 +805,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="41"/>
 <rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="42"/>
 <rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="3.81" x2="4.445" y2="10.795" layer="43"/>
 </package>
 <package name="RJ12-STRAIGHT-ANALOG">
 <wire x1="-6.877" y1="10.819" x2="6.877" y2="10.819" width="0.2032" layer="21"/>
@@ -832,6 +836,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="41"/>
 <rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="42"/>
 <rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="3.81" x2="4.445" y2="10.795" layer="43"/>
 </package>
 <package name="LED3MM">
 <description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
@@ -903,6 +908,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="41"/>
 <rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="42"/>
 <rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="3.81" x2="4.445" y2="10.795" layer="43"/>
 </package>
 <package name="SOT223">
 <description>&lt;b&gt;Smal Outline Transistor&lt;/b&gt;</description>
@@ -1208,6 +1214,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF857
 <rectangle x1="-8.255" y1="-1.905" x2="-4.445" y2="1.905" layer="42"/>
 <rectangle x1="4.445" y1="-1.905" x2="8.255" y2="1.905" layer="42"/>
 <text x="-0.635" y="0.3175" size="0.8128" layer="21" ratio="4">G</text>
+<rectangle x1="-4.445" y1="0" x2="4.445" y2="6.985" layer="43"/>
 </package>
 <package name="RJ12-RIGHTANGLE-I2C">
 <wire x1="-6.325" y1="-5.95" x2="6.325" y2="-5.95" width="0.2032" layer="21"/>
@@ -1238,6 +1245,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF857
 <rectangle x1="4.445" y1="-1.905" x2="8.255" y2="1.905" layer="41"/>
 <rectangle x1="-8.255" y1="-1.905" x2="-4.445" y2="1.905" layer="42"/>
 <rectangle x1="4.445" y1="-1.905" x2="8.255" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="0" x2="4.445" y2="6.985" layer="43"/>
 </package>
 <package name="CON10">
 <description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
