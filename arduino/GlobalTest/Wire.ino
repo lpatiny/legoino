@@ -35,6 +35,23 @@ byte wireRead(uint8_t address) {
   return _data;
 }
 
+int wireReadTwoBytesToInt(uint8_t address) {
+  int i = 0;
+  int _data;
+  int byteWithMSB;
+  int byteWithLSB;
+  
+  Wire.requestFrom(address, (uint8_t)2);
+  while(Wire.available()) {
+    if (i > 2) return 0; // security mechanism
+    else i++;
+    byteWithMSB = Wire.read();
+    byteWithLSB = Wire.read();
+    _data = (byteWithMSB<<8) | byteWithLSB;
+  }
+  return _data;
+}
+
 void wireInfo(Print* output) {
   wireUpdateList();
   output->println("I2C");

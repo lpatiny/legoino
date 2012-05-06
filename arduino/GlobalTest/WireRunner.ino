@@ -3,7 +3,9 @@
 #define wire_extension2 B00100111
 
 #define WIRE_RELAY_ID 0b00100101 // 4-Relay 
+#define WIRE_PHMETER_ID 0b01001000 // pH-meter v1.3
 #define REGISTER_RELAY_COMMAND 0b00010001 // = 17 = R (elay)
+#define REGISTER_PH_METER_READOUT 0b00001111 // = 15 = P 
 
 #define wire_lcd B00100000
 LiquidCrystal lcd(wire_lcd);
@@ -73,7 +75,10 @@ void runWire() {
     relayInitialized = false;
   }
 
-
+  if (wireDeviceExists(WIRE_PHMETER_ID)) {
+    wireWrite(WIRE_PHMETER_ID, 0b00010000); // initialize A/D conversion with 5th bit
+    setParameter(REGISTER_PH_METER_READOUT, wireReadTwoBytesToInt(WIRE_PHMETER_ID)); // save pH value into 
+  }
 
 }
 
