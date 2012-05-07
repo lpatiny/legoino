@@ -14625,12 +14625,21 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="NAME" x="134.62" y="20.32" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="149.86" y="25.4" size="1.778" layer="96" rot="MR0"/>
 </instance>
+<<<<<<< HEAD:eagle/modules/I2C/LCD-MCP23008/lcd-i2c.sch
 <instance part="GND8" gate="1" x="137.16" y="10.16"/>
 <instance part="R7" gate="G$1" x="134.62" y="30.48" rot="MR180"/>
 <instance part="GND1" gate="1" x="86.36" y="40.64" rot="R180"/>
 <instance part="C1" gate="G$1" x="-2.54" y="15.24"/>
 <instance part="P+1" gate="VCC" x="-2.54" y="20.32" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-5.08" y="22.86" size="1.778" layer="96" rot="MR180"/>
+=======
+<instance part="GND8" gate="1" x="154.94" y="30.48"/>
+<instance part="R7" gate="G$1" x="152.4" y="48.26" rot="MR180"/>
+<instance part="GND1" gate="1" x="104.14" y="58.42" rot="R180"/>
+<instance part="C1" gate="G$1" x="15.24" y="33.02"/>
+<instance part="P+1" gate="VCC" x="15.24" y="38.1" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="12.7" y="40.64" size="1.778" layer="96" rot="MR180"/>
+>>>>>>> update:eagle/modules/I2C/LCD-MCP23008/i2cspilcdbackpack.sch
 </instance>
 <instance part="GND9" gate="1" x="-2.54" y="7.62" rot="MR0"/>
 <instance part="C2" gate="G$1" x="5.08" y="15.24"/>
@@ -14739,7 +14748,10 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
+<<<<<<< HEAD:eagle/modules/I2C/LCD-MCP23008/lcd-i2c.sch
 <wire x1="137.16" y1="12.7" x2="137.16" y2="15.24" width="0.1524" layer="91"/>
+=======
+>>>>>>> update:eagle/modules/I2C/LCD-MCP23008/i2cspilcdbackpack.sch
 <pinref part="Q1" gate="G$1" pin="E"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
