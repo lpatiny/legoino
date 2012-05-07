@@ -816,7 +816,7 @@ design rules under a new name.</description>
 <element name="J2" library="lpatiny" package="RJ12-RIGHTANGLE-I2C" value="RJ12RIGHTANGLE-I2C" x="10.16" y="4.445"/>
 <element name="J3" library="lpatiny" package="RJ12-RIGHTANGLE-I2C" value="RJ12RIGHTANGLE-I2C" x="27.94" y="4.445"/>
 <element name="R6" library="pot" package="CA9V" value="" x="44.45" y="7.62" rot="R270"/>
-<element name="X1" library="adafruit" package="LCD1602" value="HD44780LCD-1602" x="105.41" y="90.805" rot="R180"/>
+<element name="X1" library="adafruit" package="LCD1602" value="HD44780LCD-1602" x="101.6" y="89.535" rot="R180"/>
 <element name="X2" library="con-molex" package="22-23-2041" value="22-23-2041" x="5.715" y="35.56" rot="R270">
 <attribute name="OC_NEWARK" value="38C0355" x="5.715" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="22-23-2041" x="5.715" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
