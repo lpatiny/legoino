@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -807,17 +807,21 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="74.93" y="48.26" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="74.93" y="48.26" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="PC1" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="20.32" y="64.77"/>
-<element name="PC2" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="38.1" y="64.77"/>
-<element name="P2" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="43.815" y="64.77"/>
-<element name="P1" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="26.035" y="64.77"/>
-<element name="P3" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="61.595" y="64.77"/>
-<element name="PC3" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="55.88" y="64.77"/>
-<element name="PC4" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="73.66" y="64.77"/>
-<element name="P4" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="79.375" y="64.77"/>
+<element name="PC1" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="21.59" y="64.77"/>
+<element name="PC2" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="39.37" y="64.77"/>
+<element name="P2" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="45.085" y="64.77"/>
+<element name="P1" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="27.305" y="64.77"/>
+<element name="P3" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="62.865" y="64.77"/>
+<element name="PC3" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="57.15" y="64.77"/>
+<element name="PC4" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="74.93" y="64.77"/>
+<element name="P4" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="80.645" y="64.77"/>
 <element name="POWER2" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="95.25" y="64.77"/>
 <element name="PAD10" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="95.25" y="57.15"/>
 <element name="IC2" library="adafruit" package="DIL18" value="MCP2300X/P" x="36.83" y="13.97"/>
+<element name="P5" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="69.215" y="64.77"/>
+<element name="P6" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="51.435" y="64.77"/>
+<element name="P7" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="33.655" y="64.77"/>
+<element name="P8" library="wirepad" package="3,81/1,4" value="WIREPAD3,81/1,4" x="15.875" y="64.77"/>
 </elements>
 <signals>
 <signal name="GND" class="2">
@@ -1177,25 +1181,25 @@ design rules under a new name.</description>
 <signal name="N$8" class="2">
 <contactref element="P4" pad="1"/>
 <contactref element="K4" pad="NO"/>
-<wire x1="79.375" y1="64.77" x2="80.93" y2="64.77" width="2.1844" layer="16"/>
+<wire x1="80.645" y1="64.77" x2="80.93" y2="64.77" width="2.1844" layer="16"/>
 <wire x1="80.93" y1="64.77" x2="80.93" y2="53.76" width="2.1844" layer="16"/>
 </signal>
 <signal name="N$11" class="2">
 <contactref element="P3" pad="1"/>
 <contactref element="K3" pad="NO"/>
-<wire x1="61.595" y1="64.77" x2="63.15" y2="64.77" width="2.1844" layer="16"/>
+<wire x1="62.865" y1="64.77" x2="63.15" y2="64.77" width="2.1844" layer="16"/>
 <wire x1="63.15" y1="64.77" x2="63.15" y2="53.76" width="2.1844" layer="16"/>
 </signal>
 <signal name="N$14" class="2">
 <contactref element="P2" pad="1"/>
 <contactref element="K2" pad="NO"/>
-<wire x1="43.815" y1="64.77" x2="45.37" y2="64.77" width="2.1844" layer="16"/>
+<wire x1="45.085" y1="64.77" x2="45.37" y2="64.77" width="2.1844" layer="16"/>
 <wire x1="45.37" y1="64.77" x2="45.37" y2="53.76" width="2.1844" layer="16"/>
 </signal>
 <signal name="N$19" class="2">
 <contactref element="P1" pad="1"/>
 <contactref element="K1" pad="NO"/>
-<wire x1="26.035" y1="64.77" x2="27.59" y2="64.77" width="2.1844" layer="16"/>
+<wire x1="27.305" y1="64.77" x2="27.59" y2="64.77" width="2.1844" layer="16"/>
 <wire x1="27.59" y1="64.77" x2="27.59" y2="53.76" width="2.1844" layer="16"/>
 </signal>
 <signal name="POWER1" class="2">
@@ -1221,14 +1225,38 @@ design rules under a new name.</description>
 <contactref element="PC2" pad="1"/>
 <contactref element="PC1" pad="1"/>
 <wire x1="95.25" y1="64.77" x2="95.25" y2="69.85" width="2.1844" layer="16"/>
-<wire x1="95.25" y1="69.85" x2="73.66" y2="69.85" width="2.1844" layer="16"/>
-<wire x1="73.66" y1="64.77" x2="73.66" y2="69.85" width="2.1844" layer="16"/>
-<wire x1="73.66" y1="69.85" x2="55.88" y2="69.85" width="2.1844" layer="16"/>
-<wire x1="55.88" y1="64.77" x2="55.88" y2="69.85" width="2.1844" layer="16"/>
-<wire x1="55.88" y1="69.85" x2="38.1" y2="69.85" width="2.1844" layer="16"/>
-<wire x1="38.1" y1="64.77" x2="38.1" y2="69.85" width="2.1844" layer="16"/>
-<wire x1="38.1" y1="69.85" x2="20.32" y2="69.85" width="2.1844" layer="16"/>
-<wire x1="20.32" y1="69.85" x2="20.32" y2="64.77" width="2.1844" layer="16"/>
+<wire x1="95.25" y1="69.85" x2="74.93" y2="69.85" width="2.1844" layer="16"/>
+<wire x1="74.93" y1="64.77" x2="74.93" y2="69.85" width="2.1844" layer="16"/>
+<wire x1="74.93" y1="69.85" x2="57.15" y2="69.85" width="2.1844" layer="16"/>
+<wire x1="57.15" y1="64.77" x2="57.15" y2="69.85" width="2.1844" layer="16"/>
+<wire x1="57.15" y1="69.85" x2="39.37" y2="69.85" width="2.1844" layer="16"/>
+<wire x1="39.37" y1="64.77" x2="39.37" y2="69.85" width="2.1844" layer="16"/>
+<wire x1="39.37" y1="69.85" x2="21.59" y2="69.85" width="2.1844" layer="16"/>
+<wire x1="21.59" y1="69.85" x2="21.59" y2="64.77" width="2.1844" layer="16"/>
+</signal>
+<signal name="N$6" class="2">
+<contactref element="K1" pad="NC"/>
+<contactref element="P8" pad="1"/>
+<wire x1="15.59" y1="53.76" x2="15.875" y2="55.665" width="2.1844" layer="16"/>
+<wire x1="15.875" y1="55.665" x2="15.875" y2="64.77" width="2.1844" layer="16"/>
+</signal>
+<signal name="N$7" class="2">
+<contactref element="P7" pad="1"/>
+<contactref element="K2" pad="NC"/>
+<wire x1="33.37" y1="53.76" x2="33.655" y2="53.76" width="2.1844" layer="16"/>
+<wire x1="33.655" y1="53.76" x2="33.655" y2="64.77" width="2.1844" layer="16"/>
+</signal>
+<signal name="N$10" class="2">
+<contactref element="K3" pad="NC"/>
+<contactref element="P6" pad="1"/>
+<wire x1="51.15" y1="53.76" x2="51.435" y2="53.76" width="2.1844" layer="16"/>
+<wire x1="51.435" y1="53.76" x2="51.435" y2="64.77" width="2.1844" layer="16"/>
+</signal>
+<signal name="N$13" class="2">
+<contactref element="P5" pad="1"/>
+<contactref element="K4" pad="NC"/>
+<wire x1="68.93" y1="53.76" x2="69.215" y2="53.76" width="2.1844" layer="16"/>
+<wire x1="69.215" y1="53.76" x2="69.215" y2="64.77" width="2.1844" layer="16"/>
 </signal>
 </signals>
 </board>

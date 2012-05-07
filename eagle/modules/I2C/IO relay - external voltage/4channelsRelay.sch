@@ -12334,6 +12334,10 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <part name="PAD10" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="IC2" library="adafruit" deviceset="MCP2300X" device="/P"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
+<part name="P5" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="P6" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="P7" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="P8" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 </parts>
 <sheets>
 <sheet>
@@ -12424,6 +12428,10 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <instance part="P+6" gate="1" x="114.3" y="127" smashed="yes" rot="R180">
 <attribute name="VALUE" x="114.935" y="126.365" size="1.27" layer="96"/>
 </instance>
+<instance part="P5" gate="G$1" x="261.62" y="114.3" rot="R180"/>
+<instance part="P6" gate="G$1" x="261.62" y="137.16" rot="R180"/>
+<instance part="P7" gate="G$1" x="261.62" y="160.02" rot="R180"/>
+<instance part="P8" gate="G$1" x="261.62" y="182.88" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -12855,6 +12863,34 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <pinref part="PC3" gate="G$1" pin="P"/>
 <pinref part="PC2" gate="G$1" pin="P"/>
 <pinref part="PC1" gate="G$1" pin="P"/>
+</segment>
+</net>
+<net name="N$6" class="2">
+<segment>
+<pinref part="K1" gate="2" pin="O"/>
+<pinref part="P8" gate="G$1" pin="P"/>
+<wire x1="241.3" y1="182.88" x2="259.08" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="2">
+<segment>
+<pinref part="P7" gate="G$1" pin="P"/>
+<pinref part="K2" gate="2" pin="O"/>
+<wire x1="259.08" y1="160.02" x2="241.3" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="2">
+<segment>
+<pinref part="K3" gate="2" pin="O"/>
+<pinref part="P6" gate="G$1" pin="P"/>
+<wire x1="241.3" y1="137.16" x2="259.08" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="2">
+<segment>
+<pinref part="P5" gate="G$1" pin="P"/>
+<pinref part="K4" gate="2" pin="O"/>
+<wire x1="259.08" y1="114.3" x2="241.3" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
