@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1358,9 +1358,9 @@ design rules under a new name.</description>
 <contactref element="J3" pad="IN"/>
 <contactref element="J2" pad="SDA"/>
 <wire x1="107.4928" y1="17.0688" x2="109.3216" y2="17.0688" width="0.2032" layer="1"/>
-<wire x1="107.4928" y1="20.32" x2="107.4928" y2="17.0688" width="0.2032" layer="1"/>
-<wire x1="98.1456" y1="29.6672" x2="107.4928" y2="20.32" width="0.2032" layer="1"/>
-<wire x1="95.3008" y1="29.6672" x2="98.1456" y2="29.6672" width="0.2032" layer="1"/>
+<wire x1="107.4928" y1="29.67" x2="107.4928" y2="17.0688" width="0.2032" layer="1"/>
+<wire x1="100.1456" y1="29.6672" x2="107.4928" y2="29.67" width="0.2032" layer="1"/>
+<wire x1="95.3008" y1="29.6672" x2="100.1456" y2="29.6672" width="0.2032" layer="1"/>
 <wire x1="109.3216" y1="17.0688" x2="109.474" y2="17.018" width="0.2032" layer="1"/>
 <wire x1="95.3008" y1="29.6672" x2="95.25" y2="29.845" width="0.2032" layer="1"/>
 <wire x1="96.7232" y1="44.9072" x2="95.3008" y2="46.3296" width="0.2032" layer="16"/>
@@ -1423,10 +1423,10 @@ design rules under a new name.</description>
 <signal name="N$18" class="1">
 <contactref element="JP3" pad="3"/>
 <contactref element="R23" pad="1"/>
-<wire x1="110.5408" y1="12.3952" x2="109.5248" y2="11.3792" width="0.2032" layer="1"/>
-<wire x1="110.5408" y1="20.1168" x2="110.5408" y2="12.3952" width="0.2032" layer="1"/>
-<wire x1="100.7872" y1="29.8704" x2="110.5408" y2="20.1168" width="0.2032" layer="1"/>
-<wire x1="100.7872" y1="57.7088" x2="100.7872" y2="29.8704" width="0.2032" layer="1"/>
+<wire x1="110.7408" y1="12.2952" x2="109.5248" y2="11.3792" width="0.2032" layer="1"/>
+<wire x1="110.7408" y1="30.8168" x2="110.7408" y2="12.2952" width="0.2032" layer="1"/>
+<wire x1="100.6372" y1="30.8204" x2="110.7408" y2="30.8168" width="0.2032" layer="1"/>
+<wire x1="100.7872" y1="57.7088" x2="100.6372" y2="30.8204" width="0.2032" layer="1"/>
 <wire x1="92.2528" y1="66.2432" x2="100.7872" y2="57.7088" width="0.2032" layer="16"/>
 <wire x1="109.5248" y1="11.3792" x2="109.474" y2="11.2268" width="0.2032" layer="1"/>
 <wire x1="92.2528" y1="66.2432" x2="92.138" y2="66.294" width="0.2032" layer="16"/>
@@ -1438,10 +1438,10 @@ design rules under a new name.</description>
 <wire x1="105.2576" y1="13.4112" x2="103.2256" y2="11.3792" width="0.2032" layer="1"/>
 <wire x1="105.2576" y1="16.6624" x2="105.2576" y2="13.4112" width="0.2032" layer="1"/>
 <wire x1="105.2576" y1="18.8976" x2="105.2576" y2="16.6624" width="0.2032" layer="16"/>
-<wire x1="105.664" y1="19.304" x2="105.2576" y2="18.8976" width="0.2032" layer="16"/>
-<wire x1="105.664" y1="60.5536" x2="105.664" y2="19.304" width="0.2032" layer="16"/>
-<wire x1="105.4608" y1="60.5536" x2="105.664" y2="60.5536" width="0.2032" layer="16"/>
-<wire x1="99.7712" y1="66.2432" x2="105.4608" y2="60.5536" width="0.2032" layer="16"/>
+<wire x1="107.264" y1="18.904" x2="105.2576" y2="18.8976" width="0.2032" layer="16"/>
+<wire x1="107.3464" y1="56.664" x2="107.264" y2="18.904" width="0.2032" layer="16"/>
+<wire x1="105.5608" y1="60.6036" x2="107.3464" y2="56.664" width="0.2032" layer="16"/>
+<wire x1="99.7712" y1="66.2432" x2="105.5608" y2="60.6036" width="0.2032" layer="16"/>
 <wire x1="98.552" y1="66.2432" x2="99.7712" y2="66.2432" width="0.2032" layer="16"/>
 <wire x1="103.2256" y1="11.3792" x2="103.124" y2="11.2268" width="0.2032" layer="1"/>
 <wire x1="98.552" y1="66.2432" x2="98.488" y2="66.294" width="0.2032" layer="16"/>
