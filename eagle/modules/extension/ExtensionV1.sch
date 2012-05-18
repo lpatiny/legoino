@@ -427,6 +427,46 @@ DIN A3, landscape with extra doc field</description>
 <text x="0.0635" y="-0.4445" size="0.254" layer="51" rot="R40">PASTE</text>
 <rectangle x1="-0.2794" y1="-1.016" x2="1.4224" y2="0.9906" layer="31"/>
 </package>
+<package name="SD-CARD">
+<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
+<pad name="GND1" x="5.08" y="6.35" drill="0.9144" rot="R90"/>
+<pad name="2" x="2.54" y="6.35" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="3.3V" x="5.08" y="8.89" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="4" x="2.54" y="8.89" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="5V" x="5.08" y="11.43" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="6" x="2.54" y="11.43" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="SDCS" x="5.08" y="13.97" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="8" x="2.54" y="13.97" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="MOSI" x="5.08" y="16.51" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="10" x="2.54" y="16.51" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="SCK" x="5.08" y="19.05" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="12" x="2.54" y="19.05" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="MISO" x="5.08" y="21.59" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="14" x="2.54" y="21.59" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="GND2" x="5.08" y="24.13" drill="0.9144" shape="octagon" rot="R90"/>
+<pad name="16" x="2.54" y="24.13" drill="0.9144" shape="octagon" rot="R90"/>
+<text x="-0.254" y="3.175" size="1.27" layer="21" ratio="10" rot="R90">SD card extension</text>
+<wire x1="2.54" y1="6.35" x2="5.08" y2="6.35" width="1.016" layer="16"/>
+<wire x1="2.54" y1="8.89" x2="5.08" y2="8.89" width="1.016" layer="16"/>
+<wire x1="2.54" y1="11.43" x2="5.08" y2="11.43" width="1.016" layer="16"/>
+<wire x1="2.54" y1="13.97" x2="5.08" y2="13.97" width="1.016" layer="16"/>
+<wire x1="2.54" y1="16.51" x2="5.08" y2="16.51" width="1.016" layer="16"/>
+<wire x1="2.54" y1="19.05" x2="5.08" y2="19.05" width="1.016" layer="16"/>
+<wire x1="2.54" y1="21.59" x2="5.08" y2="21.59" width="1.016" layer="16"/>
+<wire x1="2.54" y1="24.13" x2="5.08" y2="24.13" width="1.016" layer="16"/>
+<wire x1="0" y1="0" x2="48.26" y2="0" width="0.127" layer="21"/>
+<wire x1="48.26" y1="0" x2="48.26" y2="30.48" width="0.127" layer="21"/>
+<wire x1="48.26" y1="30.48" x2="0" y2="30.48" width="0.127" layer="21"/>
+<wire x1="0" y1="30.48" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="6.35" y="5.715" size="1.27" layer="21">GND</text>
+<text x="6.35" y="23.495" size="1.27" layer="21">GND</text>
+<text x="6.35" y="20.955" size="1.27" layer="21">MISO</text>
+<text x="6.35" y="18.415" size="1.27" layer="21">SCK</text>
+<text x="6.35" y="15.875" size="1.27" layer="21">MOSI</text>
+<text x="6.35" y="13.335" size="1.27" layer="21">SDCS</text>
+<text x="6.35" y="10.795" size="1.27" layer="21">5V</text>
+<text x="6.35" y="8.255" size="1.27" layer="21">3.3V</text>
+</package>
 </packages>
 <symbols>
 <symbol name="W5100">
@@ -499,6 +539,46 @@ DIN A3, landscape with extra doc field</description>
 <pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="SD-CARD-EXT">
+<wire x1="3.81" y1="-12.7" x2="-3.81" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="10.16" x2="-3.81" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="10.16" x2="3.81" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-12.7" x2="3.81" y2="10.16" width="0.4064" layer="94"/>
+<circle x="1.905" y="-10.16" radius="0.635" width="0.254" layer="94"/>
+<circle x="1.905" y="-7.62" radius="0.635" width="0.254" layer="94"/>
+<circle x="1.905" y="-5.08" radius="0.635" width="0.254" layer="94"/>
+<circle x="1.905" y="-2.54" radius="0.635" width="0.254" layer="94"/>
+<circle x="1.905" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="1.905" y="2.54" radius="0.635" width="0.254" layer="94"/>
+<circle x="1.905" y="5.08" radius="0.635" width="0.254" layer="94"/>
+<circle x="1.905" y="7.62" radius="0.635" width="0.254" layer="94"/>
+<circle x="-1.905" y="-10.16" radius="0.635" width="0.254" layer="94"/>
+<circle x="-1.905" y="-7.62" radius="0.635" width="0.254" layer="94"/>
+<circle x="-1.905" y="-5.08" radius="0.635" width="0.254" layer="94"/>
+<circle x="-1.905" y="-2.54" radius="0.635" width="0.254" layer="94"/>
+<circle x="-1.905" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="-1.905" y="2.54" radius="0.635" width="0.254" layer="94"/>
+<circle x="-1.905" y="5.08" radius="0.635" width="0.254" layer="94"/>
+<circle x="-1.905" y="7.62" radius="0.635" width="0.254" layer="94"/>
+<text x="-3.81" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="10.922" size="1.778" layer="95">&gt;NAME</text>
+<pin name="GND1" x="7.62" y="-10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3.3V" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5V" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SDCS" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="MOSI" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SCK" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="MISO" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="GND2" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -644,6 +724,34 @@ DIN A3, landscape with extra doc field</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SD-CARD-EXTENSION" prefix="CON" uservalue="yes">
+<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="SD-CARD-EXT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SD-CARD">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="5V" pad="5V"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="SDCS" pad="SDCS"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -9825,6 +9933,10 @@ package type P</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
+<part name="CON2" library="lpatiny" deviceset="SD-CARD-EXTENSION" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="P+10" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9841,9 +9953,9 @@ package type P</description>
 <instance part="C2" gate="G$1" x="96.52" y="132.08"/>
 <instance part="C3" gate="G$1" x="127" y="132.08"/>
 <instance part="+3V1" gate="G$1" x="139.7" y="132.08" rot="R180"/>
-<instance part="CON1" gate="G$1" x="63.5" y="121.92"/>
-<instance part="P+1" gate="1" x="73.66" y="114.3" rot="R180"/>
-<instance part="GND1" gate="1" x="48.26" y="124.46"/>
+<instance part="CON1" gate="G$1" x="73.66" y="114.3"/>
+<instance part="P+1" gate="1" x="83.82" y="106.68" rot="R180"/>
+<instance part="GND1" gate="1" x="58.42" y="116.84"/>
 <instance part="+3V2" gate="G$1" x="73.66" y="149.86" rot="R180"/>
 <instance part="GND2" gate="1" x="73.66" y="154.94"/>
 <instance part="IC2" gate="G$1" x="139.7" y="177.8"/>
@@ -9870,6 +9982,10 @@ package type P</description>
 <instance part="GND9" gate="1" x="233.68" y="152.4"/>
 <instance part="GND10" gate="1" x="251.46" y="162.56"/>
 <instance part="P+9" gate="1" x="256.54" y="190.5" rot="R180"/>
+<instance part="CON2" gate="G$1" x="22.86" y="121.92"/>
+<instance part="GND11" gate="1" x="43.18" y="127"/>
+<instance part="GND12" gate="1" x="43.18" y="109.22"/>
+<instance part="P+10" gate="1" x="43.18" y="114.3" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -9888,7 +10004,7 @@ package type P</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="10"/>
-<wire x1="55.88" y1="127" x2="48.26" y2="127" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="119.38" x2="58.42" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9939,6 +10055,16 @@ package type P</description>
 <wire x1="251.46" y1="167.64" x2="251.46" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="GND1"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="43.18" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="GND2"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="43.18" y1="129.54" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -9950,7 +10076,7 @@ package type P</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="116.84" x2="73.66" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 </segment>
 <segment>
@@ -9994,6 +10120,11 @@ package type P</description>
 <pinref part="P+9" gate="1" pin="+5V"/>
 <wire x1="251.46" y1="193.04" x2="256.54" y2="193.04" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="5V"/>
+<pinref part="P+10" gate="1" pin="+5V"/>
+<wire x1="43.18" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -10015,17 +10146,21 @@ package type P</description>
 <pinref part="U$1" gate="G$1" pin="MISO"/>
 <wire x1="38.1" y1="157.48" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="MISO"/>
+<wire x1="30.48" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="6"/>
-<wire x1="55.88" y1="121.92" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="114.3" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="7"/>
-<wire x1="71.12" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="116.84" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="SDA"/>
@@ -10039,7 +10174,7 @@ package type P</description>
 <net name="SCL" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="8"/>
-<wire x1="55.88" y1="124.46" x2="53.34" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="SCL"/>
@@ -10053,7 +10188,11 @@ package type P</description>
 <net name="EN_SD" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="9"/>
-<wire x1="71.12" y1="127" x2="73.66" y2="127" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="119.38" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="SDCS"/>
+<wire x1="30.48" y1="119.38" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -10063,7 +10202,11 @@ package type P</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="3"/>
-<wire x1="71.12" y1="119.38" x2="73.66" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="MOSI"/>
+<wire x1="30.48" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CS" class="0">
@@ -10079,13 +10222,17 @@ package type P</description>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="5"/>
-<wire x1="71.12" y1="121.92" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="114.3" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="SCK"/>
+<wire x1="30.48" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EN_ETH" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="116.84" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="109.22" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="EN"/>
@@ -10143,7 +10290,13 @@ package type P</description>
 <net name="MSIO" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="4"/>
-<wire x1="55.88" y1="119.38" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="3.3V"/>
+<wire x1="30.48" y1="114.3" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

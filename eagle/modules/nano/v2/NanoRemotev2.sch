@@ -526,34 +526,11 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <rectangle x1="-8.0693" y1="-5.5572" x2="7.9507" y2="8.0428" layer="150" rot="R90"/>
 <hole x="-5.08" y="0" drill="3.2512"/>
 <hole x="5.08" y="0" drill="3.2512"/>
-</package>
-<package name="RJ12-RIGHTANGLE@1">
-<description>&lt;b&gt;RJ11&lt;/b&gt; 6 connects&lt;p&gt;
-Source: YH-55-10.pdf</description>
-<wire x1="-6.325" y1="-5.95" x2="6.325" y2="-5.95" width="0.2032" layer="21"/>
-<wire x1="6.325" y1="-5.95" x2="6.325" y2="-0.75" width="0.2032" layer="21"/>
-<wire x1="6.325" y1="-0.75" x2="6.325" y2="7.04" width="0.2032" layer="21"/>
-<wire x1="6.325" y1="7.04" x2="-6.325" y2="7.04" width="0.2032" layer="21"/>
-<wire x1="-6.325" y1="7.04" x2="-6.325" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="-6.325" y1="-0.75" x2="-6.325" y2="-5.95" width="0.2032" layer="21"/>
-<wire x1="-6.325" y1="0.75" x2="-6.325" y2="-0.75" width="0.2032" layer="21"/>
-<wire x1="-6.325" y1="0.75" x2="-6.325" y2="-0.75" width="0.2032" layer="21" curve="134.838404"/>
-<wire x1="6.325" y1="-0.75" x2="6.325" y2="0.75" width="0.2032" layer="21" curve="134.838404"/>
-<pad name="1" x="-2.54" y="2.3" drill="0.8" diameter="1.3"/>
-<pad name="2" x="-1.54" y="4.84" drill="0.8" diameter="1.3"/>
-<pad name="3" x="-0.5" y="2.3" drill="0.8" diameter="1.3"/>
-<pad name="4" x="0.5" y="4.84" drill="0.8" diameter="1.3"/>
-<pad name="5" x="1.54" y="2.3" drill="0.8" diameter="1.3"/>
-<pad name="6" x="2.54" y="4.84" drill="0.8" diameter="1.3"/>
-<text x="-6.35" y="7.62" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-2.2225" y="6.0325" size="0.8128" layer="21" ratio="4">5V</text>
-<text x="1.905" y="6.0325" size="0.8128" layer="21" ratio="4">12V</text>
-<text x="-0.3175" y="6.0325" size="0.8128" layer="21" ratio="4">I/O</text>
-<text x="0" y="0.3175" size="0.8128" layer="21" ratio="4">PWM</text>
-<text x="-2.8575" y="0.3175" size="0.8128" layer="21" ratio="4">GND</text>
-<hole x="-6" y="0" drill="2.36"/>
-<hole x="6" y="0" drill="2.36"/>
+<rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="41"/>
+<rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="41"/>
+<rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="42"/>
+<rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="3.81" x2="4.445" y2="10.795" layer="43"/>
 </package>
 <package name="RJ12-STRAIGHT-I2C">
 <wire x1="-6.877" y1="10.819" x2="6.877" y2="10.819" width="0.2032" layer="21"/>
@@ -580,34 +557,11 @@ Source: YH-55-10.pdf</description>
 <rectangle x1="-8.0693" y1="-5.5572" x2="7.9507" y2="8.0428" layer="150" rot="R90"/>
 <hole x="-5.08" y="0" drill="3.2512"/>
 <hole x="5.08" y="0" drill="3.2512"/>
-</package>
-<package name="RJ12-RIGHTANGLE">
-<description>&lt;b&gt;RJ11&lt;/b&gt; 6 connects&lt;p&gt;
-Source: YH-55-10.pdf</description>
-<wire x1="-6.325" y1="-5.95" x2="6.325" y2="-5.95" width="0.2032" layer="21"/>
-<wire x1="6.325" y1="-5.95" x2="6.325" y2="-0.75" width="0.2032" layer="21"/>
-<wire x1="6.325" y1="-0.75" x2="6.325" y2="7.04" width="0.2032" layer="21"/>
-<wire x1="6.325" y1="7.04" x2="-6.325" y2="7.04" width="0.2032" layer="21"/>
-<wire x1="-6.325" y1="7.04" x2="-6.325" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="-6.325" y1="-0.75" x2="-6.325" y2="-5.95" width="0.2032" layer="21"/>
-<wire x1="-6.325" y1="0.75" x2="-6.325" y2="-0.75" width="0.2032" layer="21"/>
-<wire x1="-6.325" y1="0.75" x2="-6.325" y2="-0.75" width="0.2032" layer="21" curve="134.838404"/>
-<wire x1="6.325" y1="-0.75" x2="6.325" y2="0.75" width="0.2032" layer="21" curve="134.838404"/>
-<pad name="GND1" x="-2.54" y="2.3" drill="0.8" diameter="1.3"/>
-<pad name="+5V" x="-1.54" y="4.84" drill="0.8" diameter="1.3"/>
-<pad name="GND2" x="-0.5" y="2.3" drill="0.8" diameter="1.3"/>
-<pad name="I/O" x="0.5" y="4.84" drill="0.8" diameter="1.3"/>
-<pad name="PWM" x="1.54" y="2.3" drill="0.8" diameter="1.3"/>
-<pad name="+12V" x="2.54" y="4.84" drill="0.8" diameter="1.3"/>
-<text x="-6.35" y="7.62" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-2.2225" y="6.0325" size="0.8128" layer="21" ratio="4">5V</text>
-<text x="1.905" y="6.0325" size="0.8128" layer="21" ratio="4">12V</text>
-<text x="-0.3175" y="6.0325" size="0.8128" layer="21" ratio="4">I/O</text>
-<text x="0" y="0.3175" size="0.8128" layer="21" ratio="4">PWM</text>
-<text x="-2.8575" y="0.3175" size="0.8128" layer="21" ratio="4">GND</text>
-<hole x="-6" y="0" drill="2.36"/>
-<hole x="6" y="0" drill="2.36"/>
+<rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="41"/>
+<rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="41"/>
+<rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="42"/>
+<rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="3.81" x2="4.445" y2="10.795" layer="43"/>
 </package>
 <package name="RJ12-STRAIGHT-RGB">
 <wire x1="-6.877" y1="10.819" x2="6.877" y2="10.819" width="0.2032" layer="21"/>
@@ -634,32 +588,44 @@ Source: YH-55-10.pdf</description>
 <rectangle x1="-8.0693" y1="-5.5572" x2="7.9507" y2="8.0428" layer="150" rot="R90"/>
 <hole x="-5.08" y="0" drill="3.2512"/>
 <hole x="5.08" y="0" drill="3.2512"/>
+<rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="41"/>
+<rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="41"/>
+<rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="42"/>
+<rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="3.81" x2="4.445" y2="10.795" layer="43"/>
 </package>
-<package name="RJ12-STRAIGHT-ANALOG">
-<wire x1="-6.877" y1="10.819" x2="6.877" y2="10.819" width="0.2032" layer="21"/>
-<wire x1="7.8105" y1="-5.51" x2="-7.8105" y2="-5.51" width="0.01" layer="20"/>
-<wire x1="6.877" y1="-7.782" x2="-6.877" y2="-7.782" width="0.2032" layer="21"/>
-<wire x1="-6.877" y1="-7.782" x2="-6.877" y2="10.819" width="0.2032" layer="21"/>
-<wire x1="6.877" y1="10.819" x2="6.877" y2="-7.782" width="0.2032" layer="21"/>
-<pad name="GND2" x="0.635" y="6.35" drill="0.9" diameter="1.4"/>
-<pad name="IN" x="-0.635" y="8.89" drill="0.9" diameter="1.4"/>
-<pad name="GND3" x="-1.905" y="6.35" drill="0.9" diameter="1.4"/>
-<pad name="+5V" x="1.905" y="8.89" drill="0.9" diameter="1.4"/>
-<pad name="+12V" x="-3.175" y="8.89" drill="0.9" diameter="1.4"/>
-<pad name="GND1" x="3.175" y="6.35" drill="0.9" diameter="1.4"/>
-<text x="-7.62" y="-0.635" size="1.778" layer="25" rot="R90">&gt;NAME</text>
-<text x="-5.08" y="-4.445" size="1.778" layer="27">&gt;VALUE</text>
-<text x="2.2225" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
-<text x="-0.635" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
-<text x="3.4925" y="8.5725" size="0.8128" layer="21" ratio="4">5V</text>
-<text x="-1.27" y="9.8425" size="0.8128" layer="21" ratio="4">IN</text>
-<text x="-6.0325" y="8.5725" size="0.8128" layer="21" ratio="4">12V</text>
-<text x="-3.4925" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
-<rectangle x1="6.95" y1="-5.485" x2="7.875" y2="-4.342" layer="21"/>
-<rectangle x1="-7.875" y1="-5.485" x2="-6.95" y2="-4.342" layer="21"/>
-<rectangle x1="-8.0693" y1="-5.5572" x2="7.9507" y2="8.0428" layer="150" rot="R90"/>
-<hole x="-5.08" y="0" drill="3.2512"/>
-<hole x="5.08" y="0" drill="3.2512"/>
+<package name="RJ12-RIGHTANGLE">
+<description>&lt;b&gt;RJ11&lt;/b&gt; 6 connects&lt;p&gt;
+Source: YH-55-10.pdf</description>
+<wire x1="-6.325" y1="-5.95" x2="6.325" y2="-5.95" width="0.2032" layer="21"/>
+<wire x1="6.325" y1="-5.95" x2="6.325" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="6.325" y1="-0.75" x2="6.325" y2="8.945" width="0.2032" layer="21"/>
+<wire x1="6.325" y1="8.945" x2="-6.325" y2="8.945" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="8.945" x2="-6.325" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="-0.75" x2="-6.325" y2="-5.95" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="0.75" x2="-6.325" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="0.75" x2="-6.325" y2="-0.75" width="0.2032" layer="21" curve="134.838404"/>
+<wire x1="6.325" y1="-0.75" x2="6.325" y2="0.75" width="0.2032" layer="21" curve="134.838404"/>
+<pad name="GND1" x="-2.54" y="2.3" drill="0.8" diameter="1.3"/>
+<pad name="+5V" x="-1.54" y="4.84" drill="0.8" diameter="1.3"/>
+<pad name="GND2" x="-0.5" y="2.3" drill="0.8" diameter="1.3"/>
+<pad name="I/O" x="0.5" y="4.84" drill="0.8" diameter="1.3"/>
+<pad name="PWM" x="1.54" y="2.3" drill="0.8" diameter="1.3"/>
+<pad name="+12V" x="2.54" y="4.84" drill="0.8" diameter="1.3"/>
+<text x="-6.35" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.2225" y="6.0325" size="0.8128" layer="21" ratio="4">5V</text>
+<text x="1.905" y="6.0325" size="0.8128" layer="21" ratio="4">12V</text>
+<text x="-0.3175" y="6.0325" size="0.8128" layer="21" ratio="4">I/O</text>
+<text x="0" y="0.3175" size="0.8128" layer="21" ratio="4">PWM</text>
+<text x="-2.8575" y="0.3175" size="0.8128" layer="21" ratio="4">GND</text>
+<hole x="-6" y="0" drill="2.36"/>
+<hole x="6" y="0" drill="2.36"/>
+<rectangle x1="-8.255" y1="-1.905" x2="-4.445" y2="1.905" layer="41"/>
+<rectangle x1="4.445" y1="-1.905" x2="8.255" y2="1.905" layer="41"/>
+<rectangle x1="-8.255" y1="-1.905" x2="-4.445" y2="1.905" layer="42"/>
+<rectangle x1="4.445" y1="-1.905" x2="8.255" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="0" x2="4.445" y2="6.985" layer="43"/>
 </package>
 <package name="LED3MM">
 <description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
@@ -688,6 +654,131 @@ Source: YH-55-10.pdf</description>
 <pad name="K" x="1.27" y="0" drill="0.8128" shape="octagon"/>
 <text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="RJ12-STRAIGHT-ANALOG">
+<wire x1="-6.877" y1="10.819" x2="6.877" y2="10.819" width="0.2032" layer="21"/>
+<wire x1="7.8105" y1="-5.51" x2="-7.8105" y2="-5.51" width="0.01" layer="20"/>
+<wire x1="6.877" y1="-7.782" x2="-6.877" y2="-7.782" width="0.2032" layer="21"/>
+<wire x1="-6.877" y1="-7.782" x2="-6.877" y2="10.819" width="0.2032" layer="21"/>
+<wire x1="6.877" y1="10.819" x2="6.877" y2="-7.782" width="0.2032" layer="21"/>
+<pad name="GND2" x="0.635" y="6.35" drill="0.9" diameter="1.4"/>
+<pad name="IN" x="-0.635" y="8.89" drill="0.9" diameter="1.4"/>
+<pad name="GND3" x="-1.905" y="6.35" drill="0.9" diameter="1.4"/>
+<pad name="+5V" x="1.905" y="8.89" drill="0.9" diameter="1.4"/>
+<pad name="+12V" x="-3.175" y="8.89" drill="0.9" diameter="1.4"/>
+<pad name="GND1" x="3.175" y="6.35" drill="0.9" diameter="1.4"/>
+<text x="-7.62" y="-0.635" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="-5.08" y="-4.445" size="1.778" layer="27">&gt;VALUE</text>
+<text x="2.2225" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
+<text x="-0.635" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
+<text x="3.4925" y="8.5725" size="0.8128" layer="21" ratio="4">5V</text>
+<text x="-1.27" y="9.8425" size="0.8128" layer="21" ratio="4">IN</text>
+<text x="-6.0325" y="8.5725" size="0.8128" layer="21" ratio="4">12V</text>
+<text x="-3.4925" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
+<rectangle x1="6.95" y1="-5.485" x2="7.875" y2="-4.342" layer="21"/>
+<rectangle x1="-7.875" y1="-5.485" x2="-6.95" y2="-4.342" layer="21"/>
+<rectangle x1="-8.0693" y1="-5.5572" x2="7.9507" y2="8.0428" layer="150" rot="R90"/>
+<hole x="-5.08" y="0" drill="3.2512"/>
+<hole x="5.08" y="0" drill="3.2512"/>
+<rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="41"/>
+<rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="41"/>
+<rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="42"/>
+<rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="3.81" x2="4.445" y2="10.795" layer="43"/>
+</package>
+<package name="RJ12-STRAIGHT-RS232">
+<wire x1="-6.877" y1="10.819" x2="6.877" y2="10.819" width="0.2032" layer="21"/>
+<wire x1="7.8105" y1="-5.51" x2="-7.8105" y2="-5.51" width="0.01" layer="20"/>
+<wire x1="6.877" y1="-7.782" x2="-6.877" y2="-7.782" width="0.2032" layer="21"/>
+<wire x1="-6.877" y1="-7.782" x2="-6.877" y2="10.819" width="0.2032" layer="21"/>
+<wire x1="6.877" y1="10.819" x2="6.877" y2="-7.782" width="0.2032" layer="21"/>
+<pad name="GND2" x="0.635" y="6.35" drill="0.9" diameter="1.4"/>
+<pad name="TX" x="-0.635" y="8.89" drill="0.9" diameter="1.4"/>
+<pad name="RX" x="-1.905" y="6.35" drill="0.9" diameter="1.4"/>
+<pad name="+5V" x="1.905" y="8.89" drill="0.9" diameter="1.4"/>
+<pad name="+12V" x="-3.175" y="8.89" drill="0.9" diameter="1.4"/>
+<pad name="GND1" x="3.175" y="6.35" drill="0.9" diameter="1.4"/>
+<text x="-7.62" y="-0.635" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="-5.08" y="-4.445" size="1.778" layer="27">&gt;VALUE</text>
+<text x="2.2225" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
+<text x="-0.9525" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
+<text x="3.4925" y="8.5725" size="0.8128" layer="21" ratio="4">5V</text>
+<text x="-1.27" y="9.8425" size="0.8128" layer="21" ratio="4">TX</text>
+<text x="-6.0325" y="8.5725" size="0.8128" layer="21" ratio="4">12V</text>
+<text x="-2.8575" y="4.1275" size="0.8128" layer="21" ratio="4">RX</text>
+<rectangle x1="6.95" y1="-5.485" x2="7.875" y2="-4.342" layer="21"/>
+<rectangle x1="-7.875" y1="-5.485" x2="-6.95" y2="-4.342" layer="21"/>
+<rectangle x1="-8.0693" y1="-5.5572" x2="7.9507" y2="8.0428" layer="150" rot="R90"/>
+<hole x="-5.08" y="0" drill="3.2512"/>
+<hole x="5.08" y="0" drill="3.2512"/>
+<rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="41"/>
+<rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="41"/>
+<rectangle x1="-6.985" y1="-1.905" x2="-3.175" y2="1.905" layer="42"/>
+<rectangle x1="3.175" y1="-1.905" x2="6.985" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="3.81" x2="4.445" y2="10.795" layer="43"/>
+</package>
+<package name="RJ12-RIGHTRANGE-RGB">
+<wire x1="-6.325" y1="-5.95" x2="6.325" y2="-5.95" width="0.2032" layer="21"/>
+<wire x1="6.325" y1="-5.95" x2="6.325" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="6.325" y1="-0.75" x2="6.325" y2="8.945" width="0.2032" layer="21"/>
+<wire x1="6.325" y1="8.945" x2="-6.325" y2="8.945" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="8.945" x2="-6.325" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="-0.75" x2="-6.325" y2="-5.95" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="0.75" x2="-6.325" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="0.75" x2="-6.325" y2="-0.75" width="0.2032" layer="21" curve="134.838404"/>
+<wire x1="6.325" y1="-0.75" x2="6.325" y2="0.75" width="0.2032" layer="21" curve="134.838404"/>
+<pad name="GND1" x="-2.54" y="2.3" drill="0.8" diameter="1.3"/>
+<pad name="+5V" x="-1.54" y="4.84" drill="0.8" diameter="1.3"/>
+<pad name="G" x="-0.5" y="2.3" drill="0.8" diameter="1.3"/>
+<pad name="B" x="0.5" y="4.84" drill="0.8" diameter="1.3"/>
+<pad name="R" x="1.54" y="2.3" drill="0.8" diameter="1.3"/>
+<pad name="+12V" x="2.54" y="4.84" drill="0.8" diameter="1.3"/>
+<text x="-6.35" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.2225" y="6.0325" size="0.8128" layer="21" ratio="4">5V</text>
+<text x="1.905" y="6.0325" size="0.8128" layer="21" ratio="4">12V</text>
+<text x="0.3175" y="6.0325" size="0.8128" layer="21" ratio="4">B</text>
+<text x="1.27" y="0.3175" size="0.8128" layer="21" ratio="4">R</text>
+<text x="-4.1275" y="0.3175" size="0.8128" layer="21" ratio="4">GND</text>
+<hole x="-6" y="0" drill="2.36"/>
+<hole x="6" y="0" drill="2.36"/>
+<rectangle x1="-8.255" y1="-1.905" x2="-4.445" y2="1.905" layer="41"/>
+<rectangle x1="4.445" y1="-1.905" x2="8.255" y2="1.905" layer="41"/>
+<rectangle x1="-8.255" y1="-1.905" x2="-4.445" y2="1.905" layer="42"/>
+<rectangle x1="4.445" y1="-1.905" x2="8.255" y2="1.905" layer="42"/>
+<text x="-0.635" y="0.3175" size="0.8128" layer="21" ratio="4">G</text>
+<rectangle x1="-4.445" y1="0" x2="4.445" y2="6.985" layer="43"/>
+</package>
+<package name="RJ12-RIGHTANGLE-I2C">
+<wire x1="-6.325" y1="-5.95" x2="6.325" y2="-5.95" width="0.2032" layer="21"/>
+<wire x1="6.325" y1="-5.95" x2="6.325" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="6.325" y1="-0.75" x2="6.325" y2="8.945" width="0.2032" layer="21"/>
+<wire x1="6.325" y1="8.945" x2="-6.325" y2="8.945" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="8.945" x2="-6.325" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="-0.75" x2="-6.325" y2="-5.95" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="0.75" x2="-6.325" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="-6.325" y1="0.75" x2="-6.325" y2="-0.75" width="0.2032" layer="21" curve="134.838404"/>
+<wire x1="6.325" y1="-0.75" x2="6.325" y2="0.75" width="0.2032" layer="21" curve="134.838404"/>
+<pad name="GND1" x="-2.54" y="2.3" drill="0.8" diameter="1.3"/>
+<pad name="+5V" x="-1.54" y="4.84" drill="0.8" diameter="1.3"/>
+<pad name="GND2" x="-0.5" y="2.3" drill="0.8" diameter="1.3"/>
+<pad name="SDA" x="0.5" y="4.84" drill="0.8" diameter="1.3"/>
+<pad name="SCL" x="1.54" y="2.3" drill="0.8" diameter="1.3"/>
+<pad name="+12V" x="2.54" y="4.84" drill="0.8" diameter="1.3"/>
+<text x="-6.35" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.2225" y="6.0325" size="0.8128" layer="21" ratio="4">5V</text>
+<text x="2.54" y="6.0325" size="0.8128" layer="21" ratio="4">12V</text>
+<text x="-0.3175" y="6.0325" size="0.8128" layer="21" ratio="4">SDA</text>
+<text x="0.635" y="0.3175" size="0.8128" layer="21" ratio="4">SCL</text>
+<text x="-2.8575" y="0.3175" size="0.8128" layer="21" ratio="4">GND</text>
+<hole x="-6" y="0" drill="2.36"/>
+<hole x="6" y="0" drill="2.36"/>
+<rectangle x1="-8.255" y1="-1.905" x2="-4.445" y2="1.905" layer="41"/>
+<rectangle x1="4.445" y1="-1.905" x2="8.255" y2="1.905" layer="41"/>
+<rectangle x1="-8.255" y1="-1.905" x2="-4.445" y2="1.905" layer="42"/>
+<rectangle x1="4.445" y1="-1.905" x2="8.255" y2="1.905" layer="42"/>
+<rectangle x1="-4.445" y1="0" x2="4.445" y2="6.985" layer="43"/>
 </package>
 </packages>
 <symbols>
@@ -787,54 +878,6 @@ Source: YH-55-10.pdf</description>
 <pin name="GND1" x="-2.54" y="1.016" length="middle" direction="in"/>
 <pin name="GND2" x="-2.54" y="-1.524" length="middle" direction="in"/>
 <pin name="+12V" x="-2.54" y="-4.064" length="middle" direction="pwr"/>
-</symbol>
-<symbol name="JACK6">
-<wire x1="1.524" y1="5.588" x2="0" y2="5.588" width="0.254" layer="94"/>
-<wire x1="0" y1="5.588" x2="0" y2="4.572" width="0.254" layer="94"/>
-<wire x1="0" y1="4.572" x2="1.524" y2="4.572" width="0.254" layer="94"/>
-<wire x1="1.524" y1="3.048" x2="0" y2="3.048" width="0.254" layer="94"/>
-<wire x1="0" y1="3.048" x2="0" y2="2.032" width="0.254" layer="94"/>
-<wire x1="0" y1="2.032" x2="1.524" y2="2.032" width="0.254" layer="94"/>
-<wire x1="1.524" y1="0.508" x2="0" y2="0.508" width="0.254" layer="94"/>
-<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.508" x2="1.524" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.032" x2="0" y2="-2.032" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.032" x2="0" y2="-3.048" width="0.254" layer="94"/>
-<wire x1="0" y1="-3.048" x2="1.524" y2="-3.048" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-4.572" x2="0" y2="-4.572" width="0.254" layer="94"/>
-<wire x1="0" y1="-4.572" x2="0" y2="-5.588" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.588" x2="1.524" y2="-5.588" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-7.112" x2="0" y2="-7.112" width="0.254" layer="94"/>
-<wire x1="0" y1="-7.112" x2="0" y2="-8.128" width="0.254" layer="94"/>
-<wire x1="0" y1="-8.128" x2="1.524" y2="-8.128" width="0.254" layer="94"/>
-<wire x1="4.318" y1="-3.556" x2="6.858" y2="-3.556" width="0.1998" layer="94"/>
-<wire x1="6.858" y1="-3.556" x2="6.858" y2="-2.286" width="0.1998" layer="94"/>
-<wire x1="6.858" y1="-2.286" x2="7.874" y2="-2.286" width="0.1998" layer="94"/>
-<wire x1="7.874" y1="-2.286" x2="7.874" y2="-0.254" width="0.1998" layer="94"/>
-<wire x1="7.874" y1="-0.254" x2="6.858" y2="-0.254" width="0.1998" layer="94"/>
-<wire x1="6.858" y1="-0.254" x2="6.858" y2="1.016" width="0.1998" layer="94"/>
-<wire x1="6.858" y1="1.016" x2="4.318" y2="1.016" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="1.016" x2="4.318" y2="0" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="0" x2="4.318" y2="-0.508" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="-0.508" x2="4.318" y2="-1.016" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="-1.016" x2="4.318" y2="-1.524" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="-1.524" x2="4.318" y2="-2.032" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="-2.032" x2="4.318" y2="-2.54" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="-2.54" x2="4.318" y2="-3.556" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="0" x2="5.08" y2="0" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="-0.508" x2="5.08" y2="-0.508" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="-1.016" x2="5.08" y2="-1.016" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="-1.524" x2="5.08" y2="-1.524" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="-2.032" x2="5.08" y2="-2.032" width="0.1998" layer="94"/>
-<wire x1="4.318" y1="-2.54" x2="5.08" y2="-2.54" width="0.1998" layer="94"/>
-<text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-10.668" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="5.08" visible="pin" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="-2.54" y="2.54" visible="pin" length="short" direction="pas" swaplevel="1"/>
-<pin name="3" x="-2.54" y="0" visible="pin" length="short" direction="pas" swaplevel="1"/>
-<pin name="4" x="-2.54" y="-2.54" visible="pin" length="short" direction="pas" swaplevel="1"/>
-<pin name="5" x="-2.54" y="-5.08" visible="pin" length="short" direction="pas" swaplevel="1"/>
-<pin name="6" x="-2.54" y="-7.62" visible="pin" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 <symbol name="RJ12">
 <wire x1="1.524" y1="5.588" x2="0" y2="5.588" width="0.254" layer="94"/>
@@ -1017,46 +1060,6 @@ Source: http://www.osram.convergy.de/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RJ11" prefix="J">
-<description>&lt;b&gt;CORCOM Modular RJ Jacks&lt;/b&gt; No Shield&lt;p&gt;
-Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</description>
-<gates>
-<gate name="G$1" symbol="JACK6" x="0" y="0"/>
-</gates>
-<devices>
-<device name="STRAIGHT" package="RJ12-STRAIGHT">
-<connects>
-<connect gate="G$1" pin="1" pad="+12V"/>
-<connect gate="G$1" pin="2" pad="PWM"/>
-<connect gate="G$1" pin="3" pad="I/O"/>
-<connect gate="G$1" pin="4" pad="GND2"/>
-<connect gate="G$1" pin="5" pad="+5V"/>
-<connect gate="G$1" pin="6" pad="GND1"/>
-</connects>
-<technologies>
-<technology name="-6X">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="RJ11-6X" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="16R6089" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="RIGHTANGLE" package="RJ12-RIGHTANGLE@1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RJ12" prefix="J">
 <description>&lt;b&gt;CORCOM Modular RJ Jacks&lt;/b&gt; No Shield&lt;p&gt;
 Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</description>
@@ -1121,11 +1124,50 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="RJ12-STRAIGHT-ANALOG">
+<device name="STRAIGHT-ANALOG" package="RJ12-STRAIGHT-ANALOG">
 <connects>
 <connect gate="G$1" pin="1" pad="+12V"/>
 <connect gate="G$1" pin="2" pad="GND3"/>
 <connect gate="G$1" pin="3" pad="IN"/>
+<connect gate="G$1" pin="4" pad="GND2"/>
+<connect gate="G$1" pin="5" pad="+5V"/>
+<connect gate="G$1" pin="6" pad="GND1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="STRAIGHT-RS232-SERVER" package="RJ12-STRAIGHT-RS232">
+<connects>
+<connect gate="G$1" pin="1" pad="+12V"/>
+<connect gate="G$1" pin="2" pad="RX"/>
+<connect gate="G$1" pin="3" pad="TX"/>
+<connect gate="G$1" pin="4" pad="GND2"/>
+<connect gate="G$1" pin="5" pad="+5V"/>
+<connect gate="G$1" pin="6" pad="GND1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RIGHTANGLE-RGB" package="RJ12-RIGHTRANGE-RGB">
+<connects>
+<connect gate="G$1" pin="1" pad="+12V"/>
+<connect gate="G$1" pin="2" pad="R"/>
+<connect gate="G$1" pin="3" pad="B"/>
+<connect gate="G$1" pin="4" pad="G"/>
+<connect gate="G$1" pin="5" pad="+5V"/>
+<connect gate="G$1" pin="6" pad="GND1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RIGHTANGLE-I2C" package="RJ12-RIGHTANGLE-I2C">
+<connects>
+<connect gate="G$1" pin="1" pad="+12V"/>
+<connect gate="G$1" pin="2" pad="SCL"/>
+<connect gate="G$1" pin="3" pad="SDA"/>
 <connect gate="G$1" pin="4" pad="GND2"/>
 <connect gate="G$1" pin="5" pad="+5V"/>
 <connect gate="G$1" pin="6" pad="GND1"/>
@@ -3165,6 +3207,68 @@ general purpose rectifier, 1 A</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="buzzer">
+<description>&lt;b&gt;Speakers and Buzzers&lt;/b&gt;&lt;p&gt;
+&lt;ul&gt;Distributors:
+&lt;li&gt;Buerklin
+&lt;li&gt;Spoerle
+&lt;li&gt;Schukat
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="F/HMB">
+<description>&lt;b&gt;BUZZER&lt;/b&gt;</description>
+<wire x1="3.175" y1="3.175" x2="4.445" y2="3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="3.81" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="7.0104" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="8.001" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.27" width="0.1524" layer="21"/>
+<circle x="3.81" y="3.175" radius="1.27" width="0.1524" layer="21"/>
+<pad name="-" x="-3.81" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<pad name="+" x="3.81" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<text x="4.445" y="6.985" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.445" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="B">
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="5.08" x2="1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="1.397" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="1.397" width="0.1524" layer="94"/>
+<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="-" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="F/HMB" prefix="SG">
+<description>&lt;b&gt;BUZZER&lt;/b&gt;&lt;p&gt; Source: Buerklin</description>
+<gates>
+<gate name="G$1" symbol="B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="F/HMB">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3236,7 +3340,6 @@ general purpose rectifier, 1 A</description>
 <part name="R2" library="resistor" deviceset="R-EU_" device="M1206" value="1K"/>
 <part name="IC1" library="lpatiny" deviceset="ULN2803A" device="" value="ULN2803A"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="RXTX_INT1" library="lpatiny" deviceset="RJ11" device="STRAIGHT" technology="-6X" value="RS232"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
 <part name="P+19" library="supply1" deviceset="+12V" device=""/>
@@ -3256,12 +3359,10 @@ general purpose rectifier, 1 A</description>
 <part name="RL1" library="resistor" deviceset="R-EU_" device="M1206" value="1K"/>
 <part name="LED1" library="lpatiny" deviceset="LED3MM" device="" value=""/>
 <part name="FRAME1" library="frames" deviceset="DINA3_L" device=""/>
-<part name="A1" library="lpatiny" deviceset="RJ12" device="" value="ANALOG1"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="P+24" library="supply1" deviceset="+5V" device=""/>
 <part name="P+25" library="supply1" deviceset="+12V" device=""/>
 <part name="RA0" library="resistor" deviceset="R-EU_" device="M1206" value="1K"/>
-<part name="A2" library="lpatiny" deviceset="RJ12" device="" value="ANALOG2"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="P+26" library="supply1" deviceset="+5V" device=""/>
 <part name="P+29" library="supply1" deviceset="+12V" device=""/>
@@ -3272,10 +3373,6 @@ general purpose rectifier, 1 A</description>
 <part name="U$1" library="lpatiny" deviceset="KPJX-4S-S" device=""/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="M1206" value="1K"/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="M1206" value="1K"/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="RA3" library="resistor" deviceset="R-EU_" device="M1206" value="10K"/>
-<part name="RA6" library="resistor" deviceset="R-EU_" device="M1206" value="10K"/>
-<part name="RA7" library="resistor" deviceset="R-EU_" device="M1206" value="10K"/>
 <part name="LED2" library="lpatiny" deviceset="LED3MM" device="" value=""/>
 <part name="RL2" library="resistor" deviceset="R-EU_" device="M1206" value="1K"/>
 <part name="LED3" library="lpatiny" deviceset="LED3MM" device="" value=""/>
@@ -3286,6 +3383,13 @@ general purpose rectifier, 1 A</description>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="R6" library="resistor" deviceset="R-EU_" device="M1206" value="10K"/>
 <part name="R7" library="resistor" deviceset="R-EU_" device="M1206" value="10K"/>
+<part name="A1" library="lpatiny" deviceset="RJ12" device="STRAIGHT-ANALOG"/>
+<part name="A2" library="lpatiny" deviceset="RJ12" device="STRAIGHT-ANALOG"/>
+<part name="J1" library="lpatiny" deviceset="RJ12" device="STRAIGHT-RS232-SERVER"/>
+<part name="SG2" library="buzzer" deviceset="F/HMB" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="RL14" library="resistor" deviceset="R-EU_" device="M1206" value="1K"/>
+<part name="LED5" library="lpatiny" deviceset="LED3MM" device="" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3447,9 +3551,6 @@ general purpose rectifier, 1 A</description>
 <instance part="GND6" gate="1" x="43.18" y="167.64" smashed="yes">
 <attribute name="VALUE" x="41.275" y="165.735" size="1.27" layer="96"/>
 </instance>
-<instance part="RXTX_INT1" gate="G$1" x="335.28" y="152.4" smashed="yes">
-<attribute name="NAME" x="343.535" y="154.305" size="1.778" layer="95"/>
-</instance>
 <instance part="GND11" gate="1" x="332.74" y="142.24" smashed="yes">
 <attribute name="VALUE" x="330.835" y="140.335" size="1.27" layer="96"/>
 </instance>
@@ -3501,9 +3602,6 @@ general purpose rectifier, 1 A</description>
 <instance part="LED1" gate="G$1" x="81.28" y="139.7" rot="MR180"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="287.02" y="0"/>
-<instance part="A1" gate="G$1" x="335.28" y="220.98" smashed="yes">
-<attribute name="NAME" x="343.535" y="222.885" size="1.778" layer="95"/>
-</instance>
 <instance part="GND17" gate="1" x="332.74" y="210.82" smashed="yes">
 <attribute name="VALUE" x="330.835" y="208.915" size="1.27" layer="96"/>
 </instance>
@@ -3516,9 +3614,6 @@ general purpose rectifier, 1 A</description>
 <instance part="RA0" gate="G$1" x="325.12" y="220.98" smashed="yes" rot="MR0">
 <attribute name="NAME" x="326.39" y="220.5736" size="1.016" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="330.2" y="221.488" size="1.27" layer="96" rot="MR0"/>
-</instance>
-<instance part="A2" gate="G$1" x="335.28" y="198.12" smashed="yes">
-<attribute name="NAME" x="343.535" y="200.025" size="1.778" layer="95"/>
 </instance>
 <instance part="GND18" gate="1" x="332.74" y="187.96" smashed="yes">
 <attribute name="VALUE" x="330.835" y="186.055" size="1.27" layer="96"/>
@@ -3547,19 +3642,6 @@ general purpose rectifier, 1 A</description>
 <attribute name="NAME" x="326.39" y="177.3936" size="1.016" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="330.2" y="178.308" size="1.27" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND8" gate="1" x="213.36" y="218.44"/>
-<instance part="RA3" gate="G$1" x="226.06" y="226.06" smashed="yes" rot="MR0">
-<attribute name="NAME" x="227.33" y="225.6536" size="1.016" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="231.14" y="226.568" size="1.27" layer="96" rot="MR0"/>
-</instance>
-<instance part="RA6" gate="G$1" x="226.06" y="218.44" smashed="yes" rot="MR0">
-<attribute name="NAME" x="227.33" y="218.0336" size="1.016" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="231.14" y="218.948" size="1.27" layer="96" rot="MR0"/>
-</instance>
-<instance part="RA7" gate="G$1" x="226.06" y="215.9" smashed="yes" rot="MR0">
-<attribute name="NAME" x="227.33" y="215.4936" size="1.016" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="231.14" y="216.408" size="1.27" layer="96" rot="MR0"/>
-</instance>
 <instance part="LED2" gate="G$1" x="299.72" y="124.46" rot="MR90"/>
 <instance part="RL2" gate="G$1" x="309.88" y="124.46" rot="MR180"/>
 <instance part="LED3" gate="G$1" x="299.72" y="111.76" rot="MR90"/>
@@ -3582,6 +3664,13 @@ general purpose rectifier, 1 A</description>
 <attribute name="NAME" x="315.3664" y="171.45" size="1.016" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="314.452" y="175.26" size="1.27" layer="96" rot="MR270"/>
 </instance>
+<instance part="A1" gate="G$1" x="335.28" y="220.98"/>
+<instance part="A2" gate="G$1" x="335.28" y="198.12"/>
+<instance part="J1" gate="G$1" x="335.28" y="152.4"/>
+<instance part="SG2" gate="G$1" x="218.44" y="213.36" rot="R180"/>
+<instance part="GND8" gate="1" x="198.12" y="213.36"/>
+<instance part="RL14" gate="G$1" x="215.9" y="220.98" rot="MR180"/>
+<instance part="LED5" gate="G$1" x="205.74" y="220.98" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -3645,10 +3734,14 @@ general purpose rectifier, 1 A</description>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="332.74" y1="144.78" x2="332.74" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="RXTX_INT1" gate="G$1" pin="6"/>
-<pinref part="RXTX_INT1" gate="G$1" pin="4"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="6"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="332.74" y1="149.86" x2="337.82" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="149.86" x2="337.82" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="144.78" x2="332.74" y2="144.78" width="0.1524" layer="91"/>
+<junction x="332.74" y="144.78"/>
+<junction x="332.74" y="149.86"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="157.48" x2="104.14" y2="162.56" width="0.1524" layer="91"/>
@@ -3663,22 +3756,32 @@ general purpose rectifier, 1 A</description>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="332.74" y1="213.36" x2="332.74" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="223.52" x2="332.74" y2="218.44" width="0.1524" layer="91"/>
-<junction x="332.74" y="218.44"/>
-<pinref part="A1" gate="G$1" pin="6"/>
-<pinref part="A1" gate="G$1" pin="4"/>
 <pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="A1" gate="G$1" pin="6"/>
 <pinref part="A1" gate="G$1" pin="2"/>
+<wire x1="332.74" y1="223.52" x2="337.82" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="223.52" x2="337.82" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="A1" gate="G$1" pin="4"/>
+<wire x1="332.74" y1="218.44" x2="337.82" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="218.44" x2="337.82" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="213.36" x2="332.74" y2="213.36" width="0.1524" layer="91"/>
+<junction x="332.74" y="223.52"/>
+<junction x="332.74" y="218.44"/>
+<junction x="332.74" y="213.36"/>
 </segment>
 <segment>
-<wire x1="332.74" y1="190.5" x2="332.74" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="200.66" x2="332.74" y2="195.58" width="0.1524" layer="91"/>
-<junction x="332.74" y="195.58"/>
-<pinref part="A2" gate="G$1" pin="6"/>
-<pinref part="A2" gate="G$1" pin="4"/>
 <pinref part="GND18" gate="1" pin="GND"/>
+<pinref part="A2" gate="G$1" pin="6"/>
 <pinref part="A2" gate="G$1" pin="2"/>
+<wire x1="332.74" y1="200.66" x2="337.82" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="200.66" x2="337.82" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="A2" gate="G$1" pin="4"/>
+<wire x1="332.74" y1="195.58" x2="337.82" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="195.58" x2="337.82" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="190.5" x2="332.74" y2="190.5" width="0.1524" layer="91"/>
+<junction x="332.74" y="200.66"/>
+<junction x="332.74" y="195.58"/>
+<junction x="332.74" y="190.5"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="213.36" x2="45.72" y2="213.36" width="0.1524" layer="91"/>
@@ -3698,14 +3801,12 @@ general purpose rectifier, 1 A</description>
 <pinref part="LED3" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="215.9" x2="220.98" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="218.44" x2="220.98" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="220.98" x2="220.98" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="220.98" x2="220.98" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="RA7" gate="G$1" pin="2"/>
-<pinref part="RA6" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="RA3" gate="G$1" pin="2"/>
+<pinref part="SG2" gate="G$1" pin="-"/>
+<wire x1="198.12" y1="215.9" x2="213.36" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<wire x1="200.66" y1="220.98" x2="198.12" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="220.98" x2="198.12" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="2">
@@ -3753,8 +3854,10 @@ general purpose rectifier, 1 A</description>
 </segment>
 <segment>
 <wire x1="332.74" y1="157.48" x2="327.66" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="RXTX_INT1" gate="G$1" pin="1"/>
 <pinref part="P+19" gate="1" pin="+12V"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<junction x="332.74" y="157.48"/>
+<junction x="327.66" y="157.48"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="170.18" x2="99.06" y2="170.18" width="0.1524" layer="91"/>
@@ -3767,14 +3870,18 @@ general purpose rectifier, 1 A</description>
 <pinref part="P+23" gate="1" pin="+12V"/>
 </segment>
 <segment>
-<wire x1="332.74" y1="226.06" x2="327.66" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="A1" gate="G$1" pin="1"/>
 <pinref part="P+25" gate="1" pin="+12V"/>
+<wire x1="327.66" y1="226.06" x2="332.74" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="A1" gate="G$1" pin="1"/>
+<junction x="332.74" y="226.06"/>
+<junction x="327.66" y="226.06"/>
 </segment>
 <segment>
-<wire x1="332.74" y1="203.2" x2="327.66" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="A2" gate="G$1" pin="1"/>
 <pinref part="P+29" gate="1" pin="+12V"/>
+<wire x1="327.66" y1="203.2" x2="332.74" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="A2" gate="G$1" pin="1"/>
+<junction x="332.74" y="203.2"/>
+<junction x="327.66" y="203.2"/>
 </segment>
 <segment>
 <wire x1="152.4" y1="170.18" x2="144.78" y2="170.18" width="0.1524" layer="91"/>
@@ -3836,9 +3943,9 @@ general purpose rectifier, 1 A</description>
 </segment>
 <segment>
 <wire x1="327.66" y1="147.32" x2="332.74" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="147.32" x2="327.66" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="RXTX_INT1" gate="G$1" pin="5"/>
 <pinref part="P+14" gate="1" pin="+5V"/>
+<pinref part="J1" gate="G$1" pin="5"/>
+<junction x="332.74" y="147.32"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="160.02" x2="104.14" y2="160.02" width="0.1524" layer="91"/>
@@ -3855,14 +3962,18 @@ general purpose rectifier, 1 A</description>
 <pinref part="RL1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="327.66" y1="215.9" x2="332.74" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="A1" gate="G$1" pin="5"/>
 <pinref part="P+24" gate="1" pin="+5V"/>
+<wire x1="332.74" y1="215.9" x2="327.66" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="A1" gate="G$1" pin="5"/>
+<junction x="332.74" y="215.9"/>
+<junction x="327.66" y="215.9"/>
 </segment>
 <segment>
 <wire x1="327.66" y1="193.04" x2="332.74" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="A2" gate="G$1" pin="5"/>
 <pinref part="P+26" gate="1" pin="+5V"/>
+<pinref part="A2" gate="G$1" pin="5"/>
+<junction x="332.74" y="193.04"/>
+<junction x="327.66" y="193.04"/>
 </segment>
 <segment>
 <wire x1="147.32" y1="205.74" x2="157.48" y2="205.74" width="0.1524" layer="91"/>
@@ -3908,6 +4019,7 @@ general purpose rectifier, 1 A</description>
 <wire x1="320.04" y1="220.98" x2="317.5" y2="220.98" width="0.1524" layer="91"/>
 <label x="316.865" y="221.615" size="1.27" layer="95"/>
 <pinref part="RA0" gate="G$1" pin="2"/>
+<junction x="320.04" y="220.98"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -4333,8 +4445,10 @@ general purpose rectifier, 1 A</description>
 <net name="D2B5" class="0">
 <segment>
 <wire x1="332.74" y1="152.4" x2="330.2" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="RXTX_INT1" gate="G$1" pin="3"/>
 <pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<junction x="332.74" y="152.4"/>
+<junction x="330.2" y="152.4"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -4381,15 +4495,19 @@ general purpose rectifier, 1 A</description>
 <net name="D2B8" class="0">
 <segment>
 <wire x1="332.74" y1="220.98" x2="330.2" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="A1" gate="G$1" pin="3"/>
 <pinref part="RA0" gate="G$1" pin="1"/>
+<junction x="330.2" y="220.98"/>
+<pinref part="A1" gate="G$1" pin="3"/>
+<junction x="332.74" y="220.98"/>
 </segment>
 </net>
 <net name="D2B9" class="0">
 <segment>
 <wire x1="332.74" y1="198.12" x2="330.2" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="A2" gate="G$1" pin="3"/>
 <pinref part="RA1" gate="G$1" pin="1"/>
+<junction x="330.2" y="198.12"/>
+<pinref part="A2" gate="G$1" pin="3"/>
+<junction x="332.74" y="198.12"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -4492,7 +4610,9 @@ general purpose rectifier, 1 A</description>
 <segment>
 <wire x1="330.2" y1="154.94" x2="332.74" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="RXTX_INT1" gate="G$1" pin="2"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<junction x="332.74" y="154.94"/>
+<junction x="330.2" y="154.94"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -4505,22 +4625,22 @@ general purpose rectifier, 1 A</description>
 <net name="N$16" class="0">
 <segment>
 <wire x1="231.14" y1="226.06" x2="233.68" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="RA3" gate="G$1" pin="1"/>
 <pinref part="ARDUINO1" gate="ARDUINO" pin="A3"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<wire x1="233.68" y1="218.44" x2="231.14" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="ARDUINO1" gate="ARDUINO" pin="A6"/>
-<pinref part="RA6" gate="G$1" pin="1"/>
+<pinref part="RL14" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="218.44" x2="220.98" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="218.44" x2="220.98" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<wire x1="233.68" y1="215.9" x2="231.14" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="ARDUINO1" gate="ARDUINO" pin="A7"/>
-<pinref part="RA7" gate="G$1" pin="1"/>
+<pinref part="SG2" gate="G$1" pin="+"/>
+<wire x1="220.98" y1="215.9" x2="233.68" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -4557,6 +4677,13 @@ general purpose rectifier, 1 A</description>
 <wire x1="71.12" y1="76.2" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
 <label x="69.596" y="71.12" size="1.016" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="CD+"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="RL14" gate="G$1" pin="1"/>
+<pinref part="LED5" gate="G$1" pin="A"/>
+<wire x1="210.82" y1="220.98" x2="208.28" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
