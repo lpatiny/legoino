@@ -1,3 +1,15 @@
+/*
+MCP23008:
+- start address: B00100000
+- relay box
+- LCD display
+
+- pH meter
+
+
+*/
+
+
 
 #define wire_extension1 B00100001
 #define wire_extension2 B00100111
