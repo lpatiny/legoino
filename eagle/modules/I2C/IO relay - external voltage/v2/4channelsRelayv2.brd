@@ -920,7 +920,8 @@ design rules under a new name.</description>
 <wire x1="67.31" y1="24.13" x2="59.69" y2="16.51" width="1.3716" layer="16"/>
 <wire x1="59.69" y1="16.51" x2="59.82" y2="16.51" width="1.3716" layer="16"/>
 <wire x1="41.91" y1="6.35" x2="43.18" y2="5.08" width="1.3716" layer="1"/>
-<wire x1="41.91" y1="21.59" x2="41.91" y2="7.62" width="1.3716" layer="1"/>
+<wire x1="41.91" y1="21.59" x2="41.91" y2="17.78" width="1.3716" layer="1"/>
+<wire x1="41.91" y1="17.78" x2="41.91" y2="7.62" width="1.3716" layer="1"/>
 <wire x1="41.91" y1="7.62" x2="41.91" y2="6.35" width="1.3716" layer="1"/>
 <wire x1="44.45" y1="24.13" x2="41.91" y2="21.59" width="1.3716" layer="1"/>
 <wire x1="43.18" y1="5.08" x2="43.18" y2="5.21" width="1.3716" layer="1"/>
@@ -933,6 +934,8 @@ design rules under a new name.</description>
 <wire x1="36.83" y1="2.54" x2="30.48" y2="2.54" width="1.3716" layer="16"/>
 <wire x1="41.91" y1="7.62" x2="36.83" y2="2.54" width="1.3716" layer="1"/>
 <via x="36.83" y="2.54" extent="1-16" drill="0.6096"/>
+<contactref element="IC2" pad="6"/>
+<wire x1="41.91" y1="17.78" x2="35.56" y2="17.78" width="1.3716" layer="1"/>
 </signal>
 <signal name="N$38">
 <contactref element="RL2" pad="1"/>

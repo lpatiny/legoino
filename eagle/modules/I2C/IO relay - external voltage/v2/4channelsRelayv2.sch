@@ -12571,6 +12571,9 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <pinref part="IC2" gate="G$1" pin="VCC"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
 <wire x1="109.22" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="/RST"/>
+<wire x1="93.98" y1="119.38" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="129.54" x2="109.22" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$38" class="0">
