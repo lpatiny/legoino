@@ -14743,7 +14743,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
-<segment>
+<segment> 
 <wire x1="137.16" y1="12.7" x2="137.16" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="E"/>
 <pinref part="GND8" gate="1" pin="GND"/>

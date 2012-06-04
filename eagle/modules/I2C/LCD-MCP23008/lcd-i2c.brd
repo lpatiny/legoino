@@ -7,7 +7,7 @@
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="mic" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
-<layers>
+<layers> 
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
