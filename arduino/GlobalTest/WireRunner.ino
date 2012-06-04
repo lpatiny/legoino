@@ -1,14 +1,23 @@
 /*
 MCP23008:
-- start address: B00100000
+- start address: B00100000 (32)
 - relay box
 - LCD display
 
+ADS7823
+- start address: B10010000
 - pH meter
+
+PCA9531
+- start address: B01100000 (96)
+Smart led driver
+
+PCF8574
+- start address: B00100000
+Open drain led drive driver
 
 
 */
-
 
 
 #define wire_extension1 B00100001

@@ -14590,6 +14590,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="J3" library="lpatiny" deviceset="RJ12" device="RIGHTANGLE-I2C"/>
 <part name="R6" library="pot" deviceset="TRIM_EU-" device="CA6V" value="10k"/>
 <part name="X2" library="con-molex" deviceset="22-23-2041" device=""/>
+<part name="R8" library="adafruit" deviceset="R-US_" device="M1206" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -14644,6 +14645,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="X2" gate="-2" x="-2.54" y="60.96"/>
 <instance part="X2" gate="-3" x="-2.54" y="58.42"/>
 <instance part="X2" gate="-4" x="-2.54" y="55.88"/>
+<instance part="R8" gate="G$1" x="40.64" y="76.2" rot="MR90"/>
 </instances>
 <busses>
 <bus name="RS,E,DB4,DB5,DB6,DB7,LITE">
@@ -14663,10 +14665,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="58.42" y1="83.82" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="/RST"/>
-<wire x1="43.18" y1="71.12" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="71.12" x2="40.64" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="71.12" y1="25.4" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
@@ -14743,7 +14743,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
-<segment> 
+<segment>
 <wire x1="137.16" y1="12.7" x2="137.16" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="E"/>
 <pinref part="GND8" gate="1" pin="GND"/>
@@ -14963,6 +14963,13 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="J3" gate="G$1" pin="6"/>
 <pinref part="J2" gate="G$1" pin="6"/>
 <wire x1="-22.86" y1="53.34" x2="-38.1" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="1">
+<segment>
+<pinref part="IC1" gate="G$1" pin="/RST"/>
+<wire x1="43.18" y1="71.12" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

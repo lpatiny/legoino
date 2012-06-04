@@ -12314,8 +12314,8 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="C3" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="5uF 50V"/>
-<part name="R13" library="resistor" deviceset="R-EU_" device="M1206" value="reserve"/>
-<part name="R14" library="resistor" deviceset="R-EU_" device="M1206" value="reserve"/>
+<part name="R13" library="resistor" deviceset="R-EU_" device="M1206" value="10k"/>
+<part name="R14" library="resistor" deviceset="R-EU_" device="M1206" value="10k"/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="K1" library="relay" deviceset="JS-M1*" device="" technology="-9V-5"/>
@@ -12336,6 +12336,7 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <part name="P6" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="P7" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="P8" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="M1206" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -12428,6 +12429,7 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <instance part="P6" gate="G$1" x="261.62" y="137.16" rot="R180"/>
 <instance part="P7" gate="G$1" x="261.62" y="160.02" rot="R180"/>
 <instance part="P8" gate="G$1" x="261.62" y="182.88" rot="R180"/>
+<instance part="R1" gate="G$1" x="93.98" y="124.46" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -12567,9 +12569,8 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <pinref part="IC2" gate="G$1" pin="VCC"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
 <wire x1="109.22" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="/RST"/>
-<wire x1="93.98" y1="119.38" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="129.54" x2="109.22" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -12879,6 +12880,12 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <pinref part="K2" gate="2" pin="P"/>
 <pinref part="PC2" gate="G$1" pin="P"/>
 <wire x1="236.22" y1="152.4" x2="259.08" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="/RST"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
