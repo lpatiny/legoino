@@ -14570,8 +14570,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="A2" library="jumper" deviceset="SJ" device=""/>
 <part name="A1" library="jumper" deviceset="SJ" device=""/>
 <part name="A0" library="jumper" deviceset="SJ" device=""/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="M1206" value="4.7k"/>
-<part name="R5" library="adafruit" deviceset="R-US_" device="M1206" value="4.7k"/>
+<part name="R4" library="adafruit" deviceset="R-US_" device="M1206" value="10k"/>
+<part name="R5" library="adafruit" deviceset="R-US_" device="M1206" value="10k"/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
@@ -14588,7 +14588,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device=""/>
 <part name="J2" library="lpatiny" deviceset="RJ12" device="RIGHTANGLE-I2C"/>
 <part name="J3" library="lpatiny" deviceset="RJ12" device="RIGHTANGLE-I2C"/>
-<part name="R6" library="pot" deviceset="TRIM_EU-" device="CA6V"/>
+<part name="R6" library="pot" deviceset="TRIM_EU-" device="CA6V" value="10k"/>
 <part name="X2" library="con-molex" deviceset="22-23-2041" device=""/>
 </parts>
 <sheets>
@@ -14599,7 +14599,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="58.42" y="60.96"/>
-<instance part="P+2" gate="VCC" x="58.42" y="83.82"/>
+<instance part="P+2" gate="VCC" x="58.42" y="86.36"/>
 <instance part="GND2" gate="1" x="58.42" y="35.56"/>
 <instance part="P+4" gate="VCC" x="71.12" y="27.94"/>
 <instance part="GND4" gate="1" x="86.36" y="22.86" rot="R180"/>
@@ -14623,23 +14623,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="P+9" gate="VCC" x="7.62" y="55.88" rot="MR90"/>
 <instance part="Q1" gate="G$1" x="139.7" y="20.32" smashed="yes" rot="MR0">
 <attribute name="NAME" x="134.62" y="20.32" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="149.86" y="25.4" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="147.32" y="15.24" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<<<<<<< HEAD:eagle/modules/I2C/LCD-MCP23008/lcd-i2c.sch
 <instance part="GND8" gate="1" x="137.16" y="10.16"/>
 <instance part="R7" gate="G$1" x="134.62" y="30.48" rot="MR180"/>
 <instance part="GND1" gate="1" x="86.36" y="40.64" rot="R180"/>
 <instance part="C1" gate="G$1" x="-2.54" y="15.24"/>
 <instance part="P+1" gate="VCC" x="-2.54" y="20.32" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-5.08" y="22.86" size="1.778" layer="96" rot="MR180"/>
-=======
-<instance part="GND8" gate="1" x="154.94" y="30.48"/>
-<instance part="R7" gate="G$1" x="152.4" y="48.26" rot="MR180"/>
-<instance part="GND1" gate="1" x="104.14" y="58.42" rot="R180"/>
-<instance part="C1" gate="G$1" x="15.24" y="33.02"/>
-<instance part="P+1" gate="VCC" x="15.24" y="38.1" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="12.7" y="40.64" size="1.778" layer="96" rot="MR180"/>
->>>>>>> update:eagle/modules/I2C/LCD-MCP23008/i2cspilcdbackpack.sch
 </instance>
 <instance part="GND9" gate="1" x="-2.54" y="7.62" rot="MR0"/>
 <instance part="C2" gate="G$1" x="5.08" y="15.24"/>
@@ -14671,6 +14662,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
+<wire x1="58.42" y1="83.82" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="/RST"/>
+<wire x1="43.18" y1="71.12" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="71.12" x2="40.64" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="71.12" y1="25.4" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
@@ -14748,10 +14744,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<<<<<<< HEAD:eagle/modules/I2C/LCD-MCP23008/lcd-i2c.sch
 <wire x1="137.16" y1="12.7" x2="137.16" y2="15.24" width="0.1524" layer="91"/>
-=======
->>>>>>> update:eagle/modules/I2C/LCD-MCP23008/i2cspilcdbackpack.sch
 <pinref part="Q1" gate="G$1" pin="E"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>

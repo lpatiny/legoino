@@ -813,11 +813,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="10.16" y="37.084" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="11.43" y="37.6999" size="0.02" layer="27" rot="R270"/>
 </element>
-<element name="R4" library="adafruit" package="M1206" value="4.7k" x="34.29" y="36.83" smashed="yes" rot="R90">
+<element name="R4" library="adafruit" package="M1206" value="10k" x="34.29" y="36.83" smashed="yes" rot="R90">
 <attribute name="NAME" x="35.433" y="39.878" size="1.016" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="34.798" y="40.513" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R5" library="adafruit" package="M1206" value="4.7k" x="38.1" y="36.83" smashed="yes" rot="R90">
+<element name="R5" library="adafruit" package="M1206" value="10k" x="38.1" y="36.83" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.608" y="39.751" size="1.016" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="38.481" y="40.64" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -840,7 +840,7 @@ design rules under a new name.</description>
 <element name="JP1" library="pinhead" package="1X16" value="" x="25.146" y="16.7132"/>
 <element name="J2" library="lpatiny" package="RJ12-RIGHTANGLE-I2C" value="RJ12RIGHTANGLE-I2C" x="10.16" y="4.445"/>
 <element name="J3" library="lpatiny" package="RJ12-RIGHTANGLE-I2C" value="RJ12RIGHTANGLE-I2C" x="27.94" y="4.445"/>
-<element name="R6" library="pot" package="CA6V" value="" x="44.45" y="7.62" rot="R270"/>
+<element name="R6" library="pot" package="CA6V" value="10k" x="44.45" y="7.62" rot="R270"/>
 <element name="X2" library="con-molex" package="22-23-2041" value="22-23-2041" x="5.715" y="35.56" rot="R270">
 <attribute name="OC_NEWARK" value="38C0355" x="5.715" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="22-23-2041" x="5.715" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
@@ -913,6 +913,13 @@ design rules under a new name.</description>
 <wire x1="26.67" y1="12.065" x2="12.065" y2="12.065" width="0.8" layer="16"/>
 <wire x1="8.89" y1="9.525" x2="8.62" y2="9.285" width="0.8" layer="16"/>
 <via x="26.67" y="12.065" extent="1-16" drill="0.4826"/>
+<contactref element="IC1" pad="6"/>
+<wire x1="24.13" y1="29.845" x2="23.495" y2="30.48" width="0.8" layer="1"/>
+<wire x1="24.13" y1="29.21" x2="24.13" y2="29.845" width="0.8" layer="1"/>
+<wire x1="26.67" y1="26.67" x2="24.13" y2="29.21" width="0.8" layer="1"/>
+<wire x1="35.56" y1="26.67" x2="26.67" y2="26.67" width="0.8" layer="1"/>
+<wire x1="35.56" y1="26.035" x2="35.56" y2="26.67" width="0.8" layer="1"/>
+<wire x1="23.495" y1="30.48" x2="22.987" y2="30.48" width="0.8" layer="1"/>
 </signal>
 <signal name="GND" class="1">
 <contactref element="IC1" pad="9"/>
