@@ -11884,8 +11884,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="C3" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="5uF 50V"/>
 <part name="C4" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="5uF 50V"/>
-<part name="R13" library="resistor" deviceset="R-EU_" device="M1206" value="reserve"/>
-<part name="R14" library="resistor" deviceset="R-EU_" device="M1206" value="reserve"/>
+<part name="R13" library="resistor" deviceset="R-EU_" device="M1206" value="10k"/>
+<part name="R14" library="resistor" deviceset="R-EU_" device="M1206" value="10k"/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
@@ -12369,6 +12369,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
+<pinref part="IC1" gate="G$1" pin="RESET"/>
+<wire x1="101.6" y1="119.38" x2="99.06" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="119.38" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="124.46" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="119.38" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
