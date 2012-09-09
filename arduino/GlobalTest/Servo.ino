@@ -7,16 +7,16 @@ Servo myservo;  // create servo object to control a servo
 
 
 int servoEventStatus=0;
-int servoIncrement=1;
+int servoIncrease=1;
 
 void setupEventServo() {
   myservo.attach(IO6);  // attaches the servo on pin IO6 to the servo object 
 }
 
 void runEventServo() {
-  servoEventStatus+=servoIncrement;
-  if ((servoEventStatus>180 && servoIncrement>0) || (servoEventStatus<1 && servoIncrement<0)) {
-    servoIncrement*=-1;
+  servoEventStatus+=getParameter(PARAM_SERVO)*servoIncrease;
+  if ((servoEventStatus>180 && servoIncrease>0) || (servoEventStatus<1 && servoIncrease<0)) {
+    servoIncrease*=-1;
   }
   myservo.write(servoEventStatus); 
 

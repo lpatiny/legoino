@@ -41,6 +41,7 @@
 #define PARAM_RGB1    0
 #define PARAM_RGB2    1
 #define PARAM_SCAN    2
+#define PARAM_SERVO   3
 #define PARAM_TEMP1   20
 #define PARAM_DISTANCE   25
 
