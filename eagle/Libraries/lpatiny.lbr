@@ -1536,6 +1536,79 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF857
 <text x="6.35" y="10.795" size="1.27" layer="21">5V</text>
 <text x="6.35" y="8.255" size="1.27" layer="21">3.3V</text>
 </package>
+<package name="VS1000">
+<wire x1="-1.524" y1="-1.016" x2="16.764" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="16.764" y1="-1.016" x2="16.764" y2="-42.164" width="0.127" layer="21"/>
+<wire x1="16.764" y1="-42.164" x2="-1.524" y2="-42.164" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-42.164" x2="-1.524" y2="-1.016" width="0.127" layer="21" curve="3"/>
+<pad name="XRST" x="0" y="-2.54" drill="0.8" diameter="1.6764" shape="square"/>
+<pad name="D0" x="0" y="-5.08" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="D1" x="0" y="-7.62" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="D2" x="0" y="-10.16" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="D3" x="0" y="-12.7" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="D4" x="0" y="-15.24" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="D5" x="0" y="-17.78" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="D6" x="0" y="-20.32" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="D7" x="0" y="-22.86" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="D10" x="0" y="-25.4" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="SD3V3" x="0" y="-27.94" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="XCS" x="0" y="-30.48" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="SCLK" x="0" y="-33.02" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="SI" x="0" y="-35.56" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="SDCD" x="0" y="-38.1" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="TX" x="15.24" y="-38.1" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="RX" x="15.24" y="-35.56" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="USBP" x="15.24" y="-33.02" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="USBN" x="15.24" y="-30.48" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="GND3" x="15.24" y="-27.94" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="RHP" x="15.24" y="-25.4" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="LHP" x="15.24" y="-22.86" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="GBUF" x="15.24" y="-20.32" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="ROUT" x="15.24" y="-17.78" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="LOUT" x="15.24" y="-15.24" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="GND2" x="15.24" y="-12.7" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="P8" x="15.24" y="-10.16" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="3V3" x="15.24" y="-7.62" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="DVDD" x="15.24" y="-5.08" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="VCC" x="15.24" y="-2.54" drill="0.8" diameter="1.6764" shape="octagon"/>
+<text x="-1.524" y="-0.508" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.524" y="-43.815" size="1.27" layer="27">&gt;VALUE</text>
+<text x="17.8132" y="-31.084" size="1.4" layer="25" font="vector">USNB</text>
+<text x="17.8132" y="-5.7094" size="1.4" layer="25" font="vector">DVDD</text>
+<text x="17.7814" y="-3.168" size="1.4" layer="25" font="vector">VCC</text>
+<text x="17.7814" y="-33.648" size="1.4" layer="25" font="vector">USNP</text>
+<text x="17.7814" y="-41.268" size="1.4" layer="25" font="vector">SO</text>
+<text x="17.7814" y="-8.248" size="1.4" layer="25" font="vector">3V3</text>
+<pad name="GND1" x="0" y="-40.64" drill="0.8" diameter="1.6764" shape="octagon"/>
+<pad name="SO" x="15.24" y="-40.64" drill="0.8" diameter="1.6764" shape="octagon" rot="R90"/>
+<text x="-2.5386" y="-3.168" size="1.4" layer="25" font="vector" align="bottom-right">XRST</text>
+<text x="-2.5386" y="-5.708" size="1.4" layer="25" font="vector" align="bottom-right">D0</text>
+<text x="-2.5386" y="-5.708" size="1.4" layer="25" font="vector" align="bottom-right"></text>
+<text x="-2.5386" y="-8.248" size="1.4" layer="25" font="vector" align="bottom-right">D1</text>
+<text x="-2.5386" y="-10.788" size="1.4" layer="25" font="vector" align="bottom-right">D2</text>
+<text x="-2.5386" y="-13.328" size="1.4" layer="25" font="vector" align="bottom-right">D3</text>
+<text x="-2.5386" y="-15.868" size="1.4" layer="25" font="vector" align="bottom-right">D4</text>
+<text x="-2.5386" y="-18.408" size="1.4" layer="25" font="vector" align="bottom-right">D5</text>
+<text x="-2.5386" y="-20.948" size="1.4" layer="25" font="vector" align="bottom-right">D6</text>
+<text x="-2.5386" y="-23.488" size="1.4" layer="25" font="vector" align="bottom-right">D7</text>
+<text x="-2.5386" y="-26.028" size="1.4" layer="25" font="vector" align="bottom-right">D10</text>
+<text x="-2.5386" y="-28.568" size="1.4" layer="25" font="vector" align="bottom-right">SD3V3</text>
+<text x="-2.5386" y="-31.108" size="1.4" layer="25" font="vector" align="bottom-right">XCS</text>
+<text x="-2.5386" y="-33.648" size="1.4" layer="25" font="vector" align="bottom-right">CSLK</text>
+<text x="-2.5386" y="-36.188" size="1.4" layer="25" font="vector" align="bottom-right">SI</text>
+<text x="-2.5386" y="-38.728" size="1.4" layer="25" font="vector" align="bottom-right">SDCD</text>
+<text x="-2.5386" y="-41.268" size="1.4" layer="25" font="vector" align="bottom-right">GND</text>
+<text x="17.7814" y="-10.788" size="1.4" layer="25" font="vector">PB</text>
+<text x="17.7814" y="-13.328" size="1.4" layer="25" font="vector">GND</text>
+<text x="17.7814" y="-15.868" size="1.4" layer="25" font="vector">LOUT</text>
+<text x="17.7814" y="-18.408" size="1.4" layer="25" font="vector">ROUT</text>
+<text x="17.7814" y="-20.948" size="1.4" layer="25" font="vector">GBUF</text>
+<text x="17.7814" y="-23.488" size="1.4" layer="25" font="vector">LHP</text>
+<text x="17.7814" y="-26.028" size="1.4" layer="25" font="vector">RHP</text>
+<text x="17.7814" y="-28.568" size="1.4" layer="25" font="vector">GND</text>
+<text x="17.7814" y="-36.188" size="1.4" layer="25" font="vector">RX</text>
+<text x="17.7814" y="-38.728" size="1.4" layer="25" font="vector">TX</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MAT-P">
@@ -2216,6 +2289,45 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF857
 <pin name="SDA1" x="-10.16" y="0" length="short"/>
 <pin name="GND" x="-10.16" y="-10.16" length="short" direction="pwr"/>
 <pin name="EXPSCL1" x="-10.16" y="12.7" length="short"/>
+</symbol>
+<symbol name="VS1000">
+<wire x1="-10.16" y1="22.86" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="22.86" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
+<text x="-10.16" y="23.495" size="1.778" layer="95">&gt;NAME</text>
+<pin name="VCC" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="DVDD" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="3V3" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="PB" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="GND2" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="LOUT" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="ROUT" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="GBUF" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="RHP" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND3" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="USBN" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="USBP" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="RX" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="TX" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="SO" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="LHP" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="XRST" x="-15.24" y="20.32" length="middle"/>
+<pin name="D0" x="-15.24" y="17.78" length="middle"/>
+<pin name="D1" x="-15.24" y="15.24" length="middle"/>
+<pin name="D2" x="-15.24" y="12.7" length="middle"/>
+<pin name="D3" x="-15.24" y="10.16" length="middle"/>
+<pin name="D4" x="-15.24" y="7.62" length="middle"/>
+<pin name="D5" x="-15.24" y="5.08" length="middle"/>
+<pin name="D6" x="-15.24" y="2.54" length="middle"/>
+<pin name="D10" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SD3V3" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
+<pin name="XCS" x="-15.24" y="-7.62" length="middle" direction="pwr"/>
+<pin name="SCLK" x="-15.24" y="-10.16" length="middle" direction="pwr"/>
+<pin name="SI" x="-15.24" y="-12.7" length="middle" direction="pwr"/>
+<pin name="SDCD" x="-15.24" y="-15.24" length="middle"/>
+<pin name="D7" x="-15.24" y="0" length="middle"/>
+<pin name="GND1" x="-15.24" y="-17.78" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2928,6 +3040,64 @@ http://www.nxp.com/documents/data_sheet/PCA9531.pdf</description>
 <connect gate="G$1" pin="SDA4" pad="16"/>
 <connect gate="G$1" pin="VCC" pad="20"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VS1000" prefix="VS">
+<description>Arduino Nano I/O pin arrangement</description>
+<gates>
+<gate name="G$1" symbol="VS1000" x="-12.7" y="38.1"/>
+</gates>
+<devices>
+<device name="" package="VS1000">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3V3"/>
+<connect gate="G$1" pin="D0" pad="D0"/>
+<connect gate="G$1" pin="D1" pad="D1"/>
+<connect gate="G$1" pin="D10" pad="D10"/>
+<connect gate="G$1" pin="D2" pad="D2"/>
+<connect gate="G$1" pin="D3" pad="D3"/>
+<connect gate="G$1" pin="D4" pad="D4"/>
+<connect gate="G$1" pin="D5" pad="D5"/>
+<connect gate="G$1" pin="D6" pad="D6"/>
+<connect gate="G$1" pin="D7" pad="D7"/>
+<connect gate="G$1" pin="DVDD" pad="DVDD"/>
+<connect gate="G$1" pin="GBUF" pad="GBUF"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="GND3" pad="GND3"/>
+<connect gate="G$1" pin="LHP" pad="LHP"/>
+<connect gate="G$1" pin="LOUT" pad="LOUT"/>
+<connect gate="G$1" pin="PB" pad="P8"/>
+<connect gate="G$1" pin="RHP" pad="RHP"/>
+<connect gate="G$1" pin="ROUT" pad="ROUT"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="SCLK" pad="SCLK"/>
+<connect gate="G$1" pin="SD3V3" pad="SD3V3"/>
+<connect gate="G$1" pin="SDCD" pad="SDCD"/>
+<connect gate="G$1" pin="SI" pad="SI"/>
+<connect gate="G$1" pin="SO" pad="SO"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="USBN" pad="USBN"/>
+<connect gate="G$1" pin="USBP" pad="USBP"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="XCS" pad="XCS"/>
+<connect gate="G$1" pin="XRST" pad="XRST"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST">
+<gates>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
