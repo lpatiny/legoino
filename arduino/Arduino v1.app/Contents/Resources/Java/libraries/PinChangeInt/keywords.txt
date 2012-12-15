@@ -1,6 +1,7 @@
 # LITERAL1 specifies constants
 
 # KEYWORD1 specifies datatypes and C/C++ keywords
+pinState	KEYWORD1	PinState
 arduinoPin	KEYWORD1	ArduinoPin
 PCintPort	KEYWORD1	PCInterruptPort
 

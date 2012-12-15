@@ -4,8 +4,8 @@
 // You can reduce the memory footprint of this handler by declaring that there will be no pin change interrupts
 // on any one or two of the three ports.  If only a single port remains, the handler will be declared inline
 // reducing the size and latency of the handler.
-#define NO_PORTB_PINCHANGES // to indicate that port b will not be used for pin change interrupts
-#define NO_PORTC_PINCHANGES // to indicate that port c will not be used for pin change interrupts
+//#define NO_PORTB_PINCHANGES // to indicate that port b will not be used for pin change interrupts
+//#define NO_PORTC_PINCHANGES // to indicate that port c will not be used for pin change interrupts
 // #define NO_PORTD_PINCHANGES // to indicate that port d will not be used for pin change interrupts
 // if there is only one PCInt vector in use the code can be inlined
 // reducing latency and code size
