@@ -8,7 +8,7 @@ int currentBit=0;
 
 void irInterrupt() {
   long unsigned timeCurrent=micros();
-  if (timeCurrent-timeLast>2000) {
+  if (timeCurrent-timeLast>2000 || timeLast-timeCurrent>2000) {
     timeLast=timeCurrent;
     currentBit=0;
     newIrCode=0;
