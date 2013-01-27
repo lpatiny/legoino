@@ -102,6 +102,35 @@ nano.build.variant=eightanaloginputs
 
 ##############################################################
 
+nano168direct.name=Arduino Nano w/ ATmega168 NO BOOTLOAD
+
+#nano168direct.upload.protocol=usbtiny
+#nano168direct.upload.maximum_size=14336
+#nano168direct.upload.speed=19200
+
+nano168direct.upload.using=usbtinyisp
+nano168direct.upload.maximum_size=16768
+
+nano168direct.build.mcu=atmega168
+#nano168direct.build.f_cpu=16000000L
+nano168direct.build.f_cpu=1000000L
+nano168direct.build.core=arduino
+nano168direct.build.variant=eightanaloginputs
+
+##############################################################
+
+nano328direct.name=Arduino Nano w/ ATmega328p NO BOOTLOAD
+
+nano328direct.upload.using=usbtinyisp
+nano168direct.upload.maximum_size=16768
+
+nano328direct.build.mcu=atmega328p
+nano328direct.build.f_cpu=1000000L
+nano328direct.build.core=arduino
+nano328direct.build.variant=eightanaloginputs
+
+##############################################################
+
 mega2560.name=Arduino Mega 2560 or Mega ADK
 
 mega2560.upload.protocol=stk500v2

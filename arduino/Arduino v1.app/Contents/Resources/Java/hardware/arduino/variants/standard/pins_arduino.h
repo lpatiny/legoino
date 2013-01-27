@@ -150,6 +150,8 @@ const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
 	PC,
 	PC,
 	PC,
+	PB,
+	PB,
 };
 
 const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
@@ -173,6 +175,8 @@ const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
 	_BV(3),
 	_BV(4),
 	_BV(5),
+	_BV(6),
+	_BV(7),
 };
 
 const uint8_t PROGMEM digital_pin_to_timer_PGM[] = {
