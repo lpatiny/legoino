@@ -8587,6 +8587,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="83.82" y1="10.16" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
 <label x="86.36" y="10.16" size="1.27" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="-71.12" y1="101.6" x2="-73.66" y2="101.6" width="0.1524" layer="91"/>
+<label x="-75.184" y="102.362" size="1.27" layer="95"/>
+</segment>
 </net>
 <net name="RESET" class="3">
 <segment>
@@ -9175,13 +9180,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="RL1" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="-60.96" y1="101.6" x2="-63.5" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="D13" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="-71.12" y1="101.6" x2="-73.66" y2="101.6" width="0.1524" layer="91"/>
-<label x="-75.184" y="102.362" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="1">
