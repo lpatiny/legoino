@@ -6365,6 +6365,115 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="-0.889" y="1.397" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-1.778" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="TC2030-MCP">
+<description>&lt;b&gt;TAG-CONNECT ICSP Connector&lt;/b&gt; - Legged version&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;
+&lt;p&gt;
+Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.
+&lt;p&gt;
+&lt;b&gt;NOTE:&lt;/b&gt; Eagle's default spacing for drill holes does not leave sufficent room for routing traces for this footprint and should be adjusted. &lt;br&gt;
+This setting can be found in the board layout editor under the Edit menu.  Select "Design Rules" and then the Distance tab.  8 mils for Drill/Hole works well.
+&lt;br&gt;
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<smd name="5V" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="MOSI" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="GND" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="RESET" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="SCK" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="MISO" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="-2.54" size="1.27" layer="25" rot="R90">&gt;name</text>
+<hole x="0" y="0" drill="0.889"/>
+<hole x="5.08" y="-1.016" drill="0.889"/>
+<hole x="5.08" y="1.016" drill="0.889"/>
+<hole x="0" y="2.54" drill="2.3748"/>
+<hole x="0" y="-2.54" drill="2.3748"/>
+<hole x="3.175" y="-2.54" drill="2.3748"/>
+<hole x="3.175" y="2.54" drill="2.3748"/>
+<polygon width="0.0254" layer="39">
+<vertex x="1.27" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.9337" y="-0.2413"/>
+<vertex x="2.9337" y="-0.635"/>
+<vertex x="3.4163" y="-0.635"/>
+<vertex x="3.4163" y="-0.2413"/>
+<vertex x="3.81" y="-0.2413"/>
+<vertex x="3.81" y="0.2413"/>
+<vertex x="3.4163" y="0.2413"/>
+<vertex x="3.4163" y="0.635"/>
+<vertex x="2.9337" y="0.635"/>
+<vertex x="2.9337" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="1.27" y="0.2413"/>
+</polygon>
+</package>
+<package name="TC2030-MCP-NL">
+<description>&lt;B&gt;TAG-CONNECT ICSP Connector&lt;/B&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
+&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
+
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<smd name="5V" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="MOSI" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="GND" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="RESET" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="SCK" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="MISO" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;name</text>
+<hole x="0" y="0" drill="0.889"/>
+<hole x="5.08" y="-1.016" drill="0.889"/>
+<hole x="5.08" y="1.016" drill="0.889"/>
+<polygon width="0.0254" layer="39">
+<vertex x="1.27" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.9337" y="-0.2413"/>
+<vertex x="2.9337" y="-0.635"/>
+<vertex x="3.4163" y="-0.635"/>
+<vertex x="3.4163" y="-0.2413"/>
+<vertex x="3.81" y="-0.2413"/>
+<vertex x="3.81" y="0.2413"/>
+<vertex x="3.4163" y="0.2413"/>
+<vertex x="3.4163" y="0.635"/>
+<vertex x="2.9337" y="0.635"/>
+<vertex x="2.9337" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="1.27" y="0.2413"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="TINYISP">
@@ -6545,6 +6654,32 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="TAG" package="TC2030-MCP">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="VCC" pad="5V"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="T" package="TC2030-MCP-NL">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="VCC" pad="5V"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6853,342 +6988,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="tag-connect">
-<description>&lt;h3&gt;TAG-CONNECT ICSP Connector&lt;/h3&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
-&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
-Two variants - one "with legs" (for hands-free fit on PCB) and another "without legs" for quick programming.
-
-&lt;p&gt;
-&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
-&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
-&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
-&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
-&lt;/TABLE&gt;
-&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
-
-©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
-<packages>
-<package name="TC2030-MCP">
-<description>&lt;b&gt;TAG-CONNECT ICSP Connector&lt;/b&gt; - Legged version&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;
-&lt;p&gt;
-Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.
-&lt;p&gt;
-&lt;b&gt;NOTE:&lt;/b&gt; Eagle's default spacing for drill holes does not leave sufficent room for routing traces for this footprint and should be adjusted. &lt;br&gt;
-This setting can be found in the board layout editor under the Edit menu.  Select "Design Rules" and then the Distance tab.  8 mils for Drill/Hole works well.
-&lt;br&gt;
-&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
-&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
-&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
-&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
-&lt;/TABLE&gt;
-&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
-©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
-<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<text x="-1.27" y="-2.54" size="1.27" layer="25" rot="R90">&gt;name</text>
-<hole x="0" y="0" drill="0.889"/>
-<hole x="5.08" y="-1.016" drill="0.889"/>
-<hole x="5.08" y="1.016" drill="0.889"/>
-<hole x="0" y="2.54" drill="2.3748"/>
-<hole x="0" y="-2.54" drill="2.3748"/>
-<hole x="3.175" y="-2.54" drill="2.3748"/>
-<hole x="3.175" y="2.54" drill="2.3748"/>
-<polygon width="0.0254" layer="39">
-<vertex x="1.27" y="-0.2413"/>
-<vertex x="1.6637" y="-0.2413"/>
-<vertex x="1.6637" y="-0.635"/>
-<vertex x="2.1463" y="-0.635"/>
-<vertex x="2.1463" y="-0.2413"/>
-<vertex x="2.9337" y="-0.2413"/>
-<vertex x="2.9337" y="-0.635"/>
-<vertex x="3.4163" y="-0.635"/>
-<vertex x="3.4163" y="-0.2413"/>
-<vertex x="3.81" y="-0.2413"/>
-<vertex x="3.81" y="0.2413"/>
-<vertex x="3.4163" y="0.2413"/>
-<vertex x="3.4163" y="0.635"/>
-<vertex x="2.9337" y="0.635"/>
-<vertex x="2.9337" y="0.2413"/>
-<vertex x="2.1463" y="0.2413"/>
-<vertex x="2.1463" y="0.635"/>
-<vertex x="1.6637" y="0.635"/>
-<vertex x="1.6637" y="0.2413"/>
-<vertex x="1.27" y="0.2413"/>
-</polygon>
-</package>
-<package name="TC2030-MCP-NL">
-<description>&lt;B&gt;TAG-CONNECT ICSP Connector&lt;/B&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
-&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
-
-&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
-&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
-&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
-&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
-&lt;/TABLE&gt;
-&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
-
-©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
-<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;name</text>
-<hole x="0" y="0" drill="0.889"/>
-<hole x="5.08" y="-1.016" drill="0.889"/>
-<hole x="5.08" y="1.016" drill="0.889"/>
-<polygon width="0.0254" layer="39">
-<vertex x="1.27" y="-0.2413"/>
-<vertex x="1.6637" y="-0.2413"/>
-<vertex x="1.6637" y="-0.635"/>
-<vertex x="2.1463" y="-0.635"/>
-<vertex x="2.1463" y="-0.2413"/>
-<vertex x="2.9337" y="-0.2413"/>
-<vertex x="2.9337" y="-0.635"/>
-<vertex x="3.4163" y="-0.635"/>
-<vertex x="3.4163" y="-0.2413"/>
-<vertex x="3.81" y="-0.2413"/>
-<vertex x="3.81" y="0.2413"/>
-<vertex x="3.4163" y="0.2413"/>
-<vertex x="3.4163" y="0.635"/>
-<vertex x="2.9337" y="0.635"/>
-<vertex x="2.9337" y="0.2413"/>
-<vertex x="2.1463" y="0.2413"/>
-<vertex x="2.1463" y="0.635"/>
-<vertex x="1.6637" y="0.635"/>
-<vertex x="1.6637" y="0.2413"/>
-<vertex x="1.27" y="0.2413"/>
-</polygon>
-</package>
-<package name="TC2030-MCP-NL-CP">
-<description>&lt;B&gt;TAG-CONNECT ICSP Connector&lt;/B&gt;&lt;I&gt;- with optional copper pads for steel alignment pins&lt;/I&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
-&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.
-&lt;p&gt;
-&lt;b&gt;NOTE:&lt;/b&gt; Eagle's default spacing for drill holes does not leave sufficent room for routing traces for this footprint and should be adjusted. &lt;br&gt;
-This setting can be found in the board layout editor under the Edit menu.  Select "Design Rules" and then the Distance tab.  8 mils for Drill/Hole works well.
-&lt;br&gt;
-&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
-&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
-&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
-&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
-&lt;/TABLE&gt;
-&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
-
-&lt;B&gt;Note:&lt;/B&gt; Suitable Receptacle pins are 0295-0-15-xx-06-xx-10-0 series from &lt;a href="www.mill-max.com"&gt;Mill-Max&lt;/a&gt;&lt;BR&gt;&lt;BR&gt;
-
-©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
-<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<text x="-1.27" y="1.905" size="1.27" layer="25">&gt;name</text>
-<hole x="0" y="0" drill="1.6"/>
-<hole x="5.08" y="1.016" drill="1.6"/>
-<hole x="5.08" y="-1.016" drill="1.6"/>
-<polygon width="0.0254" layer="39">
-<vertex x="1.27" y="-0.2413"/>
-<vertex x="1.6637" y="-0.2413"/>
-<vertex x="1.6637" y="-0.635"/>
-<vertex x="2.1463" y="-0.635"/>
-<vertex x="2.1463" y="-0.2413"/>
-<vertex x="2.9337" y="-0.2413"/>
-<vertex x="2.9337" y="-0.635"/>
-<vertex x="3.4163" y="-0.635"/>
-<vertex x="3.4163" y="-0.2413"/>
-<vertex x="3.81" y="-0.2413"/>
-<vertex x="3.81" y="0.2413"/>
-<vertex x="3.4163" y="0.2413"/>
-<vertex x="3.4163" y="0.635"/>
-<vertex x="2.9337" y="0.635"/>
-<vertex x="2.9337" y="0.2413"/>
-<vertex x="2.1463" y="0.2413"/>
-<vertex x="2.1463" y="0.635"/>
-<vertex x="1.6637" y="0.635"/>
-<vertex x="1.6637" y="0.2413"/>
-<vertex x="1.27" y="0.2413"/>
-</polygon>
-<polygon width="0.0254" layer="16">
-<vertex x="3.556" y="-1.016" curve="90"/>
-<vertex x="5.08" y="-2.54" curve="90"/>
-<vertex x="6.604" y="-1.016"/>
-<vertex x="6.604" y="1.016" curve="90"/>
-<vertex x="5.08" y="2.54" curve="90"/>
-<vertex x="3.556" y="1.016"/>
-</polygon>
-<polygon width="0.0254" layer="16">
-<vertex x="-1.524" y="0" curve="-90"/>
-<vertex x="0" y="1.524" curve="-90"/>
-<vertex x="1.524" y="0" curve="-90"/>
-<vertex x="0" y="-1.524" curve="-90"/>
-</polygon>
-<polygon width="0.254" layer="30">
-<vertex x="3.556" y="-1.016" curve="90"/>
-<vertex x="5.08" y="-2.54" curve="90"/>
-<vertex x="6.604" y="-1.016"/>
-<vertex x="6.604" y="1.016" curve="90"/>
-<vertex x="5.08" y="2.54" curve="90"/>
-<vertex x="3.556" y="1.016"/>
-</polygon>
-<polygon width="0.254" layer="30">
-<vertex x="-1.524" y="0" curve="-90"/>
-<vertex x="0" y="1.524" curve="-90"/>
-<vertex x="1.524" y="0" curve="-90"/>
-<vertex x="0" y="-1.524" curve="-90"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="ICSP">
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="8.89" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="8.89" y1="-7.62" x2="8.89" y2="10.16" width="0.254" layer="94"/>
-<wire x1="8.89" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<circle x="5.842" y="9.144" radius="0.5679" width="0.254" layer="94"/>
-<circle x="4.826" y="3.048" radius="0.5679" width="0.254" layer="94"/>
-<circle x="6.858" y="3.048" radius="0.5679" width="0.254" layer="94"/>
-<pin name="VPP/MCLR" x="-12.7" y="7.62" length="short" direction="pas"/>
-<pin name="VDD" x="-12.7" y="5.08" length="short" direction="pwr"/>
-<pin name="VSS(GND)" x="-12.7" y="2.54" length="short" direction="pwr"/>
-<pin name="ICSP_DAT/PGD" x="-12.7" y="0" length="short"/>
-<pin name="ICSP_CLK/PGC" x="-12.7" y="-2.54" length="short" direction="out"/>
-<pin name="LVP" x="-12.7" y="-5.08" length="short"/>
-<polygon width="0.254" layer="94">
-<vertex x="6.096" y="7.62" curve="-90"/>
-<vertex x="6.604" y="8.128" curve="-90"/>
-<vertex x="7.112" y="7.62" curve="-90"/>
-<vertex x="6.604" y="7.112" curve="-90"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="4.572" y="7.62" curve="-90"/>
-<vertex x="5.08" y="8.128" curve="-90"/>
-<vertex x="5.588" y="7.62" curve="-90"/>
-<vertex x="5.08" y="7.112" curve="-90"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="6.096" y="6.096" curve="-90"/>
-<vertex x="6.604" y="6.604" curve="-90"/>
-<vertex x="7.112" y="6.096" curve="-90"/>
-<vertex x="6.604" y="5.588" curve="-90"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="4.572" y="6.096" curve="-90"/>
-<vertex x="5.08" y="6.604" curve="-90"/>
-<vertex x="5.588" y="6.096" curve="-90"/>
-<vertex x="5.08" y="5.588" curve="-90"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="4.572" y="4.572" curve="-90"/>
-<vertex x="5.08" y="5.08" curve="-90"/>
-<vertex x="5.588" y="4.572" curve="-90"/>
-<vertex x="5.08" y="4.064" curve="-90"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="6.096" y="4.572" curve="-90"/>
-<vertex x="6.604" y="5.08" curve="-90"/>
-<vertex x="7.112" y="4.572" curve="-90"/>
-<vertex x="6.604" y="4.064" curve="-90"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TC2030" prefix="J" uservalue="yes">
-<description>&lt;h3&gt;TAG-CONNECT ICSP Connector&lt;/h3&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
-&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
-Two variants - one "with legs" (for hands-free fit on PCB) and another "without legs" for quick programming.
-
-&lt;p&gt;
-&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
-&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
-&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
-&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
-&lt;/TABLE&gt;
-&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
-
-©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
-<gates>
-<gate name="G$1" symbol="ICSP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-MCP" package="TC2030-MCP">
-<connects>
-<connect gate="G$1" pin="ICSP_CLK/PGC" pad="5"/>
-<connect gate="G$1" pin="ICSP_DAT/PGD" pad="4"/>
-<connect gate="G$1" pin="LVP" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
-<connect gate="G$1" pin="VPP/MCLR" pad="1"/>
-<connect gate="G$1" pin="VSS(GND)" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-MCP-NL" package="TC2030-MCP-NL">
-<connects>
-<connect gate="G$1" pin="ICSP_CLK/PGC" pad="5"/>
-<connect gate="G$1" pin="ICSP_DAT/PGD" pad="4"/>
-<connect gate="G$1" pin="LVP" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
-<connect gate="G$1" pin="VPP/MCLR" pad="1"/>
-<connect gate="G$1" pin="VSS(GND)" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="" package="TC2030-MCP-NL-CP">
-<connects>
-<connect gate="G$1" pin="ICSP_CLK/PGC" pad="5"/>
-<connect gate="G$1" pin="ICSP_DAT/PGD" pad="4"/>
-<connect gate="G$1" pin="LVP" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
-<connect gate="G$1" pin="VPP/MCLR" pad="1"/>
-<connect gate="G$1" pin="VSS(GND)" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7766,7 +7565,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </class>
 <class number="2" name="highpower" width="0.9144" drill="0">
 </class>
-<class number="3" name="fine" width="0.3048" drill="0">
+<class number="3" name="fine" width="0.2032" drill="0">
 </class>
 </classes>
 <parts>
@@ -7832,7 +7631,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="R7" library="resistor" deviceset="R-EU_" device="M1206" value="10K"/>
 <part name="R8" library="resistor" deviceset="R-EU_" device="M1206" value="10K"/>
 <part name="J1" library="lpatiny" deviceset="RJ12" device="STRAIGHT-RS232-SERVER"/>
-<part name="J2" library="tag-connect" deviceset="TC2030" device="-MCP"/>
 <part name="LED1" library="lpatiny" deviceset="LED3MM" device="" value=""/>
 <part name="RL1" library="resistor" deviceset="R-EU_" device="M1206" value="1K"/>
 <part name="F2" library="lpatiny" deviceset="POLYSWITCH" device="SMD1812"/>
@@ -7845,12 +7643,15 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="C3" library="SparkFun" deviceset="CAP_POL" device="1206-KIT" value="10uF 20V"/>
 <part name="D1" library="lpatiny" deviceset="1N581*" device="D1206" value="1N581D1206"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="U$7" library="SparkFun" deviceset="5V" device=""/>
-<part name="U$8" library="SparkFun" deviceset="5V" device=""/>
+<part name="5V" library="SparkFun" deviceset="5V" device=""/>
 <part name="LED4" library="lpatiny" deviceset="LED3MM" device="" value=""/>
 <part name="RL4" library="resistor" deviceset="R-EU_" device="M1206" value="1K"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="D2" library="lpatiny" deviceset="1N581*" device="D1206" value="1N581D1206"/>
+<part name="CON2" library="lpatiny" deviceset="TINYISP" device="TAG"/>
+<part name="P+2" library="supply1" deviceset="+12V" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="P+3" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8015,7 +7816,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <attribute name="VALUE" x="123.952" y="27.94" size="1.27" layer="96" rot="MR270"/>
 </instance>
 <instance part="J1" gate="G$1" x="144.78" y="5.08"/>
-<instance part="J2" gate="G$1" x="-38.1" y="63.5"/>
 <instance part="LED1" gate="G$1" x="-68.58" y="101.6" rot="MR270"/>
 <instance part="RL1" gate="G$1" x="-55.88" y="101.6" rot="MR180"/>
 <instance part="F2" gate="G$1" x="-48.26" y="43.18" rot="R180"/>
@@ -8030,14 +7830,21 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <instance part="C3" gate="G$1" x="55.88" y="132.08"/>
 <instance part="D1" gate="G$1" x="35.56" y="147.32"/>
 <instance part="GND3" gate="1" x="50.8" y="124.46"/>
-<instance part="U$7" gate="G$1" x="129.54" y="17.78"/>
-<instance part="U$8" gate="G$1" x="114.3" y="60.96"/>
+<instance part="5V" gate="G$1" x="129.54" y="17.78"/>
 <instance part="LED4" gate="G$1" x="81.28" y="132.08" rot="MR0"/>
 <instance part="RL4" gate="G$1" x="73.66" y="134.62" rot="MR180"/>
 <instance part="P+1" gate="1" x="17.78" y="137.16" smashed="yes">
 <attribute name="VALUE" x="17.145" y="137.795" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="D2" gate="G$1" x="27.94" y="134.62"/>
+<instance part="CON2" gate="G$1" x="-5.08" y="124.46"/>
+<instance part="P+2" gate="1" x="-60.96" y="27.94" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-62.865" y="27.94" size="1.27" layer="96" rot="R180"/>
+</instance>
+<instance part="GND5" gate="1" x="7.62" y="119.38"/>
+<instance part="P+3" gate="1" x="114.3" y="63.5" smashed="yes">
+<attribute name="VALUE" x="113.665" y="64.135" size="1.27" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8052,16 +7859,20 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="30.48" y1="38.1" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="38.1" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
+<junction x="35.56" y="35.56"/>
+<junction x="35.56" y="38.1"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="CON1" gate="G$1" pin="GND"/>
 <wire x1="7.62" y1="142.24" x2="2.54" y2="142.24" width="0.1524" layer="91"/>
+<junction x="7.62" y="142.24"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="35.56" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
+<junction x="10.16" y="63.5"/>
 </segment>
 <segment>
 <wire x1="-127" y1="142.24" x2="-124.46" y2="142.24" width="0.1524" layer="91"/>
@@ -8074,16 +7885,24 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="RGB2_D7-8-13" gate="G$1" pin="6"/>
 </segment>
 <segment>
-<wire x1="-124.46" y1="45.72" x2="-124.46" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="D4_IO3" gate="G$1" pin="6"/>
-<pinref part="D4_IO3" gate="G$1" pin="4"/>
 <pinref part="GND19" gate="1" pin="GND"/>
+<pinref part="D4_IO3" gate="G$1" pin="4"/>
+<wire x1="-124.46" y1="50.8" x2="-119.38" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="50.8" x2="-119.38" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="45.72" x2="-124.46" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-124.46" y="45.72"/>
+<junction x="-124.46" y="50.8"/>
 </segment>
 <segment>
-<wire x1="-124.46" y1="22.86" x2="-124.46" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="D9_IO1" gate="G$1" pin="6"/>
-<pinref part="D9_IO1" gate="G$1" pin="4"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="D9_IO1" gate="G$1" pin="4"/>
+<wire x1="-124.46" y1="27.94" x2="-119.38" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="27.94" x2="-119.38" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="22.86" x2="-124.46" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-124.46" y="27.94"/>
+<junction x="-124.46" y="22.86"/>
 </segment>
 <segment>
 <wire x1="-185.42" y1="73.66" x2="-182.88" y2="73.66" width="0.1524" layer="91"/>
@@ -8091,10 +7910,14 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="IC3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="20.32" x2="142.24" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="I2C_INT0" gate="G$1" pin="6"/>
-<pinref part="I2C_INT0" gate="G$1" pin="4"/>
 <pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="I2C_INT0" gate="G$1" pin="4"/>
+<wire x1="142.24" y1="25.4" x2="147.32" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="25.4" x2="147.32" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="20.32" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
+<junction x="142.24" y="25.4"/>
+<junction x="142.24" y="20.32"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
@@ -8107,16 +7930,24 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <junction x="142.24" y="2.54"/>
 </segment>
 <segment>
-<wire x1="-124.46" y1="93.98" x2="-124.46" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="D2_IO5" gate="G$1" pin="6"/>
-<pinref part="D2_IO5" gate="G$1" pin="4"/>
 <pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="D2_IO5" gate="G$1" pin="4"/>
+<wire x1="-124.46" y1="99.06" x2="-119.38" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="99.06" x2="-119.38" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="93.98" x2="-124.46" y2="93.98" width="0.1524" layer="91"/>
+<junction x="-124.46" y="93.98"/>
+<junction x="-124.46" y="99.06"/>
 </segment>
 <segment>
-<wire x1="-124.46" y1="71.12" x2="-124.46" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="D4_IO6" gate="G$1" pin="6"/>
-<pinref part="D4_IO6" gate="G$1" pin="4"/>
 <pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="-124.46" y1="71.12" x2="-119.38" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="71.12" x2="-119.38" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="D4_IO6" gate="G$1" pin="4"/>
+<wire x1="-119.38" y1="76.2" x2="-124.46" y2="76.2" width="0.1524" layer="91"/>
+<junction x="-124.46" y="71.12"/>
+<junction x="-124.46" y="76.2"/>
 </segment>
 <segment>
 <wire x1="-185.42" y1="116.84" x2="-182.88" y2="116.84" width="0.1524" layer="91"/>
@@ -8134,6 +7965,10 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="GND13" gate="1" pin="GND"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="LED3" gate="G$1" pin="C"/>
+<junction x="-68.58" y="35.56"/>
+<junction x="-88.9" y="35.56"/>
+<junction x="-27.94" y="33.02"/>
+<junction x="-27.94" y="35.56"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -8154,22 +7989,35 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="LED4" gate="G$1" pin="C"/>
 <wire x1="81.28" y1="127" x2="55.88" y2="127" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="GND"/>
+<wire x1="2.54" y1="121.92" x2="7.62" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<junction x="7.62" y="121.92"/>
+</segment>
 </net>
 <net name="MISO" class="3">
 <segment>
 <pinref part="CON1" gate="G$1" pin="MISO"/>
 <wire x1="-12.7" y1="147.32" x2="-17.78" y2="147.32" width="0.1524" layer="91"/>
+<label x="-21.082" y="147.574" size="1.016" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB4(MISO)"/>
 <wire x1="83.82" y1="12.7" x2="86.36" y2="12.7" width="0.1524" layer="91"/>
 <label x="86.36" y="12.7" size="1.27" layer="95"/>
 </segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="MISO"/>
+<wire x1="-12.7" y1="127" x2="-17.78" y2="127" width="0.1524" layer="91"/>
+<label x="-20.574" y="127.254" size="1.016" layer="95"/>
+</segment>
 </net>
 <net name="SCK" class="3">
 <segment>
 <pinref part="CON1" gate="G$1" pin="SCK"/>
 <wire x1="-12.7" y1="144.78" x2="-17.78" y2="144.78" width="0.1524" layer="91"/>
+<label x="-20.828" y="144.78" size="1.016" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB5(SCK)"/>
@@ -8181,27 +8029,45 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-71.12" y1="101.6" x2="-73.66" y2="101.6" width="0.1524" layer="91"/>
 <label x="-75.184" y="102.362" size="1.27" layer="95"/>
 </segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="SCK"/>
+<wire x1="-12.7" y1="124.46" x2="-17.78" y2="124.46" width="0.1524" layer="91"/>
+<label x="-20.574" y="124.714" size="1.016" layer="95"/>
+</segment>
 </net>
 <net name="RESET" class="3">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC6(/RESET)"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
+<label x="33.02" y="70.866" size="1.016" layer="95"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="RESET"/>
 <wire x1="-12.7" y1="142.24" x2="-17.78" y2="142.24" width="0.1524" layer="91"/>
+<label x="-22.098" y="142.494" size="1.016" layer="95"/>
+</segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="RESET"/>
+<wire x1="-12.7" y1="121.92" x2="-17.78" y2="121.92" width="0.1524" layer="91"/>
+<label x="-22.352" y="122.174" size="1.016" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="3">
 <segment>
 <pinref part="CON1" gate="G$1" pin="MOSI"/>
 <wire x1="2.54" y1="144.78" x2="7.62" y2="144.78" width="0.1524" layer="91"/>
+<label x="6.858" y="145.288" size="1.016" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB3(MOSI/OC2)"/>
 <wire x1="83.82" y1="15.24" x2="86.36" y2="15.24" width="0.1524" layer="91"/>
 <label x="86.36" y="15.24" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="CON2" gate="G$1" pin="MOSI"/>
+<wire x1="2.54" y1="124.46" x2="7.62" y2="124.46" width="0.1524" layer="91"/>
+<label x="7.62" y="124.714" size="1.016" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -8248,6 +8114,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-124.46" y1="106.68" x2="-129.54" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="D2_IO5" gate="G$1" pin="1"/>
 <pinref part="P+21" gate="1" pin="+12V"/>
+<junction x="-124.46" y="106.68"/>
 </segment>
 <segment>
 <wire x1="-124.46" y1="83.82" x2="-129.54" y2="83.82" width="0.1524" layer="91"/>
@@ -8257,7 +8124,10 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <segment>
 <pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="RL3" gate="G$1" pin="2"/>
-<wire x1="-53.34" y1="30.48" x2="-68.58" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="30.48" x2="-60.96" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="1" pin="+12V"/>
+<wire x1="-60.96" y1="30.48" x2="-68.58" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-60.96" y="30.48"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -8311,6 +8181,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="IC4" gate="G$1" pin="I2"/>
 <wire x1="-182.88" y1="137.16" x2="-182.88" y2="134.62" width="0.1524" layer="91"/>
 <label x="-185.42" y="137.16" size="1.27" layer="95"/>
+<junction x="-182.88" y="137.16"/>
+<junction x="-182.88" y="134.62"/>
 </segment>
 </net>
 <net name="D4" class="0">
@@ -8332,6 +8204,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <label x="-185.928" y="127.508" size="1.016" layer="95"/>
 <pinref part="IC4" gate="G$1" pin="I5"/>
 <pinref part="IC4" gate="G$1" pin="I6"/>
+<junction x="-182.88" y="127"/>
+<junction x="-182.88" y="124.46"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
@@ -8346,6 +8220,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <label x="-185.928" y="132.588" size="1.016" layer="95"/>
 <pinref part="IC4" gate="G$1" pin="I3"/>
 <pinref part="IC4" gate="G$1" pin="I4"/>
+<junction x="-182.88" y="132.08"/>
+<junction x="-182.88" y="129.54"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD6(AIN0)"/>
@@ -8360,6 +8236,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <label x="-185.928" y="122.428" size="1.016" layer="95"/>
 <pinref part="IC4" gate="G$1" pin="I8"/>
 <pinref part="IC4" gate="G$1" pin="I7"/>
+<junction x="-182.88" y="121.92"/>
+<junction x="-182.88" y="119.38"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD7(AIN1)"/>
@@ -8374,6 +8252,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <label x="-186.69" y="94.615" size="1.27" layer="95"/>
 <pinref part="IC3" gate="G$1" pin="I1"/>
 <pinref part="IC3" gate="G$1" pin="I2"/>
+<junction x="-182.88" y="91.44"/>
+<junction x="-182.88" y="93.98"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB0(ICP)"/>
@@ -8413,6 +8293,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-147.32" y1="127" x2="-147.32" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="-147.32" y1="119.38" x2="-154.94" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="-154.94" y1="119.38" x2="-154.94" y2="93.98" width="0.1524" layer="91"/>
+<junction x="-157.48" y="91.44"/>
+<junction x="-157.48" y="93.98"/>
 </segment>
 </net>
 <net name="N$50" class="1">
@@ -8424,6 +8306,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-124.46" y1="149.86" x2="-154.94" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="-154.94" y1="149.86" x2="-154.94" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-154.94" y1="132.08" x2="-157.48" y2="132.08" width="0.1524" layer="91"/>
+<junction x="-157.48" y="129.54"/>
+<junction x="-157.48" y="132.08"/>
 </segment>
 </net>
 <net name="D2B" class="0">
@@ -8467,6 +8351,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-144.78" y1="116.84" x2="-144.78" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="RGB2_D7-8-13" gate="G$1" pin="4"/>
 <wire x1="-144.78" y1="124.46" x2="-124.46" y2="124.46" width="0.1524" layer="91"/>
+<junction x="-157.48" y="88.9"/>
+<junction x="-157.48" y="86.36"/>
 </segment>
 </net>
 <net name="D2B5" class="0">
@@ -8485,6 +8371,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-149.86" y1="83.82" x2="-157.48" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="D2_IO5" gate="G$1" pin="2"/>
 <pinref part="IC3" gate="G$1" pin="O5"/>
+<junction x="-124.46" y="104.14"/>
 </segment>
 </net>
 <net name="D2B6" class="0">
@@ -8492,6 +8379,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-124.46" y1="101.6" x2="-127" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="D2_IO5" gate="G$1" pin="3"/>
 <pinref part="R0" gate="G$1" pin="1"/>
+<junction x="-124.46" y="101.6"/>
 </segment>
 </net>
 <net name="D2B7" class="0">
@@ -8509,6 +8397,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-157.48" y1="152.4" x2="-157.48" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="RGB1_D5-6-11" gate="G$1" pin="2"/>
 <wire x1="-157.48" y1="152.4" x2="-124.46" y2="152.4" width="0.1524" layer="91"/>
+<junction x="-157.48" y="134.62"/>
+<junction x="-157.48" y="137.16"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -8670,6 +8560,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-182.88" y1="86.36" x2="-182.88" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-182.88" y1="88.9" x2="-185.42" y2="88.9" width="0.1524" layer="91"/>
 <label x="-186.944" y="89.154" size="1.27" layer="95"/>
+<junction x="-182.88" y="86.36"/>
+<junction x="-182.88" y="88.9"/>
 </segment>
 </net>
 <net name="D15" class="0">
@@ -8693,6 +8585,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-124.46" y1="129.54" x2="-149.86" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="-149.86" y1="129.54" x2="-149.86" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="-149.86" y1="121.92" x2="-157.48" y2="121.92" width="0.1524" layer="91"/>
+<junction x="-157.48" y="119.38"/>
+<junction x="-157.48" y="121.92"/>
 </segment>
 </net>
 <net name="N$1" class="1">
@@ -8704,48 +8598,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-152.4" y1="127" x2="-152.4" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="RGB1_D5-6-11" gate="G$1" pin="4"/>
 <wire x1="-152.4" y1="147.32" x2="-124.46" y2="147.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="ICSP_DAT/PGD"/>
-<wire x1="-50.8" y1="63.5" x2="-53.34" y2="63.5" width="0.1524" layer="91"/>
-<label x="-54.864" y="64.008" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="ICSP_CLK/PGC"/>
-<wire x1="-50.8" y1="60.96" x2="-53.34" y2="60.96" width="0.1524" layer="91"/>
-<label x="-55.118" y="61.468" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="LVP"/>
-<wire x1="-50.8" y1="58.42" x2="-53.34" y2="58.42" width="0.1524" layer="91"/>
-<label x="-55.118" y="58.928" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="N$100" class="3">
-<segment>
-<pinref part="J2" gate="G$1" pin="VPP/MCLR"/>
-<wire x1="-50.8" y1="71.12" x2="-53.34" y2="71.12" width="0.1524" layer="91"/>
-<label x="-55.372" y="71.882" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="N$101" class="1">
-<segment>
-<pinref part="J2" gate="G$1" pin="VDD"/>
-<wire x1="-50.8" y1="68.58" x2="-53.34" y2="68.58" width="0.1524" layer="91"/>
-<label x="-55.118" y="69.088" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="N$102" class="1">
-<segment>
-<pinref part="J2" gate="G$1" pin="VSS(GND)"/>
-<wire x1="-50.8" y1="66.04" x2="-53.34" y2="66.04" width="0.1524" layer="91"/>
-<label x="-55.118" y="66.548" size="1.27" layer="95"/>
+<junction x="-157.48" y="124.46"/>
+<junction x="-157.48" y="127"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -8793,6 +8647,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="5V"/>
+<junction x="20.32" y="68.58"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="AVCC"/>
@@ -8813,6 +8668,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="U$6" gate="G$1" pin="5V"/>
 <wire x1="20.32" y1="30.48" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
 <junction x="20.32" y="30.48"/>
+<junction x="35.56" y="33.02"/>
+<junction x="35.56" y="30.48"/>
 </segment>
 <segment>
 <wire x1="129.54" y1="17.78" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
@@ -8820,13 +8677,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <junction x="124.46" y="17.78"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="U$7" gate="G$1" pin="5V"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="121.92" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
-<label x="118.11" y="61.214" size="1.778" layer="95"/>
-<pinref part="U$8" gate="G$1" pin="5V"/>
+<pinref part="5V" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -8848,6 +8699,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="RL2" gate="G$1" pin="2"/>
 <pinref part="F2" gate="G$1" pin="2"/>
 <wire x1="-60.96" y1="43.18" x2="-53.34" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-60.96" y="43.18"/>
 </segment>
 <segment>
 <wire x1="-129.54" y1="48.26" x2="-124.46" y2="48.26" width="0.1524" layer="91"/>
@@ -8890,13 +8742,24 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="D4_IO6" gate="G$1" pin="5"/>
 <pinref part="P+22" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<wire x1="121.92" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
+<label x="118.11" y="61.214" size="1.778" layer="95"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="ISP+5V" class="0">
 <segment>
+<pinref part="CON2" gate="G$1" pin="VCC"/>
 <pinref part="CON1" gate="G$1" pin="VCC"/>
-<wire x1="2.54" y1="147.32" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="147.32" x2="12.7" y2="147.32" width="0.1524" layer="91"/>
 <label x="5.08" y="149.86" size="1.778" layer="95"/>
 <pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="12.7" y1="147.32" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="127" x2="12.7" y2="127" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="127" x2="12.7" y2="147.32" width="0.1524" layer="91"/>
+<junction x="12.7" y="147.32"/>
 </segment>
 </net>
 </nets>
