@@ -20,7 +20,7 @@ Open drain led drive driver
 */
 
 
-#define wire_extension1 B00100001
+#define wire_extension1 B00100010
 #define wire_extension2 B00100111
 
 #define WIRE_RELAY_ID 0b00100101 // 4-Relay 

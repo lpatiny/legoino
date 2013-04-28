@@ -119,15 +119,28 @@ nano168direct.build.variant=eightanaloginputs
 
 ##############################################################
 
-nano328direct.name=Arduino Nano w/ ATmega328p NO BOOTLOAD
+nano328direct.name=Arduino Nano 1MHz w/ ATmega328p NO BOOTLOAD
 
 nano328direct.upload.using=usbtinyisp
-nano168direct.upload.maximum_size=16768
+nano328direct.upload.maximum_size=32768
 
 nano328direct.build.mcu=atmega328p
 nano328direct.build.f_cpu=1000000L
 nano328direct.build.core=arduino
 nano328direct.build.variant=eightanaloginputs
+
+##############################################################
+
+nano328direct16.name=Arduino Nano 16MHz w/ ATmega328p NO BOOTLOAD
+
+nano328direct16.upload.using=usbtinyisp
+nano328direct16.upload.maximum_size=32768
+nano328direct16.upload.speed=115200
+
+nano328direct16.build.mcu=atmega328p
+nano328direct16.build.f_cpu=16000000L
+nano328direct16.build.core=arduino
+nano328direct16.build.variant=eightanaloginputs
 
 ##############################################################
 
