@@ -6252,6 +6252,35 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <text x="-2.7" y="2.8" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.2" y="-3.9" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="BICOLOR-3MM">
+<description>&lt;b&gt;T-1(3mm) BI-COLOR INDICATOR LAMP&lt;/b&gt;&lt;p&gt;
+Source: Kingbright .. 2_colour_led_.pdf</description>
+<wire x1="1.27" y1="1.5748" x2="-1.27" y2="1.5748" width="0.254" layer="21"/>
+<wire x1="0" y1="-1.524" x2="-0.9756" y2="-1.1708" width="0.1524" layer="21" curve="-39.806332"/>
+<wire x1="0" y1="-1.524" x2="1.0125" y2="-1.1391" width="0.1524" layer="21" curve="41.638926"/>
+<wire x1="-0.9918" y1="1.1571" x2="0" y2="1.524" width="0.1524" layer="51" curve="-40.601165"/>
+<wire x1="0.9756" y1="1.1708" x2="0" y2="1.524" width="0.1524" layer="51" curve="39.806332"/>
+<wire x1="-1.524" y1="0" x2="-0.8858" y2="1.2401" width="0.1524" layer="21" curve="-54.461337"/>
+<wire x1="-0.9144" y1="-1.2192" x2="-1.524" y2="0" width="0.1524" layer="21" curve="-53.130102"/>
+<wire x1="1.524" y1="0" x2="0.9356" y2="1.203" width="0.1524" layer="21" curve="52.130554"/>
+<wire x1="0.9356" y1="-1.203" x2="1.524" y2="0" width="0.1524" layer="21" curve="52.130554"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="0" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-1.016" x2="-1.016" y2="0" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0.635" y1="0" x2="0" y2="0.635" width="0.1524" layer="51" curve="90"/>
+<wire x1="1.016" y1="0" x2="0" y2="1.016" width="0.1524" layer="51" curve="90"/>
+<wire x1="-2.032" y1="0" x2="-1.3009" y2="1.561" width="0.254" layer="51" curve="-50.193108"/>
+<wire x1="-0.9562" y1="-1.7929" x2="-2.032" y2="0" width="0.254" layer="51" curve="-61.930333"/>
+<wire x1="2.032" y1="0" x2="1.3126" y2="1.5512" width="0.254" layer="51" curve="49.763022"/>
+<wire x1="1.0082" y1="-1.7643" x2="2.032" y2="0" width="0.254" layer="51" curve="60.265035"/>
+<wire x1="0" y1="-2.032" x2="-0.9634" y2="-1.7891" width="0.254" layer="21" curve="-28.301701"/>
+<wire x1="0" y1="-2.032" x2="1.065" y2="-1.7306" width="0.254" layer="21" curve="31.609816"/>
+<pad name="1" x="-2.54" y="0" drill="0.8" diameter="1.4" rot="R90"/>
+<pad name="2" x="0" y="0" drill="0.8" diameter="1.4" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.8" diameter="1.4" rot="R90"/>
+<text x="3.81" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.81" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<circle x="0" y="0" radius="1.6" width="0" layer="150"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TINYISP">
@@ -6419,6 +6448,53 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <text x="-3.81" y="-5.08" size="1.27" layer="96" font="vector">&gt;VALUE</text>
 <pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
 <pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+</symbol>
+<symbol name="BICOLOR-LED">
+<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="-1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="-3.302" x2="-3.429" y2="-4.699" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-4.445" x2="-3.302" y2="-5.842" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="1.27" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.032" y1="3.302" x2="3.429" y2="4.699" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="3.302" y2="5.842" width="0.1524" layer="94"/>
+<circle x="0" y="0" radius="0.254" width="0.4064" layer="94"/>
+<text x="6.35" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="8.89" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<text x="-2.54" y="3.81" size="1.016" layer="94" ratio="10" rot="R90">red</text>
+<text x="2.54" y="-5.08" size="1.016" layer="94" ratio="10" rot="R90">green</text>
+<pin name="C" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="AR" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="AG" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-4.699"/>
+<vertex x="-3.048" y="-3.81"/>
+<vertex x="-2.54" y="-4.318"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-5.842"/>
+<vertex x="-2.921" y="-4.953"/>
+<vertex x="-2.413" y="-5.461"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="2.413" y="5.461"/>
+<vertex x="3.302" y="5.842"/>
+<vertex x="2.921" y="4.953"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="2.54" y="4.318"/>
+<vertex x="3.429" y="4.699"/>
+<vertex x="3.048" y="3.81"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -6823,6 +6899,25 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BICOLOR-LED" prefix="LED">
+<description>&lt;b&gt;T-1(3mm) BI-COLOR INDICATOR LAMP&lt;/b&gt;&lt;p&gt;
+Source: Kingbright .. 2_colour_led_.pdf</description>
+<gates>
+<gate name="G$1" symbol="BICOLOR-LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BICOLOR-3MM">
+<connects>
+<connect gate="G$1" pin="AG" pad="1"/>
+<connect gate="G$1" pin="AR" pad="3"/>
+<connect gate="G$1" pin="C" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10770,6 +10865,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="C6" library="resistor" deviceset="C-EU" device="C1206" value="1uF"/>
 <part name="C7" library="resistor" deviceset="C-EU" device="C1206" value="10uF"/>
 <part name="U$8" library="SparkFun" deviceset="5V" device=""/>
+<part name="LED5" library="lpatiny" deviceset="BICOLOR-LED" device=""/>
+<part name="RL5" library="resistor" deviceset="R-EU_" device="M1206" value="1K"/>
+<part name="RL6" library="resistor" deviceset="R-EU_" device="M1206" value="1K"/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10980,6 +11079,12 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="C6" gate="G$1" x="-22.86" y="-68.58"/>
 <instance part="C7" gate="G$1" x="-48.26" y="-66.04"/>
 <instance part="U$8" gate="G$1" x="-5.08" y="-63.5"/>
+<instance part="LED5" gate="G$1" x="-12.7" y="96.52"/>
+<instance part="RL5" gate="G$1" x="-22.86" y="104.14" rot="MR180"/>
+<instance part="RL6" gate="G$1" x="-22.86" y="88.9" rot="MR180"/>
+<instance part="GND6" gate="1" x="-20.32" y="93.98" smashed="yes">
+<attribute name="VALUE" x="-22.225" y="92.075" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11154,6 +11259,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="-22.86" y1="-73.66" x2="-12.7" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-73.66" x2="-12.7" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-68.58" x2="2.54" y2="-68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<wire x1="-15.24" y1="96.52" x2="-20.32" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="MISO" class="3">
@@ -11827,6 +11937,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="78.74" y="-33.02" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="(SS/PCINT0)PB0"/>
 </segment>
+<segment>
+<pinref part="RL5" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="104.14" x2="-33.02" y2="104.14" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="HWB" class="0">
 <segment>
@@ -11840,6 +11954,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="86.36" y1="-60.96" x2="68.58" y2="-60.96" width="0.1524" layer="91"/>
 <label x="78.74" y="-60.96" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="(XCK1/#CTS)PD5"/>
+</segment>
+<segment>
+<pinref part="RL6" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="88.9" x2="-33.02" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -12036,6 +12154,20 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="68.58" y1="-83.82" x2="86.36" y2="-83.82" width="0.1524" layer="91"/>
 <label x="78.74" y="-83.82" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="(ADC5/TMS)PF5"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="RL5" gate="G$1" pin="2"/>
+<pinref part="LED5" gate="G$1" pin="AR"/>
+<wire x1="-17.78" y1="104.14" x2="-12.7" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="LED5" gate="G$1" pin="AG"/>
+<pinref part="RL6" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="88.9" x2="-17.78" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
