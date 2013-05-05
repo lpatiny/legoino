@@ -38,12 +38,15 @@
 #define   ANALOG2 A2
 
 
-#define PARAM_RGB1    0
-#define PARAM_RGB2    1
-#define PARAM_SCAN    2
-#define PARAM_SERVO   3
-#define PARAM_TEMP1   20
-#define PARAM_DISTANCE   25
+#define PARAM_RGB1      0
+#define PARAM_RGB2      1
+#define PARAM_SCAN      2
+#define PARAM_SERVO     3
+#define PARAM_RELAY_1   17// = 17 = R (elay)
+#define PARAM_RELAY_2   18
+#define PARAM_TEMP1     20
+#define PARAM_DISTANCE  25
+
 
 byte IO[]={
   IO1, IO2, IO3, IO4, IO5, IO6};

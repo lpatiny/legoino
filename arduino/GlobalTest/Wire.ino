@@ -5,6 +5,8 @@ byte numberI2CDevices=0;
 byte wireDeviceID[WIRE_MAX_DEVICES];
 
 
+// TODO: PLUG IN / OUT CRASH THE SYSTEM !!!
+
 
 void setupWire() {
   Wire.begin();
@@ -137,7 +139,35 @@ boolean wireDeviceExists(byte id) {
 }
 
 
+void sendRelay(byte id, byte value, byte* flag) {
+  if (wireDeviceExists(id)) {
+    if (!wireFlagStatus(flag, id))
+    {
+      setWireFlag(flag, id);
+      wireWrite(id, 0x05, 0b00000100); // initialize CONFREG (0x05)
+      wireWrite(id, 0x00, 0b00000000); // initialize IOREG (0x00)
+    }
+    wireWrite(id, 0x0A, value); // pin control
+  }
+  else
+  {
+    clearWireFlag(flag, id);
+  }
+}
 
 
 
+// We will combine flags in a byte. Using pointer does not seems to improve
+// memory size so we don't use pointer
+void setWireFlag(byte *aByte, byte address) {
+  *aByte |= (1 << (address & 0b00000111));
+}
+
+void clearWireFlag(byte *aByte, byte address) {
+  *aByte &= ~(1 << (address & 0b00000111));
+}
+
+boolean wireFlagStatus(byte *aByte, byte address) {
+  return *aByte & (1 << (address & 0b00000111));
+}
 
