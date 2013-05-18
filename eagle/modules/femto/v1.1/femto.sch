@@ -7774,12 +7774,12 @@ Source: YH-55-10.pdf</description>
 <wire x1="4.191" y1="-2.54" x2="4.953" y2="-2.54" width="0.1998" layer="94"/>
 <text x="0" y="6.604" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="5.08" visible="pad" length="short" direction="pwr" swaplevel="1"/>
+<pin name="1" x="-2.54" y="5.08" visible="pad" length="short" swaplevel="1"/>
 <pin name="2" x="-2.54" y="2.54" visible="pad" length="short" swaplevel="1"/>
 <pin name="3" x="-2.54" y="0" visible="pad" length="short" swaplevel="1"/>
-<pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pwr" swaplevel="1"/>
-<pin name="5" x="-2.54" y="-5.08" visible="pad" length="short" direction="pwr" swaplevel="1"/>
-<pin name="6" x="-2.54" y="-7.62" visible="pad" length="short" direction="pwr" swaplevel="1"/>
+<pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" swaplevel="1"/>
+<pin name="5" x="-2.54" y="-5.08" visible="pad" length="short" swaplevel="1"/>
+<pin name="6" x="-2.54" y="-7.62" visible="pad" length="short" swaplevel="1"/>
 </symbol>
 <symbol name="LED-RGB-COMMON-CATHODE">
 <wire x1="6.35" y1="-3.048" x2="5.08" y2="-1.016" width="0.254" layer="94"/>

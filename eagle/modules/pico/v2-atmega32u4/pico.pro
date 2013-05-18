@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/lpatiny/git/legoino/eagle/modules/pico/v2-atmega32u4/pico.brd
+Job           : /Users/music/git/legoino/eagle/modules/pico/v2-atmega32u4/pico.brd
 
-Start at      : 15:46:46 (4/30/13)
-End at        : 15:47:46 (4/30/13)
-Elapsed time  : 00:01:00
+Start at      : 13:25:25 (5/18/13)
+End at        : 13:25:51 (5/18/13)
+Elapsed time  : 00:00:26
 
-Signals       :    70   RoutingGrid: 6 mil  Layers: 2
-Connections   :   158   predefined:  37 ( 1 Vias )
+Signals       :    69   RoutingGrid: 8 mil  Layers: 2
+Connections   :   159   predefined:  37 ( 2 Vias )
 
-Router memory :   981836
+Router memory :   533900
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:34  00:00:07  00:00:06  00:00:07  00:00:06
-Number of Ripups  :        66         0         0         0         0
-max. Level        :         3         0         0         0         0
-max. Total        :        27         0         0         0         0
+Time per pass     :  00:00:14  00:00:04  00:00:03  00:00:03  00:00:02
+Number of Ripups  :        70         0         0         0         0
+max. Level        :         5         0         0         0         0
+max. Total        :        31         0         0         0         0
 
-Routed            :       121       121       121       121       121
-Vias              :       159       132       122       105       104
+Routed            :       122       122       122       122       122
+Vias              :       162       138       120       111       106
 Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished

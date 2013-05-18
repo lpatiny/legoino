@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -193,69 +193,6 @@
 <hole x="3.81" y="49.53" drill="4"/>
 <hole x="69.85" y="49.53" drill="4"/>
 <hole x="69.85" y="3.81" drill="4"/>
-<polygon width="0.0254" layer="49">
-<vertex x="3.2511" y="40.5684"/>
-<vertex x="0.6601" y="40.5684"/>
-<vertex x="0.6601" y="41.0764"/>
-<vertex x="3.4541" y="41.0764" curve="24.43131"/>
-<vertex x="5.7401" y="41.6854"/>
-<vertex x="5.7401" y="41.1264" curve="-24.157083"/>
-</polygon>
-<polygon width="0.0254" layer="49">
-<vertex x="5.7401" y="37.2664"/>
-<vertex x="5.7401" y="37.7744"/>
-<vertex x="0.6601" y="37.7744"/>
-<vertex x="0.6601" y="37.2664"/>
-</polygon>
-<polygon width="0.0254" layer="49">
-<vertex x="1.9811" y="38.3324"/>
-<vertex x="1.8791" y="38.3324" curve="30.151085"/>
-<vertex x="0.8121" y="38.0284"/>
-<vertex x="0.6601" y="38.0284"/>
-<vertex x="0.6601" y="38.3834" curve="-30.103733"/>
-<vertex x="1.9301" y="38.7394" curve="-30.103733"/>
-<vertex x="3.2001" y="38.3834"/>
-<vertex x="3.2001" y="38.0534"/>
-<vertex x="3.0221" y="38.0534" curve="29.234035"/>
-</polygon>
-<polygon width="0.0254" layer="49">
-<vertex x="0.6601" y="39.6024"/>
-<vertex x="0.6601" y="40.1614" curve="24.43131"/>
-<vertex x="2.9461" y="39.5524"/>
-<vertex x="2.9461" y="40.0604"/>
-<vertex x="3.4541" y="40.0604"/>
-<vertex x="3.4541" y="39.5524"/>
-<vertex x="5.7401" y="39.5524"/>
-<vertex x="5.7401" y="39.0444"/>
-<vertex x="3.2001" y="39.0444" curve="-24.839134"/>
-</polygon>
-<polygon width="0.0254" layer="49">
-<vertex x="0.6601" y="35.6404" curve="22.531669"/>
-<vertex x="3.1491" y="35.1324"/>
-<vertex x="3.2511" y="35.1324" curve="22.531669"/>
-<vertex x="5.7401" y="35.6404"/>
-<vertex x="5.7401" y="33.6084"/>
-<vertex x="0.6601" y="33.6084"/>
-</polygon>
-<polygon width="0.0254" layer="49">
-<vertex x="3.2511" y="35.7424"/>
-<vertex x="3.2001" y="35.7424" curve="-24.839134"/>
-<vertex x="0.6601" y="36.3004"/>
-<vertex x="0.6601" y="36.8594" curve="24.43131"/>
-<vertex x="2.9461" y="36.2504"/>
-<vertex x="2.9461" y="36.7584"/>
-<vertex x="3.4541" y="36.7584"/>
-<vertex x="3.4541" y="36.2504" curve="24.43131"/>
-<vertex x="5.7401" y="36.8594"/>
-<vertex x="5.7401" y="36.3004" curve="-24.157083"/>
-</polygon>
-<polygon width="0.0254" layer="49">
-<vertex x="5.7401" y="42.2954" curve="-26.511626"/>
-<vertex x="3.2511" y="41.6854"/>
-<vertex x="0.6601" y="41.6854"/>
-<vertex x="0.6601" y="43.7684"/>
-<vertex x="5.7401" y="43.7684"/>
-</polygon>
 </plain>
 <libraries>
 <library name="led">
@@ -386,7 +323,7 @@ Source: YH-55-10.pdf</description>
 <class number="1" name="power" width="0.9144" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
