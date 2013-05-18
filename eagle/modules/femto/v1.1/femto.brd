@@ -1378,8 +1378,7 @@ chip</description>
 <pad name="SDA" x="0.5" y="4.84" drill="0.8" diameter="1.3"/>
 <pad name="SCL" x="1.54" y="2.3" drill="0.8" diameter="1.3"/>
 <pad name="+12V" x="2.54" y="4.84" drill="0.8" diameter="1.3"/>
-<text x="-6.35" y="7.62" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-5.08" y="-3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.2225" y="6.0325" size="0.8128" layer="21" ratio="4">5V</text>
 <text x="2.54" y="6.0325" size="0.8128" layer="21" ratio="4">12V</text>
 <text x="-0.3175" y="6.0325" size="0.8128" layer="21" ratio="4">SDA</text>
@@ -1401,7 +1400,6 @@ chip</description>
 <pad name="BLU" x="3" y="0" drill="1" rot="R90"/>
 <pad name="RED" x="-3" y="0" drill="1" rot="R270"/>
 <text x="-2.54" y="3.81" size="1.27" layer="25">&gt;Name</text>
-<text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;Value</text>
 </package>
 <package name="TC2030-MCP">
 <description>&lt;b&gt;TAG-CONNECT ICSP Connector&lt;/b&gt; - Legged version&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;

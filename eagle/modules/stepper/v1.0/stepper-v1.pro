@@ -1,19 +1,19 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/music/git/legoino/eagle/modules/stepper/stepper-v1.brd
+Job           : /Users/music/git/legoino/eagle/modules/stepper/v1.0/stepper-v1.brd
 
-Start at      : 23:49:34 (5/17/13)
-End at        : 23:49:35 (5/17/13)
-Elapsed time  : 00:00:01
+Start at      : 10:25:33 (5/18/13)
+End at        : 10:25:35 (5/18/13)
+Elapsed time  : 00:00:02
 
 Signals       :    15   RoutingGrid: 8 mil  Layers: 2
 Connections   :    40   predefined:  1 ( 0 Vias )
 
-Router memory :   149328
+Router memory :   144432
 
 Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:01  00:00:00  00:00:00
+Time per pass     :  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00  00:00:01
 Number of Ripups  :         0         5         0         0         0         0
 max. Level        :         0         1         0         0         0         0
 max. Total        :         0         8         0         0         0         0
