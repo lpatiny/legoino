@@ -33,8 +33,6 @@ ADS7823
  PCF8574
  - start address: B00100000
  Open drain led drive driver
- 
- 
  */
 
 
@@ -43,37 +41,27 @@ ADS7823
 #define REGISTER_PH_METER_READOUT 0b00001111 // = 15 = P 
 
 
-
-LiquidCrystal lcd(WIRE_LCD_16_2);
-
-
-
-byte* wireFlag32=(byte*) malloc(1);
-
-
-
-boolean relayInitialized = false;
-
-unsigned int wireEventStatus=0;
-
-
-
-
 #define WIRE_MAX_DEVICES 10
 byte numberI2CDevices=0;
 byte wireDeviceID[WIRE_MAX_DEVICES];
 
-
-NIL_WORKING_AREA(waThread5, 0);
-NIL_THREAD(Thread5, arg) {
-
-
+NIL_WORKING_AREA(waThreadWire, 150);
+NIL_THREAD(ThreadWire, arg) {
+  byte aByte=0;
+  byte* wireFlag32=&aByte;
+  unsigned int wireEventStatus=0;
+  boolean relayInitialized = false;
   // TODO: PLUG IN / OUT CRASH THE SYSTEM !!! {
   Wire.begin();
-  *wireFlag32=0;
+  LiquidCrystal lcd(WIRE_LCD_16_2);
+
 
   while(TRUE) {
     wireEventStatus++;
+
+    if (wireEventStatus%10==5) {
+      wireUpdateList();
+    }
 
     if (wireDeviceExists(WIRE_EXT_1)) {
       // Serial.println("Device exists");
@@ -94,41 +82,45 @@ NIL_THREAD(Thread5, arg) {
       }
     }
 
-
-    if (wireDeviceExists(WIRE_LCD_16_2)) {
-      if (! wireFlagStatus(wireFlag32, WIRE_LCD_16_2)) {
-        // we should be able to dynamically change the LCD I2C bus address
-        setWireFlag(wireFlag32, WIRE_LCD_16_2);
-        lcd.begin(16, 2);
-        // Print a message to the LCD.
-        lcd.setCursor(0,0);
-        lcd.print("Temperature A1!");
-      }
-      lcd.setCursor(0,1);
-      lcd.print(getParameter(20));
-    } 
-    else {
-      clearWireFlag(wireFlag32, WIRE_LCD_16_2); 
-    }
-
-
     sendRelay(WIRE_RELAY_1, getParameter(PARAM_RELAY_1), wireFlag32);
     sendRelay(WIRE_RELAY_2, getParameter(PARAM_RELAY_2), wireFlag32);
 
+    if (wireEventStatus%10==0) {
+      if (wireDeviceExists(WIRE_LCD_16_2)) {
+        if (! wireFlagStatus(wireFlag32, WIRE_LCD_16_2)) {
+          // we should be able to dynamically change the LCD I2C bus address
+          setWireFlag(wireFlag32, WIRE_LCD_16_2);
+          lcd.begin(20, 4);
+          // Print a message to the LCD.
+          lcd.setCursor(0,0);
+          lcd.print(F("Temperature A1!"));
+          lcd.setCursor(0,2);
+          lcd.print(F("Distance A2!"));
+        }
+        lcd.setCursor(0,1);
+        lcd.print(getParameter(PARAM_TEMP1));
+        lcd.print(F("     "));
+        lcd.setCursor(0,3);
+        lcd.print(getParameter(PARAM_DISTANCE));
+        lcd.print(F("     "));
+      } 
+      else {
+        clearWireFlag(wireFlag32, WIRE_LCD_16_2); 
+      }
+    }
     if (wireDeviceExists(WIRE_PHMETER_ID)) {
       wireWrite(WIRE_PHMETER_ID, 0b00010000); // initialize A/D conversion with 5th bit
       setParameter(REGISTER_PH_METER_READOUT, wireReadTwoBytesToInt(WIRE_PHMETER_ID)); // save pH value into 
     }
-    nilThdSleepMilliseconds(40);
+    nilThdSleepMilliseconds(100);
+
   }
 }
 
-NIL_WORKING_AREA(waThread6, 0);
-NIL_THREAD(Thread6, arg) {
 
-  wireUpdateList();
-  nilThdSleepMilliseconds(1000);
-}
+
+
+
 
 
 

@@ -43,7 +43,7 @@ int wireReadTwoBytesToInt(uint8_t address) {
 }
 
 void wireInfo(Print* output) {
-  wireUpdateList();
+  // wireUpdateList();
   output->println("I2C");
 
   for (byte i=0; i<numberI2CDevices; i++) {
@@ -70,26 +70,27 @@ void wireUpdateList() {
       // there is a device, we need to check if we should add or remove a previous device
       if (currentPosition<numberI2CDevices && wireDeviceID[currentPosition]==i) { // it is still the same device that is at the same position, nothing to do
         currentPosition++;
-        // Serial.print("ok: ");
-        // Serial.println(i);
+        //Serial.print("ok: ");
+        //Serial.println(i);
       } 
       else if (currentPosition<numberI2CDevices && wireDeviceID[currentPosition]<i) { // some device(s) disappear, we need to delete them
-        // Serial.print("delete: ");
-        // Serial.println(wireDeviceID[currentPosition]);
+        //Serial.print("delete: ");
+        //Serial.println(wireDeviceID[currentPosition]);
         wireRemoveDevice(currentPosition);
         i--;
       } 
       else if (currentPosition>=numberI2CDevices || wireDeviceID[currentPosition]>i) { // we need to add a device
-        // Serial.print("add: ");
-        // Serial.println(i);
+        //Serial.print("add: ");
+        //Serial.println(i);
         wireInsertDevice(currentPosition, i);
         currentPosition++;
       }
+      nilThdSleepMilliseconds(1);
     }
   }
   while (currentPosition<numberI2CDevices) {
-    // Serial.print("delete: ");
-    // Serial.println(wireDeviceID[currentPosition]);
+    //Serial.print("delete: ");
+    //Serial.println(wireDeviceID[currentPosition]);
     wireRemoveDevice(currentPosition);
   }
 }
@@ -103,6 +104,7 @@ void wireRemoveDevice(byte id) {
 }
 
 void wireInsertDevice(byte id, byte newDevice) {
+  //Serial.println(id);
   debugger(DEBUG_WIRE_ADDED_DEVICE,newDevice);
   if (numberI2CDevices<WIRE_MAX_DEVICES) {
     for (byte i=id+1; i<numberI2CDevices-1; i++) {
@@ -156,6 +158,7 @@ void clearWireFlag(byte *aByte, byte address) {
 boolean wireFlagStatus(byte *aByte, byte address) {
   return *aByte & (1 << (address & 0b00000111));
 }
+
 
 
 

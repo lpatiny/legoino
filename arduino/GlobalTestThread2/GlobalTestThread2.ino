@@ -8,8 +8,10 @@
 #include <DallasTemperature.h>
 #include <LiquidCrystal.h>
 
-#include <NilSerial.h>
-#define Serial NilSerial
+// The normal serial takes 200 bytes more but is buffered
+// And if we send a String for parameters it can not be understand ...
+// #include <NilSerial.h>
+// #define Serial NilSerial
 
 // We want to save and load easily from EEPROM
 #include <EEPROM.h>
@@ -47,24 +49,19 @@
 #define PARAM_RELAY_1   17// = 17 = R (elay)
 #define PARAM_RELAY_2   18
 #define PARAM_TEMP1     20
+#define PARAM_WIRE      24 // contains the active wire devices
 #define PARAM_DISTANCE  25
-
 
 byte IO[]={
   IO1, IO2, IO3, IO4, IO5, IO6};
 
-
-
-
 void setup() {
-//  setupWire();
-  //  timer.setInterval(10, loopFunction);
   setupLogger();
   setupDebugger();
   setupParameters();
-
   nilSysBegin();
 }
+
 
 void loop() {
 }

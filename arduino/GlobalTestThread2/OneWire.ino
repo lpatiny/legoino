@@ -5,6 +5,8 @@
 // - the devices
 // - the target variable
 
+
+
 // If there is more than one device on a bus we need to specify the devices address. Otherwise we may just scan
 #define ONE_WIRE_BUS1 ANALOG1
 
@@ -12,8 +14,8 @@ OneWire oneWire1(ONE_WIRE_BUS1);
 DallasTemperature sensors1(&oneWire1);
 DeviceAddress oneWireAddress;
 
-NIL_WORKING_AREA(waThread8, 100);
-NIL_THREAD(Thread8, arg) {
+NIL_WORKING_AREA(waThreadOneWire, 70);
+NIL_THREAD(ThreadOneWire, arg) {
   sensors1.begin();
   if (!sensors1.getAddress(oneWireAddress, 0)) debugger(DEBUG_ONEWIRE_NODEVICE, ONE_WIRE_BUS1); 
   sensors1.setWaitForConversion(false); // we don't wait for conversion (otherwise may take 900mS)
@@ -24,12 +26,14 @@ NIL_THREAD(Thread8, arg) {
 
   while (TRUE) {
     // following instruction takes 2ms
-    sensors1.requestTemperatures(); // Send the command to get temperatures
+    sensors1.requestTemperatures(); // Send the coThreadOneWiremmand to get temperatures
     // we should not forget that with 12 bits it takes over 600ms to get the result so in fact we
     // will get the result of the previous conversion ...
     // Following instruction takes 14ms
     setParameter(PARAM_TEMP1,(int)(sensors1.getTempC(oneWireAddress)*100));
+    nilThdSleepMilliseconds(1000);
   }
+
 }
 
 // function to print a device address
