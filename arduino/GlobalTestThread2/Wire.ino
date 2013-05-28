@@ -90,6 +90,30 @@ NIL_THREAD(ThreadWire, arg) {
         if (! wireFlagStatus(wireFlag32, WIRE_LCD_16_2)) {
           // we should be able to dynamically change the LCD I2C bus address
           setWireFlag(wireFlag32, WIRE_LCD_16_2);
+          lcd.begin(16,2);
+          // Print a message to the LCD.
+          lcd.setCursor(0,0);
+          lcd.print(F("Temp. A1:"));
+          lcd.setCursor(0,1);
+          lcd.print(F("Dist. A2:"));
+        }
+        lcd.setCursor(9,0);
+        lcd.print(((float)getParameter(PARAM_TEMP1))/100);
+        lcd.print(F(" C "));
+        lcd.setCursor(9,1);
+        lcd.print(getParameter(PARAM_DISTANCE));
+        lcd.print(F(" mm  "));
+      } 
+      else {
+        clearWireFlag(wireFlag32, WIRE_LCD_16_2); 
+      }
+    }
+    
+    if (wireEventStatus%10==5) {
+      if (wireDeviceExists(WIRE_LCD_20_4)) {
+        if (! wireFlagStatus(wireFlag32, WIRE_LCD_20_4)) {
+          // we should be able to dynamically change the LCD I2C bus address
+          setWireFlag(wireFlag32, WIRE_LCD_20_4);
           lcd.begin(20, 4);
           // Print a message to the LCD.
           lcd.setCursor(0,0);
@@ -98,16 +122,21 @@ NIL_THREAD(ThreadWire, arg) {
           lcd.print(F("Distance A2!"));
         }
         lcd.setCursor(0,1);
-        lcd.print(getParameter(PARAM_TEMP1));
-        lcd.print(F("     "));
+        lcd.print(((float)getParameter(PARAM_TEMP1))/100);
+        lcd.print(F(" C   "));
         lcd.setCursor(0,3);
         lcd.print(getParameter(PARAM_DISTANCE));
-        lcd.print(F("     "));
+        lcd.print(F(" mm    "));
       } 
       else {
-        clearWireFlag(wireFlag32, WIRE_LCD_16_2); 
+        clearWireFlag(wireFlag32, WIRE_LCD_20_4); 
       }
     }
+    
+    
+    
+    
+    
     if (wireDeviceExists(WIRE_PHMETER_ID)) {
       wireWrite(WIRE_PHMETER_ID, 0b00010000); // initialize A/D conversion with 5th bit
       setParameter(REGISTER_PH_METER_READOUT, wireReadTwoBytesToInt(WIRE_PHMETER_ID)); // save pH value into 

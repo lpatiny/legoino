@@ -13,6 +13,7 @@ void serialReset() {
 
 void serialPrintHelp() {
   Serial.println(F("(d)ebug"));
+  Serial.println(F("(e)eprom"));
   Serial.println(F("(f)ree mem"));
   Serial.println(F("(h)elp"));
   Serial.println(F("(i)2c"));
@@ -55,8 +56,10 @@ NIL_THREAD(ThreadSerial, arg) {
       if (inChar=='d') { // show debug info
         getDebuggerLog(&Serial);
         serialReset();
-      } 
-      else if (inChar=='f') { // show settings
+      } else if (inChar=='e') { // show debug info
+        getStatusEEPROM(&Serial);
+        serialReset();
+      } else if (inChar=='f') { // show settings
         printFreeMemory(&Serial);
         serialReset();
       } 

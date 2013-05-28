@@ -3,7 +3,7 @@
  */
 
 
-#define DEBUG_MAX_NUMBER_EVENTS 16
+#define DEBUG_MAX_NUMBER_EVENTS 8
 
 
 #define INT_MIN_VALUE  -32768

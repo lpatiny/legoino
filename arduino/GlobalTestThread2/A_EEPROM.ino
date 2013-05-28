@@ -32,7 +32,7 @@ void getStatusEEPROM(Print* output) {
   byte b;
 
   // temporary buffer for sprintf
-  char buf[10];
+  char buf[4];
 
 
   // initialize row counter
@@ -44,8 +44,9 @@ void getStatusEEPROM(Print* output) {
     // if this is the first byte of the row,
     // start row by printing the byte address
     if (j == 0) {
-      sprintf(buf, "%03X: ", i);
+      sprintf(buf, "%03X", i);
       output->print(buf);
+      output->print(F(": "));
     }
 
     // read current byte from eeprom
