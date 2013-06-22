@@ -14493,8 +14493,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="A2" library="jumper" deviceset="SJ" device=""/>
 <part name="A1" library="jumper" deviceset="SJ" device=""/>
 <part name="A0" library="jumper" deviceset="SJ" device=""/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="M1206" value="10k"/>
-<part name="R5" library="adafruit" deviceset="R-US_" device="M1206" value="10k"/>
+<part name="R4" library="adafruit" deviceset="R-US_" device="M1206" value="UNUSED"/>
+<part name="R5" library="adafruit" deviceset="R-US_" device="M1206" value="UNUSED"/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
