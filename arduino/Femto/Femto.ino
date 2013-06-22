@@ -1,21 +1,17 @@
-#define   OUT1   10
-#define   IO1    A3
-#define   OUT2    9
-#define   IO2    A2
-#define   OUT3    2
-#define   IO3    A0
-#define   OUT4    4
-#define   IO4    A1
+#define   LED1    3
+#define   LED2    4
+#define   LED3    9
+#define   LED4   10
 #define   RED1    5
-#define   GREEN1 11
-#define   BLUE1   6
+#define   GREEN1  6
+#define   BLUE1  11
 #define   RED2    7
-#define   GREEN2 13
-#define   BLUE2   8
+#define   GREEN2  8
+#define   BLUE2  13
 
 
 byte IO[]={
-  OUT1, OUT2, OUT3, OUT4, IO1, IO2, IO3, IO4, RED1, GREEN1, BLUE1, RED2, GREEN2, BLUE2};
+  LED1, LED2, LED3, LED4, RED1, GREEN1, BLUE1, RED2, GREEN2, BLUE2};
 
 // the setup routine runs once when you press reset:
 void setup() {                

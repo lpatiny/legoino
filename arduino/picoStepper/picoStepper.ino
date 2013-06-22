@@ -1,11 +1,11 @@
-#define   OUT1    2
-#define   IO1    A0
-#define   OUT2    4
-#define   IO2    A1
-#define   OUT3    9
-#define   IO3    A2
-#define   OUT4   10
-#define   IO4    A3
+#define   OUT1   10
+#define   IO1    A3
+#define   OUT2    9
+#define   IO2    A2
+#define   OUT3    2
+#define   IO3    A0
+#define   OUT4    4
+#define   IO4    A1
 #define   RED1    5
 #define   GREEN1 11
 #define   BLUE1   6
@@ -30,30 +30,48 @@ void setup() {
 
 // the loop routine runs over and over again forever:
 void loop() {
-  counter++;
-  switch (counter%4) {
-  case 0:
-    digitalWrite(IO1, LOW);
-    digitalWrite(OUT1,LOW);
-    break;
-  case 1:
-    digitalWrite(IO1, LOW);
-    digitalWrite(OUT1,HIGH);
-    break;
-  case 2:
-    digitalWrite(IO1, HIGH);
-    digitalWrite(OUT1,HIGH);
-    break;
-  case 3:
-    digitalWrite(IO1, HIGH);
-    digitalWrite(OUT1,LOW);
-    break;
+  for (int i=0; i<200; i=i+20) {
+    byte currentDelay=random(3,10);
+    executeStep(i,true, currentDelay);
+    executeStep(i,false, currentDelay);
+
   }
-delay(5);
-
-
 
 }
+
+void executeStep(int numberSteps, boolean forward, byte currentDelay) {
+  while (numberSteps>0) {
+    numberSteps--;
+    if (forward) {
+      counter++;
+    }
+    else { 
+      counter--;
+    }
+    switch (counter%4) {
+    case 0:
+      digitalWrite(IO1, LOW);
+      digitalWrite(OUT1,LOW);
+      break;
+    case 1:
+      digitalWrite(IO1, LOW);
+      digitalWrite(OUT1,HIGH);
+      break;
+    case 2:
+      digitalWrite(IO1, HIGH);
+      digitalWrite(OUT1,HIGH);
+      break;
+    case 3:
+      digitalWrite(IO1, HIGH);
+      digitalWrite(OUT1,LOW);
+      break;
+    }
+    delay(currentDelay);
+  }
+}
+
+
+
 
 
 
