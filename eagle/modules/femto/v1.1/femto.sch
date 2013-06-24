@@ -5840,9 +5840,9 @@ Metric Code Size 5664</description>
 <wire x1="-3.3" y1="2" x2="-3.3" y2="-2" width="0.127" layer="21"/>
 <wire x1="-3.3" y1="-2" x2="-3.3" y2="2" width="0.127" layer="21" curve="292.619865"/>
 <pad name="GND" x="-1" y="0" drill="1" rot="R90"/>
-<pad name="GRN" x="1" y="0" drill="1" rot="R90"/>
-<pad name="BLU" x="3" y="0" drill="1" rot="R90"/>
-<pad name="RED" x="-3" y="0" drill="1" rot="R270"/>
+<pad name="GRN" x="0.746" y="0" drill="1" rot="R90"/>
+<pad name="BLU" x="2.492" y="0" drill="1" rot="R90"/>
+<pad name="RED" x="-2.746" y="0" drill="1" rot="R270"/>
 <text x="-2.54" y="3.81" size="1.27" layer="25">&gt;Name</text>
 </package>
 <package name="TC2030-MCP">
