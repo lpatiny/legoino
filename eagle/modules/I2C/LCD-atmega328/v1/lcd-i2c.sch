@@ -3360,12 +3360,6 @@ Source: http://www.osram.convergy.de/</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="VCC">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
@@ -3379,19 +3373,6 @@ Source: http://www.osram.convergy.de/</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VCC" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="VCC" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -14384,9 +14365,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </class>
 </classes>
 <parts>
-<part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R4" library="adafruit" deviceset="R-US_" device="M1206" value="EMPTY"/>
 <part name="R5" library="adafruit" deviceset="R-US_" device="M1206" value="EMPTY"/>
@@ -14419,6 +14398,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="D2" library="lpatiny" deviceset="1N581*" device="D1206" value="1N581D1206"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-2X10" device=""/>
+<part name="P+2" library="supply1" deviceset="+5V" device=""/>
+<part name="P+6" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14427,11 +14408,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="86.36" y="-43.18" size="2.54" layer="94">CC Attribution/ShareAlike</text>
 </plain>
 <instances>
-<instance part="P+4" gate="VCC" x="71.12" y="27.94"/>
 <instance part="GND4" gate="1" x="78.74" y="17.78"/>
-<instance part="P+5" gate="VCC" x="121.92" y="30.48" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="127" y="30.48" size="1.778" layer="96" rot="MR0"/>
-</instance>
 <instance part="GND5" gate="1" x="96.52" y="27.94" rot="R180"/>
 <instance part="R4" gate="G$1" x="-58.42" y="-43.18" rot="MR90"/>
 <instance part="R5" gate="G$1" x="-68.58" y="-45.72" rot="MR90"/>
@@ -14468,27 +14445,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="D2" gate="G$1" x="-15.24" y="-55.88"/>
 <instance part="P+1" gate="1" x="0" y="-35.56"/>
 <instance part="JP2" gate="A" x="111.76" y="71.12" rot="R180"/>
+<instance part="P+2" gate="1" x="68.58" y="27.94"/>
+<instance part="P+6" gate="1" x="121.92" y="30.48"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="VCC" class="1">
-<segment>
-<wire x1="71.12" y1="25.4" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="38.1" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="25.4" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
-<junction x="73.66" y="25.4"/>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-<pinref part="JP1" gate="A" pin="2"/>
-<pinref part="R6" gate="1" pin="A"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="27.94" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
-<pinref part="JP1" gate="A" pin="15"/>
-</segment>
-</net>
 <net name="GND" class="1">
 <segment>
 <wire x1="96.52" y1="20.32" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
@@ -14829,6 +14791,21 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="-7.62" y1="-38.1" x2="0" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="0" y="-38.1"/>
+</segment>
+<segment>
+<wire x1="73.66" y1="38.1" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="25.4" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
+<junction x="73.66" y="25.4"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="R6" gate="1" pin="A"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+<wire x1="73.66" y1="25.4" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="15"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+<wire x1="121.92" y1="20.32" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
