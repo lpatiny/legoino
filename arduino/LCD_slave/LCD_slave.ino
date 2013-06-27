@@ -59,13 +59,14 @@ void receiveEvent(int howMany)
       digitalWrite(lcd_lite,HIGH);
     } 
     else if (c==25) {
-      digitalWrite(lcd_lite,HIGH);
+      digitalWrite(lcd_lite,LOW);
     } 
     else if (c==26) {
-      // to be implemented
+      lcd.clear();
+    } 
+    else {
+      lcd.print(c);         // print the character
     }
-
-    lcd.print(c);         // print the character
   }
 }
 
@@ -74,6 +75,7 @@ void requestEvent()
   Wire.write("hello "); // respond with message of 6 bytes
   // as expected by master
 }
+
 
 
 
