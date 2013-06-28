@@ -72,9 +72,13 @@ void receiveEvent(int howMany)
 
 void requestEvent()
 {
-  Wire.write("hello "); // respond with message of 6 bytes
-  // as expected by master
+  String millisStr=String(millis());
+  char buffer[20];
+  millisStr.toCharArray(buffer,20);
+  Wire.write(buffer);        // code ASCII 26 clears the screen
+
 }
+
 
 
 
