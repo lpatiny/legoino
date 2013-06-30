@@ -53,7 +53,8 @@ void loop()
 
 
   char buffer[10];
-  for (byte i=0; i<100; i++) {
+  char received[10];
+  for (byte i=0; i<1000; i++) {
     Wire.beginTransmission(4); // transmit to device #4
     Wire.write(2); // row
     Wire.write(10+4); // column
@@ -61,24 +62,24 @@ void loop()
     millisStr.toCharArray(buffer,10);
     Wire.write(buffer);        // code ASCII 26 clears the screen
     Wire.endTransmission();    // stop transmitting
-    delay(100);
+    delay(50);
 
     // we will get millis from the slace LCD screen
-    Wire.requestFrom(4, 6);   
+    Wire.requestFrom(4, 10);   
     byte pos=0; 
     while(Wire.available())    // slave may send less than requested
     { 
-      buffer[pos]=Wire.read(); // receive a byte as character
+      received[pos]=Wire.read(); // receive a byte as character
       pos++;
     }
-    delay(100);
+    delay(50);
 
     Wire.beginTransmission(4); // transmit to device #4
     Wire.write(3); // row
     Wire.write(10+4); // column
-    Wire.write(buffer);        // code ASCII 26 clears the screen
+    Wire.write(received);        // code ASCII 26 clears the screen
     Wire.endTransmission();    // stop transmitting
-    delay(100);
+    delay(50);
   }
 
 

@@ -65,7 +65,7 @@ void setup() {
   digitalWrite(lcd_lite,HIGH);
   lcd.begin(20, 4);
   // Print a message to the LCD.
-  lcd.print("hello, world!");
+  lcd.print("Hello, world !");
 
   Wire.begin(4);                // join i2c bus with address #4
   Wire.onReceive(receiveEvent); // register event

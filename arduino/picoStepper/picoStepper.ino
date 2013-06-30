@@ -32,6 +32,7 @@ void setup() {
 void loop() {
   for (int i=0; i<200; i=i+20) {
     byte currentDelay=random(3,10);
+    currentDelay=3;
     executeStep(i,true, currentDelay);
     executeStep(i,false, currentDelay);
 
