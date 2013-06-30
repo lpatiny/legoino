@@ -52,8 +52,8 @@ static const uint8_t A2 = 16;
 static const uint8_t A3 = 17;
 static const uint8_t A4 = 18;
 static const uint8_t A5 = 19;
-static const uint8_t A6 = 20;
-static const uint8_t A7 = 21;
+static const uint8_t A6 = 20;	// port C6
+static const uint8_t A7 = 21;	// port C7
 
 #define digitalPinToPCICR(p)    (((p) >= 0 && (p) <= 21) ? (&PCICR) : ((uint8_t *)0))
 #define digitalPinToPCICRbit(p) (((p) <= 7) ? 2 : (((p) <= 13) ? 0 : 1))
@@ -150,6 +150,10 @@ const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
 	PC,
 	PC,
 	PC,
+	PC,
+	PC,
+	PB,	// Allow access to XTL port
+	PB,
 };
 
 const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
@@ -173,6 +177,10 @@ const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
 	_BV(3),
 	_BV(4),
 	_BV(5),
+	_BV(6),
+	_BV(7),
+	_BV(6),	// unused crystal -> 22
+	_BV(7), // unused crystal -> 23
 };
 
 const uint8_t PROGMEM digital_pin_to_timer_PGM[] = {

@@ -1,3 +1,6 @@
+// ATTENTION !!!! we need to customize pins_arduino.h to use the crystal pinout !!!!!
+
+
 
 #include <LiquidCrystal.h>
 #include <Wire.h>
@@ -18,6 +21,44 @@
 // initialize the library with the numbers of the interface pins
 LiquidCrystal lcd(lcd_rs, lcd_e, 0,1,2,3,4,5,6,7);
 
+
+
+#include <Keypad.h>
+
+const byte ROWS = 4; //four rows
+const byte COLS = 4; //four columns
+//define the cymbols on the buttons of the keypads
+char hexaKeys[ROWS][COLS] = {
+  {
+    '1','2','3','A'            }
+  ,
+  {
+    '4','5','6','B'            }
+  ,
+  {
+    '7','8','9','C'            }
+  ,
+  {
+    '*','0','#','D'            }
+};
+
+
+
+byte rowPins[ROWS] = {
+   12, 13, 22, 23 }; //conn
+
+ 
+
+byte colPins[COLS] = {
+      8, 9, 10, 11}; //connect to the row pinouts of the keypad
+
+
+
+Keypad keypad = Keypad( makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS); 
+
+
+
+
 void setup() {
   // turn on the screen
   pinMode(lcd_lite, OUTPUT);
@@ -31,12 +72,7 @@ void setup() {
   Wire.onRequest(requestEvent); // register event
 }
 
-void loop() {
-  // set the cursor to column 0, line 1
-  // (note: line 1 is the second row, since counting begins with 0):
-  // print the number of seconds since reset:
-  delay(500);
-}
+
 
 
 char lcdRow=0;
@@ -70,14 +106,55 @@ void receiveEvent(int howMany)
   }
 }
 
+
+
+#define  maxSize 10
+char buffer[maxSize];
+char test[]={'A','B','C','D','E','F','G','H','I'};
+
+byte currentPos=0;
+
+void loop() {
+  // set the cursor to column 0, line 1
+  // (note: line 1 is the second row, since counting begins with 0):
+  // print the number of seconds since reset:
+
+  byte counter=0;
+  char key = keypad.getKey();
+  if (key){
+    if (key=='#') {
+      currentPos=0;
+    } else {
+    buffer[currentPos]=key;
+    if (currentPos<(maxSize-1)) {
+      currentPos++;
+    } else {
+      currentPos=0;
+    }
+    }
+    buffer[currentPos]=0;
+    for (byte i=currentPos; i<maxSize; i++) {
+      buffer[i]=' ';
+    }
+  } 
+}
+
+
+
 void requestEvent()
 {
-  String millisStr=String(millis());
-  char buffer[20];
-  millisStr.toCharArray(buffer,20);
-  Wire.write(buffer);        // code ASCII 26 clears the screen
-
+//  char bufferTime[6];
+//  String millisStr=String(millis());
+// millisStr.toCharArray(bufferTime,6);
+ // Wire.write(bufferTime);   
+  Wire.write(buffer); 
 }
+
+
+
+
+
+
 
 
 

@@ -6,6 +6,7 @@ void setup() {
 
 void loop()
 {
+  /*
   Wire.beginTransmission(4); // transmit to device #4
   Wire.write(0); // row
   Wire.write(0+4); // column
@@ -39,6 +40,17 @@ void loop()
 
   delay(1000);
 
+*/
+
+  Wire.beginTransmission(4); // transmit to device #4
+  Wire.write(2); // row
+  Wire.write(0+4); // column
+  Wire.write(26);        // code ASCII 26 clears the screen
+  Wire.endTransmission();    // stop transmitting
+
+  delay(100);
+
+
 
   char buffer[10];
   for (byte i=0; i<100; i++) {
@@ -71,13 +83,6 @@ void loop()
 
 
 
-  Wire.beginTransmission(4); // transmit to device #4
-  Wire.write(2); // row
-  Wire.write(0+4); // column
-  Wire.write(26);        // code ASCII 26 clears the screen
-  Wire.endTransmission();    // stop transmitting
-
-  delay(100);
 
   /*
    Wire.beginTransmission(4); // transmit to device #4
