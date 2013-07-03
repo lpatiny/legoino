@@ -1,5 +1,6 @@
 #include <PinChangeInt.h>
 
+#define IR_IN  12
 
 uint8_t latest_interrupted_pin;
 uint8_t currentPosition;
@@ -55,9 +56,9 @@ void quicfunc() {
 
 
 void setup() {
-  pinMode(A1, INPUT);
-  digitalWrite(A1, HIGH);
-  PCintPort::attachInterrupt(A1, &quicfunc, CHANGE);
+  pinMode(IR_IN, INPUT);
+  digitalWrite(IR_IN, HIGH);
+  PCintPort::attachInterrupt(IR_IN, &quicfunc, CHANGE);
   currentPosition=0;
   Serial.begin(115200);
 }

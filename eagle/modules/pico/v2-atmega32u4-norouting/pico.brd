@@ -15,21 +15,21 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
@@ -2078,7 +2078,7 @@ design rules under a new name.</description>
 </element>
 <element name="C1" library="resistor" package="C1206" value="0.1uF" x="53.975" y="31.75" rot="MR45"/>
 <element name="C2" library="resistor" package="C1206" value="0.1uF" x="53.975" y="20.32" rot="MR315"/>
-<element name="D9_IO2" library="lpatiny" package="RJ12-STRAIGHT" value="IO2" x="46.99" y="38.1">
+<element name="D11_IO2" library="lpatiny" package="RJ12-STRAIGHT" value="IO2" x="46.99" y="38.1">
 <attribute name="OC_NEWARK" value="" x="-81.28" y="125.73" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="-81.28" y="125.73" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="-81.28" y="125.73" size="1.778" layer="27" display="off"/>
@@ -2089,9 +2089,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="50.8" y="39.37" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="IC4" library="lpatiny" package="SO18W" value="ULN2803A" x="64.77" y="26.035" rot="MR180"/>
-<element name="RGB1_D5-6-11" library="lpatiny" package="RJ12-STRAIGHT-RGB" value="RGB1" x="63.5" y="13.97" rot="R180"/>
-<element name="RGB2_D7-8-13" library="lpatiny" package="RJ12-STRAIGHT-RGB" value="RGB2" x="80.01" y="13.97" rot="R180"/>
-<element name="D10_IO1" library="lpatiny" package="RJ12-STRAIGHT" value="IO1" x="30.48" y="38.1">
+<element name="RGB1_D6-9-10" library="lpatiny" package="RJ12-STRAIGHT-RGB" value="RGB1" x="63.5" y="13.97" rot="R180"/>
+<element name="RGB2_D21-22-23" library="lpatiny" package="RJ12-STRAIGHT-RGB" value="RGB2" x="80.01" y="13.97" rot="R180"/>
+<element name="D4_IO1" library="lpatiny" package="RJ12-STRAIGHT" value="IO1" x="30.48" y="38.1">
 <attribute name="OC_NEWARK" value="" x="-80.01" y="60.96" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="-80.01" y="60.96" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="-80.01" y="60.96" size="1.778" layer="27" display="off"/>
@@ -2106,7 +2106,7 @@ design rules under a new name.</description>
 <element name="R3" library="resistor" package="M1206" value="1K" x="45.466" y="13.97" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="42.926" y="12.7" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="D2_IO4" library="lpatiny" package="RJ12-STRAIGHT" value="IO4" x="63.5" y="38.1">
+<element name="D13_IO3" library="lpatiny" package="RJ12-STRAIGHT" value="IO4" x="63.5" y="38.1">
 <attribute name="OC_NEWARK" value="" x="-160.02" y="-41.91" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="-160.02" y="-41.91" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="-160.02" y="-41.91" size="1.778" layer="27" display="off"/>
@@ -2116,7 +2116,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="63.5" y="39.37" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="67.31" y="39.37" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="D4_IO3" library="lpatiny" package="RJ12-STRAIGHT" value="IO3" x="80.01" y="38.1">
+<element name="D6_IO4" library="lpatiny" package="RJ12-STRAIGHT" value="IO3" x="80.01" y="38.1">
 <attribute name="OC_NEWARK" value="" x="-181.61" y="-59.69" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="-181.61" y="-59.69" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="-181.61" y="-59.69" size="1.778" layer="27" display="off"/>
@@ -2211,16 +2211,16 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="IC4" pad="9"/>
 <contactref element="IC3" pad="9"/>
-<contactref element="RGB1_D5-6-11" pad="GND1"/>
-<contactref element="RGB2_D7-8-13" pad="GND1"/>
-<contactref element="D9_IO2" pad="GND1"/>
-<contactref element="D10_IO1" pad="GND1"/>
+<contactref element="RGB1_D6-9-10" pad="GND1"/>
+<contactref element="RGB2_D21-22-23" pad="GND1"/>
+<contactref element="D11_IO2" pad="GND1"/>
+<contactref element="D4_IO1" pad="GND1"/>
 <contactref element="IC3" pad="9"/>
 <contactref element="I2C_INT0" pad="GND1"/>
 <contactref element="J1" pad="GND1"/>
 <contactref element="J1" pad="GND2"/>
-<contactref element="D2_IO4" pad="GND1"/>
-<contactref element="D4_IO3" pad="GND1"/>
+<contactref element="D13_IO3" pad="GND1"/>
+<contactref element="D6_IO4" pad="GND1"/>
 <contactref element="IC4" pad="9"/>
 <contactref element="U$2" pad="GND2"/>
 <contactref element="U$2" pad="GND1"/>
@@ -2262,10 +2262,10 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="2"/>
 <contactref element="C3" pad="C"/>
 <contactref element="I2C_INT0" pad="GND2"/>
-<contactref element="D2_IO4" pad="GND2"/>
-<contactref element="D4_IO3" pad="GND2"/>
-<contactref element="D9_IO2" pad="GND2"/>
-<contactref element="D10_IO1" pad="GND2"/>
+<contactref element="D13_IO3" pad="GND2"/>
+<contactref element="D6_IO4" pad="GND2"/>
+<contactref element="D11_IO2" pad="GND2"/>
+<contactref element="D4_IO1" pad="GND2"/>
 <contactref element="C4" pad="1"/>
 <contactref element="C5" pad="1"/>
 <wire x1="29.8196" y1="7.7216" x2="29.845" y2="7.62" width="0.4572" layer="1"/>
@@ -2351,14 +2351,14 @@ design rules under a new name.</description>
 <wire x1="27.305" y1="26.035" x2="40.626040625" y2="24.196521875" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+12V">
-<contactref element="D9_IO2" pad="+12V"/>
-<contactref element="RGB1_D5-6-11" pad="+12V"/>
-<contactref element="RGB2_D7-8-13" pad="+12V"/>
-<contactref element="D10_IO1" pad="+12V"/>
+<contactref element="D11_IO2" pad="+12V"/>
+<contactref element="RGB1_D6-9-10" pad="+12V"/>
+<contactref element="RGB2_D21-22-23" pad="+12V"/>
+<contactref element="D4_IO1" pad="+12V"/>
 <contactref element="I2C_INT0" pad="+12V"/>
 <contactref element="J1" pad="+12V"/>
-<contactref element="D2_IO4" pad="+12V"/>
-<contactref element="D4_IO3" pad="+12V"/>
+<contactref element="D13_IO3" pad="+12V"/>
+<contactref element="D6_IO4" pad="+12V"/>
 <wire x1="21.59" y1="1.27" x2="33.655" y2="1.27" width="1.778" layer="1"/>
 <wire x1="66.675" y1="1.27" x2="83.185" y2="1.27" width="1.778" layer="1"/>
 <wire x1="66.675" y1="1.27" x2="50.165" y2="1.27" width="1.778" layer="1"/>
@@ -2436,12 +2436,12 @@ design rules under a new name.</description>
 <wire x1="40.06035625" y1="27.307790625" x2="82.55" y2="30.6198" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$22" class="4">
-<contactref element="D9_IO2" pad="PWM"/>
+<contactref element="D11_IO2" pad="PWM"/>
 <contactref element="IC3" pad="12"/>
 <wire x1="45.085" y1="44.45" x2="82.55" y2="21.4502" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$48" class="4">
-<contactref element="RGB2_D7-8-13" pad="B"/>
+<contactref element="RGB2_D21-22-23" pad="B"/>
 <contactref element="IC3" pad="18"/>
 <contactref element="IC3" pad="17"/>
 <wire x1="74.93" y1="21.4503" x2="76.2" y2="21.4503" width="0" layer="19" extent="16-16"/>
@@ -2450,23 +2450,23 @@ design rules under a new name.</description>
 <signal name="N$50" class="4">
 <contactref element="IC4" pad="16"/>
 <contactref element="IC4" pad="15"/>
-<contactref element="RGB1_D5-6-11" pad="B"/>
+<contactref element="RGB1_D6-9-10" pad="B"/>
 <wire x1="64.2112" y1="5.08" x2="64.135" y2="5.08" width="0" layer="19" extent="1-16"/>
 <wire x1="62.23" y1="21.4504" x2="63.5" y2="21.4503" width="0" layer="19" extent="16-16"/>
 <wire x1="64.135" y1="5.08" x2="63.5" y2="21.4503" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="D2B">
-<contactref element="D9_IO2" pad="I/O"/>
+<contactref element="D11_IO2" pad="I/O"/>
 <contactref element="R4" pad="1"/>
 <wire x1="48.26" y1="39.5" x2="46.355" y2="46.99" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$51" class="4">
-<contactref element="D10_IO1" pad="PWM"/>
+<contactref element="D4_IO1" pad="PWM"/>
 <contactref element="IC3" pad="11"/>
 <wire x1="28.575" y1="44.45" x2="83.82" y2="21.4503" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="D2B1">
-<contactref element="D10_IO1" pad="I/O"/>
+<contactref element="D4_IO1" pad="I/O"/>
 <contactref element="R9" pad="1"/>
 <wire x1="31.75" y1="39.5" x2="29.845" y2="46.99" width="0" layer="19" extent="16-16"/>
 </signal>
@@ -2476,7 +2476,7 @@ design rules under a new name.</description>
 <wire x1="31.115" y1="5.08" x2="28.956" y2="12.57" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$57" class="4">
-<contactref element="RGB2_D7-8-13" pad="G"/>
+<contactref element="RGB2_D21-22-23" pad="G"/>
 <contactref element="IC4" pad="12"/>
 <contactref element="IC4" pad="11"/>
 <wire x1="67.31" y1="21.4502" x2="68.58" y2="21.4503" width="0" layer="19" extent="16-16"/>
@@ -2488,23 +2488,23 @@ design rules under a new name.</description>
 <wire x1="47.625" y1="5.08" x2="45.466" y2="12.57" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$60" class="4">
-<contactref element="D2_IO4" pad="PWM"/>
+<contactref element="D13_IO3" pad="PWM"/>
 <contactref element="IC3" pad="14"/>
 <wire x1="80.01" y1="21.4502" x2="61.595" y2="44.45" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="D2B6">
-<contactref element="D2_IO4" pad="I/O"/>
+<contactref element="D13_IO3" pad="I/O"/>
 <contactref element="R0" pad="1"/>
 <wire x1="64.77" y1="39.5" x2="62.865" y2="46.99" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="D2B7">
-<contactref element="D4_IO3" pad="I/O"/>
+<contactref element="D6_IO4" pad="I/O"/>
 <contactref element="R1B" pad="1"/>
 <wire x1="81.1784" y1="39.624" x2="81.28" y2="39.5" width="0.4572" layer="16"/>
 <wire x1="81.1784" y1="39.624" x2="79.375" y2="46.99" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$68" class="4">
-<contactref element="RGB1_D5-6-11" pad="R"/>
+<contactref element="RGB1_D6-9-10" pad="R"/>
 <contactref element="IC4" pad="14"/>
 <contactref element="IC4" pad="13"/>
 <wire x1="65.2272" y1="7.7216" x2="65.405" y2="7.62" width="0" layer="19" extent="1-16"/>
@@ -2551,7 +2551,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$2" class="4">
 <contactref element="IC3" pad="13"/>
-<contactref element="D4_IO3" pad="PWM"/>
+<contactref element="D6_IO4" pad="PWM"/>
 <wire x1="81.28" y1="21.4503" x2="78.105" y2="44.45" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="D14" class="3">
@@ -2573,7 +2573,7 @@ design rules under a new name.</description>
 <wire x1="33.785" y1="27.305" x2="36.83" y2="27.435" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1" class="4">
-<contactref element="RGB1_D5-6-11" pad="G"/>
+<contactref element="RGB1_D6-9-10" pad="G"/>
 <contactref element="IC4" pad="18"/>
 <contactref element="IC4" pad="17"/>
 <wire x1="62.7888" y1="7.7216" x2="62.865" y2="7.62" width="0" layer="19" extent="1-16"/>
@@ -2631,14 +2631,14 @@ design rules under a new name.</description>
 </signal>
 <signal name="+5V">
 <contactref element="RL2" pad="2"/>
-<contactref element="D9_IO2" pad="+5V"/>
-<contactref element="RGB1_D5-6-11" pad="+5V"/>
-<contactref element="RGB2_D7-8-13" pad="+5V"/>
-<contactref element="D10_IO1" pad="+5V"/>
+<contactref element="D11_IO2" pad="+5V"/>
+<contactref element="RGB1_D6-9-10" pad="+5V"/>
+<contactref element="RGB2_D21-22-23" pad="+5V"/>
+<contactref element="D4_IO1" pad="+5V"/>
 <contactref element="I2C_INT0" pad="+5V"/>
 <contactref element="J1" pad="+5V"/>
-<contactref element="D2_IO4" pad="+5V"/>
-<contactref element="D4_IO3" pad="+5V"/>
+<contactref element="D13_IO3" pad="+5V"/>
+<contactref element="D6_IO4" pad="+5V"/>
 <wire x1="2.54" y1="50.8" x2="32.385" y2="50.8" width="1.778" layer="16"/>
 <wire x1="32.385" y1="50.8" x2="48.895" y2="50.8" width="1.778" layer="16"/>
 <wire x1="48.895" y1="50.8" x2="65.405" y2="50.8" width="1.778" layer="16"/>
@@ -2812,7 +2812,7 @@ design rules under a new name.</description>
 <signal name="N$13" class="4">
 <contactref element="IC3" pad="16"/>
 <contactref element="IC3" pad="15"/>
-<contactref element="RGB2_D7-8-13" pad="R"/>
+<contactref element="RGB2_D21-22-23" pad="R"/>
 <wire x1="77.47" y1="21.4504" x2="78.74" y2="21.4503" width="0" layer="19" extent="16-16"/>
 <wire x1="81.915" y1="7.62" x2="78.74" y2="21.4503" width="0" layer="19" extent="16-16"/>
 </signal>

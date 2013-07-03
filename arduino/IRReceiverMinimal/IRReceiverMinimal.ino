@@ -2,7 +2,7 @@
 
 // RC5 code detection
 
-#define INPUT_IR A1
+#define INPUT_IR 12
 
 
 
