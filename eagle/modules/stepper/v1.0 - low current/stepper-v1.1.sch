@@ -1420,7 +1420,7 @@ Grid 5.00 mm&lt;p&gt;
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="R5" library="SparkFun" deviceset="RESISTOR" device="1206" value="1k"/>
+<part name="R5" library="SparkFun" deviceset="RESISTOR" device="1206" value="10k"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="R1" library="SparkFun" deviceset="RESISTOR" device="1206" value="1k"/>
 <part name="R2" library="SparkFun" deviceset="RESISTOR" device="1206" value="1k"/>
