@@ -11,7 +11,7 @@
 
 
 byte IO[]={
-  LED1, LED2, LED3, LED4, RED1, GREEN1, BLUE1, RED2, GREEN2, BLUE2};
+  LED1, LED2, LED3, LED4, RED1, BLUE1, RED2};
 
 // the setup routine runs once when you press reset:
 void setup() {                
@@ -27,10 +27,12 @@ void loop() {
     digitalWrite(IO[i], HIGH);  
     delay(50);
   }
+  /*
   for (byte i=0; i<sizeof(IO); i++) {
     digitalWrite(IO[i], LOW);  
     delay(50);
   }
+  */
 }
 
 
