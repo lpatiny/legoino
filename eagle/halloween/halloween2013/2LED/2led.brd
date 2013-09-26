@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -27,7 +27,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="12" fill="0" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -136,7 +136,6 @@
 <plain>
 <text x="20.6375" y="3.175" size="0.8128" layer="21" ratio="4">GND</text>
 <text x="28.575" y="3.175" size="0.8128" layer="21" ratio="4">5V</text>
-<rectangle x1="0" y1="0" x2="49" y2="45.72" layer="20"/>
 <wire x1="0" y1="11.43" x2="48.26" y2="11.43" width="0.4064" layer="25"/>
 <wire x1="0" y1="22.86" x2="48.26" y2="22.86" width="0.4064" layer="25"/>
 <wire x1="0" y1="34.29" x2="48.26" y2="34.29" width="0.4064" layer="25"/>
@@ -146,6 +145,10 @@
 <text x="28.575" y="26.035" size="0.8128" layer="21" ratio="4">5V</text>
 <text x="20.6375" y="37.465" size="0.8128" layer="21" ratio="4">GND</text>
 <text x="28.575" y="37.465" size="0.8128" layer="21" ratio="4">5V</text>
+<wire x1="0" y1="0" x2="0" y2="45.72" width="0" layer="20"/>
+<wire x1="0" y1="45.72" x2="49.53" y2="45.72" width="0" layer="20"/>
+<wire x1="49.53" y1="45.72" x2="49.53" y2="0" width="0" layer="20"/>
+<wire x1="49.53" y1="0" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="led">
@@ -260,7 +263,7 @@ type 0207, grid 10 mm</description>
 <class number="1" name="power" width="0.9144" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules>
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
