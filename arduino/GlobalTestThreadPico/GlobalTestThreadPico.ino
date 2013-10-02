@@ -7,6 +7,7 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #include <LiquidCrystal.h>
+#include <StepperLight.h>
 
 // The normal serial takes 200 bytes more but is buffered
 // And if we send a String for parameters it can not be understand ...
@@ -39,8 +40,10 @@
 #define THR_DISTANCEPIN  IO3
 #define THR_MONITORING   13  // INCOMPATIBLE WITH OUT3
 #define THR_IRPIN        12
-#define THR_STEPPER     {OUT2, IO2}
+#define THR_STEPPER      OUT2, IO2
 #define THR_SERVO        IO4
+
+
 
 
 #define PARAM_RGB1      0
@@ -51,6 +54,9 @@
 #define PARAM_RELAY_1   17// = 17 = R (elay)
 #define PARAM_RELAY_2   18
 #define PARAM_TEMP1     20
+
+
+#define PARAM_PRESENCE  23
 #define PARAM_WIRE      24 // contains the active wire devices
 #define PARAM_DISTANCE  25
 

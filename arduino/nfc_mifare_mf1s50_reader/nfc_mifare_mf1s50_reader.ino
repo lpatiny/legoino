@@ -23,7 +23,7 @@ void setup(void)
 {
   Serial.begin(9600);
   nfc.begin();
-  Serial1.println("MF1S50 Reader Demo From Elechouse!");
+  Serial.println("MF1S50 Reader Demo From Elechouse!");
   
   uint32_t versiondata = nfc.get_version();
   if (! versiondata) {
@@ -42,6 +42,7 @@ void setup(void)
 
 void loop(void)
 {
+  
   u8 buf[32],sta;
   
   

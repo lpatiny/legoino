@@ -10,7 +10,7 @@ Getting the distance using an Ultrasonic Module HC-SR04 ($3 on ebay ...)
 
 // 2500 corresponds to around 1.5 meter (or 1500 mm), just ignore if it is over
 // The maximum time spend in this function is around 13ms (for a max counter value of 2500)
-#define MAX_DISTANCE_COUNTER 2500
+#define MAX_DISTANCE_COUNTER 2000
 
 unsigned int getDistance(byte pin) {
   pinMode(pin, OUTPUT);
@@ -36,6 +36,52 @@ unsigned int getDistance(byte pin) {
 static void printFreeMemory(Print* output)
 {
   nilPrintUnusedStack(output);
+}
+
+
+
+// The idea is to have 2 sounds on the SD card:
+// ZZZZZZZZ: 30s silent
+// YYYYYYYY: the sound to play
+
+void initSound() {
+  Serial1.begin(115200);
+  delay(2000);
+  // we need to switch to file mode each time !
+  // we may only do it once otherwise it would crash
+  Serial1.print("f");
+  Serial1.flush();
+  delay(500);
+  cancelSound(); 
+  delay(500);
+}
+
+void listSound() {
+  Serial1.print("L");
+  Serial1.print("\n");
+  Serial1.flush();
+  while (Serial1.available()) {
+    Serial1.read();
+  }
+}
+
+void playSound(String name) {
+  Serial1.print("P");
+  Serial1.print(name);
+  Serial1.print("OGG");
+  Serial1.print("\n");
+  Serial1.flush();
+  while (Serial1.available()) {
+    Serial1.read();
+  }
+}
+
+void cancelSound() {
+  Serial1.print("C"); // we cancelthe sound
+  Serial1.print("");
+  while (Serial1.available()) {
+    Serial1.read();
+  }
 }
 
 
