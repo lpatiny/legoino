@@ -36,11 +36,11 @@
 #define BLUE2   23
 
 
-#define ONE_WIRE_BUS1    IO1
+//#define ONE_WIRE_BUS1    IO1
 #define THR_DISTANCEPIN  IO3
 #define THR_MONITORING   13  // INCOMPATIBLE WITH OUT3
-#define THR_IRPIN        12
-#define THR_STEPPER      OUT2, IO2
+//#define THR_IRPIN        12
+//#define THR_STEPPER      OUT2, IO2
 #define THR_SERVO        IO4
 
 
@@ -64,7 +64,7 @@ byte IO[]={
   IO1, IO2, IO3, IO4};
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   setupLogger();
   setupDebugger();
   setupParameters();

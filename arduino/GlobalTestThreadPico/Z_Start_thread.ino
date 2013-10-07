@@ -31,7 +31,9 @@ NIL_THREAD(ThreadMonitoring, arg) {
 
 NIL_THREADS_TABLE_BEGIN()
 
+#ifdef THR_STEPPER
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadStepper, NULL, waThreadStepper, sizeof(waThreadStepper))
+#endif
 
 //NIL_THREADS_TABLE_ENTRY(NULL, ThreadIO, NULL, waThreadIO, sizeof(waThreadIO))
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadRGB1, NULL, waThreadRGB1, sizeof(waThreadRGB1))

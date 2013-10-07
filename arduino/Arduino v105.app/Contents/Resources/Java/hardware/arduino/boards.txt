@@ -1,4 +1,4 @@
-# See: http://code.google.com/p/arduino/wiki/Platforms
+ # See: http://code.google.com/p/arduino/wiki/Platforms
 
 ##############################################################
 
@@ -113,6 +113,19 @@ nano328direct.build.mcu=atmega328p
 nano328direct.build.f_cpu=1000000L
 nano328direct.build.core=arduino
 nano328direct.build.variant=eightanaloginputs
+
+##############################################################
+
+nano328direct8.name=Arduino Nano 8MHz w/ ATmega328p NO BOOTLOAD
+
+nano328direct8.upload.using=usbtinyisp
+nano328direct8.upload.maximum_size=32768
+nano328direct8.upload.speed=115200
+
+nano328direct8.build.mcu=atmega328p
+nano328direct8.build.f_cpu=8000000L
+nano328direct8.build.core=arduino
+nano328direct8.build.variant=eightanaloginputs
 
 ##############################################################
 
