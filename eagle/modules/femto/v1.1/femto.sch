@@ -8776,8 +8776,8 @@ Source: http://www.osram.convergy.de/</description>
 </classes>
 <parts>
 <part name="IC1" library="atmel" deviceset="MEGA8" device="-AI"/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="M1206" value="330"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="M1206" value="220"/>
 <part name="LED5" library="lpatiny" deviceset="LED3MM" device=""/>
 <part name="LED4" library="lpatiny" deviceset="LED3MM" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -8795,16 +8795,16 @@ Source: http://www.osram.convergy.de/</description>
 <part name="C3" library="resistor" deviceset="C-EU" device="C1206" value="10uF"/>
 <part name="LED2" library="lpatiny" deviceset="RGB-COMMON-CATHODE" device=""/>
 <part name="LED1" library="lpatiny" deviceset="RGB-COMMON-CATHODE" device=""/>
-<part name="R2A" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="R2B" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="R2C" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="R1A" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="R1B" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="R1C" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
+<part name="R2A" library="resistor" deviceset="R-EU_" device="M1206" value="330"/>
+<part name="R2B" library="resistor" deviceset="R-EU_" device="M1206" value="229"/>
+<part name="R2C" library="resistor" deviceset="R-EU_" device="M1206" value="229"/>
+<part name="R1A" library="resistor" deviceset="R-EU_" device="M1206" value="330"/>
+<part name="R1B" library="resistor" deviceset="R-EU_" device="M1206" value="229"/>
+<part name="R1C" library="resistor" deviceset="R-EU_" device="M1206" value="229"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="M1206" value="330"/>
 <part name="LED6" library="lpatiny" deviceset="LED3MM" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="R7" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10k"/>
@@ -8815,7 +8815,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="D1" library="lpatiny" deviceset="1N581*" device="D1206" value="1N581D1206"/>
 <part name="D2" library="lpatiny" deviceset="1N581*" device="D1206" value="1N581D1206"/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="M1206" value="220"/>
 <part name="LED3" library="lpatiny" deviceset="LED3MM" device=""/>
 </parts>
 <sheets>
