@@ -1,6 +1,7 @@
 #include "Arduino.h"
 #include "RGB.h"
 #include "NilRTOS.h"
+#include "SoftPWM.h"
 
 
 RGB::RGB(int redPin, int greenPin, int bluePin) {

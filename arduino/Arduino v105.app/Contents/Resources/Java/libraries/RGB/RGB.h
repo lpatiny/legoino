@@ -3,6 +3,7 @@
 
 #include "Arduino.h"
 #include "NilRTOS.h"
+#include "SoftPWM.h"
 
 class RGB {
 
