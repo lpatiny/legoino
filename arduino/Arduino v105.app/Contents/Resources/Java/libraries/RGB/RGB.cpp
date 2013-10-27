@@ -9,13 +9,13 @@ RGB::RGB(int redPin, int greenPin, int bluePin) {
   _bluePin=(byte)bluePin;
 #ifdef SOFTPWM_H
 	SoftPWMBegin();
-	SoftPWMSet(_red, 0);
-	SoftPWMSet(_green, 0);
-	SoftPWMSet(_blue, 0);
+	SoftPWMSet(_redPin, 0);
+	SoftPWMSet(_greenPin, 0);
+	SoftPWMSet(_bluePin, 0);
 #else
-	pinMode(_red, OUTPUT);
-	pinMode(_green, OUTPUT);
-	pinMode(_blue, OUTPUT);
+	pinMode(_redPin, OUTPUT);
+	pinMode(_greenPin, OUTPUT);
+	pinMode(_bluePin, OUTPUT);
 #endif
 }
 
