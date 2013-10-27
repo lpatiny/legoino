@@ -49,10 +49,6 @@ void RGB::go(int newRed, int newGreen, int newBlue, int nbStep) {
 	delay(40);
 #endif
 	}
-	
-	
-	
-
 }
 
 void RGB::randomColor() {
