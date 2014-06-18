@@ -16,6 +16,8 @@ public :
     void stop(); 
     void next (); 
     void previous(); 
-	void setVolume( byte vol );
+	void setVolume(uint8_t vol);
+	 void reset (); 
+	void increaseVolume();
 };
 
