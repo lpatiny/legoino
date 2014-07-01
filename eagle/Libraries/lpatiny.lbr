@@ -4033,6 +4033,21 @@ Source: Kingbright .. 2_colour_led_.pdf</description>
 <pin name="VDD" x="-10.16" y="0" length="short" direction="pwr"/>
 <pin name="VCORE" x="-10.16" y="5.08" length="short"/>
 </symbol>
+<symbol name="DS18B20">
+<wire x1="-10.16" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="11.43" size="1.778" layer="95">DS18B20</text>
+<pin name="DQ" x="-12.7" y="-2.54" length="short"/>
+<pin name="NC5" x="-12.7" y="2.54" length="short" direction="nc"/>
+<pin name="NC1" x="10.16" y="5.08" length="short" direction="nc" rot="R180"/>
+<pin name="NC2" x="10.16" y="2.54" length="short" direction="nc" rot="R180"/>
+<pin name="NC3" x="10.16" y="0" length="short" direction="nc" rot="R180"/>
+<pin name="GND" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="VDD" x="-12.7" y="0" length="short" direction="pwr"/>
+<pin name="NC4" x="-12.7" y="5.08" length="short" direction="nc"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="HARDDISK" prefix="J" uservalue="yes">
@@ -5403,6 +5418,28 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="G$1" pin="SCL" pad="8"/>
 <connect gate="G$1" pin="SDA" pad="7"/>
 <connect gate="G$1" pin="VCORE" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS18B20">
+<gates>
+<gate name="G$1" symbol="DS18B20" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SO8">
+<connects>
+<connect gate="G$1" pin="DQ" pad="4"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="NC1" pad="8"/>
+<connect gate="G$1" pin="NC2" pad="7"/>
+<connect gate="G$1" pin="NC3" pad="6"/>
+<connect gate="G$1" pin="NC4" pad="2"/>
+<connect gate="G$1" pin="NC5" pad="1"/>
 <connect gate="G$1" pin="VDD" pad="3"/>
 </connects>
 <technologies>
