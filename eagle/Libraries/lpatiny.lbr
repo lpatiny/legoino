@@ -2890,12 +2890,12 @@ Source: Kingbright .. 2_colour_led_.pdf</description>
 <pad name="I/O" x="0.635" y="5.08" drill="0.9" diameter="1.4"/>
 <pad name="DAT1" x="-0.635" y="7.62" drill="0.9" diameter="1.4"/>
 <pad name="DAT0" x="-1.905" y="5.08" drill="0.9" diameter="1.4"/>
-<pad name="+5V" x="1.905" y="7.62" drill="0.9" diameter="1.4"/>
+<pad name="PWM" x="1.905" y="7.62" drill="0.9" diameter="1.4"/>
 <pad name="+12V" x="-3.175" y="7.62" drill="0.9" diameter="1.4"/>
 <pad name="GND" x="3.175" y="5.08" drill="0.9" diameter="1.4"/>
 <text x="2.2225" y="2.8575" size="0.8128" layer="21" ratio="4">GND</text>
 <text x="-0.3175" y="2.8575" size="0.8128" layer="21" ratio="4">I/O</text>
-<text x="3.4925" y="7.3025" size="0.8128" layer="21" ratio="4">5V</text>
+<text x="2.8575" y="7.3025" size="0.8128" layer="21" ratio="4">PWM</text>
 <text x="-1.27" y="8.5725" size="0.8128" layer="21" ratio="4">DAT1</text>
 <text x="-6.0325" y="7.3025" size="0.8128" layer="21" ratio="4">12V</text>
 <text x="-4.7625" y="2.8575" size="0.8128" layer="21" ratio="4">DAT0</text>
@@ -4488,7 +4488,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <connect gate="G$1" pin="2" pad="DAT0"/>
 <connect gate="G$1" pin="3" pad="DAT1"/>
 <connect gate="G$1" pin="4" pad="I/O"/>
-<connect gate="G$1" pin="5" pad="+5V"/>
+<connect gate="G$1" pin="5" pad="PWM"/>
 <connect gate="G$1" pin="6" pad="GND"/>
 </connects>
 <technologies>
