@@ -24,8 +24,23 @@ void setup () {
 void loop () {
 
   // mp3tf.increaseVolume();
+test1();
 
-  mp3tf.setVolume (3);
+
+}
+
+void test2 () {
+   mp3tf.setVolume (30);
+  delay(200);
+  mp3tf.play (4);	
+  delay (10000);
+  mp3tf.pause ();
+  delay (500);	
+
+}
+
+void test1 () {
+   mp3tf.setVolume (3);
   delay(200);
   mp3tf.play (1);	
   delay (5000);
@@ -36,8 +51,7 @@ void loop () {
   mp3tf.play (1);	
   delay (5000);
   mp3tf.pause ();
-  delay (500);	
-
+  delay (500);	 
 }
 
 /****************************************************************
