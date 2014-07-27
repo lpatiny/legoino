@@ -10375,36 +10375,26 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="R" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="P+8" library="supply1" deviceset="+12V" device=""/>
-<part name="LED2" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="Blue"/>
-<part name="R25" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="J2" library="lpatiny" deviceset="RJ12" device="STRAIGHT" value="RJ12"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply1" deviceset="+5V" device=""/>
 <part name="R32" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="P+12" library="supply1" deviceset="+12V" device=""/>
-<part name="LED5" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="Blue"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="J3" library="lpatiny" deviceset="RJ12" device="STRAIGHT" value="RJ12"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply1" deviceset="+5V" device=""/>
 <part name="R33" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="P+13" library="supply1" deviceset="+12V" device=""/>
-<part name="LED6" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="Blue"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="J4" library="lpatiny" deviceset="RJ12" device="STRAIGHT" value="RJ12"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply1" deviceset="+5V" device=""/>
 <part name="R34" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="P+14" library="supply1" deviceset="+12V" device=""/>
-<part name="LED7" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="BLue"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="J5" library="lpatiny" deviceset="RJ12" device="STRAIGHT" value="RJ12"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply1" deviceset="+5V" device=""/>
 <part name="R35" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="P+15" library="supply1" deviceset="+12V" device=""/>
-<part name="LED8" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="Blue"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="U$6" library="lpatiny" deviceset="KPJX-4S-S" device=""/>
 <part name="LED10" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="RED"/>
@@ -10474,9 +10464,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
-<part name="RL2" library="resistor" deviceset="R-EU_" device="M0805" value="1K"/>
-<part name="RL8" library="resistor" deviceset="R-EU_" device="M0805" value="1K"/>
-<part name="RL9" library="resistor" deviceset="R-EU_" device="M0805" value="1K"/>
 <part name="I2C-J1" library="lpatiny" deviceset="RJ12" device="STRAIGHT-I2C" value="RJ12STRAIGHT-I2C"/>
 <part name="R29" library="resistor" deviceset="R-EU_" device="M0805" value="10K"/>
 <part name="R30" library="resistor" deviceset="R-EU_" device="M0805" value="10K"/>
@@ -10498,10 +10485,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
 <part name="CFG" library="lpatiny" deviceset="TAC_SWITCH" device="SMD" value="Configure"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
-<part name="LED3" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="RED"/>
-<part name="LED13" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="GREEN"/>
-<part name="LED14" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="BLUE"/>
-<part name="SUPPLY10" library="supply1" deviceset="+5V" device=""/>
 <part name="RGB-J2" library="lpatiny" deviceset="RJ12" device="STRAIGHT-RGB" value="RJ12"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
@@ -10512,13 +10495,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="RL10" library="resistor" deviceset="R-EU_" device="M0805" value="1K"/>
-<part name="RL11" library="resistor" deviceset="R-EU_" device="M0805" value="1K"/>
-<part name="RL12" library="resistor" deviceset="R-EU_" device="M0805" value="1K"/>
-<part name="LED15" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="RED"/>
-<part name="LED16" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="GREEN"/>
-<part name="LED17" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="BLUE"/>
-<part name="SUPPLY2" library="supply1" deviceset="+5V" device=""/>
 <part name="LED18" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="Blue"/>
 <part name="LED19" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="Blue"/>
 <part name="U$1" library="lpatiny" deviceset="DFPLAYER_AUDIO" device=""/>
@@ -10555,36 +10531,26 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <instance part="GND9" gate="1" x="76.2" y="289.56" rot="R90"/>
 <instance part="R" gate="G$1" x="55.88" y="284.48" rot="R90"/>
 <instance part="P+8" gate="1" x="40.64" y="284.48" rot="R90"/>
-<instance part="LED2" gate="G$1" x="58.42" y="266.7" rot="R270"/>
-<instance part="R25" gate="G$1" x="60.96" y="274.32" rot="R90"/>
 <instance part="J2" gate="G$1" x="99.06" y="294.64" rot="R90"/>
 <instance part="GND6" gate="1" x="116.84" y="289.56" rot="R90"/>
-<instance part="SUPPLY6" gate="1" x="109.22" y="284.48" rot="R270"/>
+<instance part="SUPPLY6" gate="1" x="104.14" y="276.86" rot="R180"/>
 <instance part="R32" gate="G$1" x="99.06" y="284.48" rot="R90"/>
 <instance part="P+12" gate="1" x="83.82" y="284.48" rot="R90"/>
-<instance part="LED5" gate="G$1" x="101.6" y="266.7" rot="R270"/>
-<instance part="R4" gate="G$1" x="104.14" y="279.4" rot="R90"/>
 <instance part="J3" gate="G$1" x="142.24" y="294.64" rot="R90"/>
 <instance part="GND22" gate="1" x="160.02" y="289.56" rot="R90"/>
-<instance part="SUPPLY7" gate="1" x="152.4" y="284.48" rot="R270"/>
+<instance part="SUPPLY7" gate="1" x="147.32" y="276.86" rot="R180"/>
 <instance part="R33" gate="G$1" x="142.24" y="284.48" rot="R90"/>
 <instance part="P+13" gate="1" x="127" y="284.48" rot="R90"/>
-<instance part="LED6" gate="G$1" x="144.78" y="266.7" rot="R270"/>
-<instance part="R5" gate="G$1" x="147.32" y="279.4" rot="R90"/>
 <instance part="J4" gate="G$1" x="185.42" y="294.64" rot="R90"/>
 <instance part="GND23" gate="1" x="203.2" y="289.56" rot="R90"/>
-<instance part="SUPPLY8" gate="1" x="195.58" y="284.48" rot="R270"/>
+<instance part="SUPPLY8" gate="1" x="190.5" y="276.86" rot="R180"/>
 <instance part="R34" gate="G$1" x="185.42" y="284.48" rot="R90"/>
 <instance part="P+14" gate="1" x="170.18" y="284.48" rot="R90"/>
-<instance part="LED7" gate="G$1" x="187.96" y="266.7" rot="R270"/>
-<instance part="R6" gate="G$1" x="190.5" y="279.4" rot="R90"/>
 <instance part="J5" gate="G$1" x="228.6" y="294.64" rot="R90"/>
 <instance part="GND24" gate="1" x="246.38" y="289.56" rot="R90"/>
-<instance part="SUPPLY9" gate="1" x="238.76" y="284.48" rot="R270"/>
+<instance part="SUPPLY9" gate="1" x="233.68" y="276.86" rot="R180"/>
 <instance part="R35" gate="G$1" x="228.6" y="284.48" rot="R90"/>
 <instance part="P+15" gate="1" x="213.36" y="284.48" rot="R90"/>
-<instance part="LED8" gate="G$1" x="231.14" y="266.7" rot="R270"/>
-<instance part="R7" gate="G$1" x="233.68" y="279.4" rot="R90"/>
 <instance part="GND25" gate="1" x="-43.18" y="287.02" rot="R270"/>
 <instance part="U$6" gate="G$1" x="2.54" y="286.004"/>
 <instance part="LED10" gate="G$1" x="-35.56" y="281.94" rot="MR90"/>
@@ -10618,7 +10584,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <instance part="Q5" gate="G$1" x="180.34" y="248.92"/>
 <instance part="Q6" gate="G$1" x="223.52" y="248.92"/>
 <instance part="GND29" gate="1" x="53.34" y="238.76"/>
-<instance part="+5VA2" gate="1" x="76.2" y="279.4" rot="R270"/>
+<instance part="+5VA2" gate="1" x="60.96" y="276.86" rot="R180"/>
 <instance part="U$4" gate="G$1" x="220.98" y="45.72"/>
 <instance part="GND28" gate="1" x="144.78" y="73.66"/>
 <instance part="RESET1" gate="S" x="134.62" y="83.82" rot="MR270"/>
@@ -10666,18 +10632,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <instance part="GND33" gate="1" x="307.34" y="236.22"/>
 <instance part="GND34" gate="1" x="320.04" y="236.22"/>
 <instance part="GND35" gate="1" x="332.74" y="236.22"/>
-<instance part="RL2" gate="G$1" x="330.2" y="276.86" smashed="yes" rot="MR180">
-<attribute name="NAME" x="328.295" y="277.2664" size="1.016" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="331.47" y="276.987" size="1.016" layer="96" rot="MR180"/>
-</instance>
-<instance part="RL8" gate="G$1" x="330.2" y="271.78" smashed="yes" rot="MR180">
-<attribute name="NAME" x="328.295" y="272.1864" size="1.016" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="331.47" y="271.907" size="1.016" layer="96" rot="MR180"/>
-</instance>
-<instance part="RL9" gate="G$1" x="330.2" y="266.7" smashed="yes" rot="MR180">
-<attribute name="NAME" x="328.295" y="267.1064" size="1.016" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="331.47" y="266.827" size="1.016" layer="96" rot="MR180"/>
-</instance>
 <instance part="I2C-J1" gate="G$1" x="314.96" y="27.94"/>
 <instance part="R29" gate="G$1" x="269.24" y="22.86" smashed="yes" rot="MR270">
 <attribute name="NAME" x="269.6464" y="24.13" size="1.016" layer="95" rot="MR270"/>
@@ -10709,10 +10663,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <instance part="GND38" gate="1" x="525.78" y="124.46"/>
 <instance part="CFG" gate="S" x="472.44" y="111.76" rot="MR180"/>
 <instance part="GND39" gate="1" x="459.74" y="109.22"/>
-<instance part="LED3" gate="G$1" x="342.9" y="276.86" rot="R270"/>
-<instance part="LED13" gate="G$1" x="342.9" y="271.78" rot="R270"/>
-<instance part="LED14" gate="G$1" x="342.9" y="266.7" rot="R270"/>
-<instance part="SUPPLY10" gate="1" x="347.98" y="274.32" rot="R180"/>
 <instance part="RGB-J2" gate="G$1" x="375.92" y="292.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="374.015" y="300.355" size="1.778" layer="95" rot="R90"/>
 </instance>
@@ -10731,22 +10681,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <instance part="GND3" gate="1" x="363.22" y="236.22"/>
 <instance part="GND7" gate="1" x="375.92" y="236.22"/>
 <instance part="GND10" gate="1" x="388.62" y="236.22"/>
-<instance part="RL10" gate="G$1" x="386.08" y="276.86" smashed="yes" rot="MR180">
-<attribute name="NAME" x="384.175" y="277.2664" size="1.016" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="387.35" y="276.987" size="1.016" layer="96" rot="MR180"/>
-</instance>
-<instance part="RL11" gate="G$1" x="386.08" y="271.78" smashed="yes" rot="MR180">
-<attribute name="NAME" x="384.175" y="272.1864" size="1.016" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="387.35" y="271.907" size="1.016" layer="96" rot="MR180"/>
-</instance>
-<instance part="RL12" gate="G$1" x="386.08" y="266.7" smashed="yes" rot="MR180">
-<attribute name="NAME" x="384.175" y="267.1064" size="1.016" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="387.35" y="266.827" size="1.016" layer="96" rot="MR180"/>
-</instance>
-<instance part="LED15" gate="G$1" x="398.78" y="276.86" rot="R270"/>
-<instance part="LED16" gate="G$1" x="398.78" y="271.78" rot="R270"/>
-<instance part="LED17" gate="G$1" x="398.78" y="266.7" rot="R270"/>
-<instance part="SUPPLY2" gate="1" x="403.86" y="274.32" rot="R180"/>
 <instance part="LED18" gate="G$1" x="-68.58" y="241.3"/>
 <instance part="LED19" gate="G$1" x="-68.58" y="231.14" rot="R180"/>
 <instance part="U$1" gate="G$1" x="-2.54" y="53.34"/>
@@ -10763,35 +10697,23 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <net name="+5V" class="1">
 <segment>
 <pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="104.14" y1="292.1" x2="104.14" y2="284.48" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="284.48" x2="106.68" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="292.1" x2="104.14" y2="279.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="1" pin="+5V"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<junction x="104.14" y="284.48"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="5"/>
-<wire x1="147.32" y1="292.1" x2="147.32" y2="284.48" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="284.48" x2="149.86" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="292.1" x2="147.32" y2="279.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="1" pin="+5V"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<junction x="147.32" y="284.48"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="5"/>
-<wire x1="190.5" y1="292.1" x2="190.5" y2="284.48" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="284.48" x2="193.04" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="292.1" x2="190.5" y2="279.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="1" pin="+5V"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<junction x="190.5" y="284.48"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="5"/>
-<wire x1="233.68" y1="292.1" x2="233.68" y2="284.48" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="284.48" x2="236.22" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="292.1" x2="233.68" y2="279.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="1" pin="+5V"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<junction x="233.68" y="284.48"/>
 </segment>
 <segment>
 <wire x1="241.3" y1="149.86" x2="246.38" y2="149.86" width="0.1524" layer="91"/>
@@ -10806,11 +10728,8 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 </segment>
 <segment>
 <pinref part="+5VA2" gate="1" pin="+5V"/>
-<pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="279.4" x2="60.96" y2="279.4" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="5"/>
 <wire x1="60.96" y1="279.4" x2="60.96" y2="292.1" width="0.1524" layer="91"/>
-<junction x="60.96" y="279.4"/>
 </segment>
 <segment>
 <wire x1="325.12" y1="284.48" x2="325.12" y2="289.56" width="0.1524" layer="91"/>
@@ -10855,27 +10774,9 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <label x="302.26" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED14" gate="G$1" pin="A"/>
-<pinref part="LED13" gate="G$1" pin="A"/>
-<wire x1="345.44" y1="266.7" x2="345.44" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="345.44" y1="271.78" x2="345.44" y2="276.86" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="276.86" x2="347.98" y2="276.86" width="0.1524" layer="91"/>
-<pinref part="SUPPLY10" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <wire x1="381" y1="284.48" x2="381" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="RGB-J2" gate="G$1" pin="5"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED17" gate="G$1" pin="A"/>
-<pinref part="LED16" gate="G$1" pin="A"/>
-<wire x1="401.32" y1="266.7" x2="401.32" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="LED15" gate="G$1" pin="A"/>
-<wire x1="401.32" y1="271.78" x2="401.32" y2="276.86" width="0.1524" layer="91"/>
-<wire x1="401.32" y1="276.86" x2="403.86" y2="276.86" width="0.1524" layer="91"/>
-<pinref part="SUPPLY2" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
@@ -11527,25 +11428,11 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <wire x1="99.06" y1="289.56" x2="99.06" y2="292.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="LED5" gate="G$1" pin="A"/>
-<wire x1="104.14" y1="274.32" x2="104.14" y2="266.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R33" gate="G$1" pin="2"/>
 <pinref part="J3" gate="G$1" pin="3"/>
 <wire x1="142.24" y1="289.56" x2="142.24" y2="292.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
-<wire x1="147.32" y1="274.32" x2="147.32" y2="266.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -11555,13 +11442,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <wire x1="185.42" y1="289.56" x2="185.42" y2="292.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="LED7" gate="G$1" pin="A"/>
-<wire x1="190.5" y1="274.32" x2="190.5" y2="266.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="R35" gate="G$1" pin="2"/>
@@ -11569,20 +11449,10 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <wire x1="228.6" y1="289.56" x2="228.6" y2="292.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="LED8" gate="G$1" pin="A"/>
-<wire x1="233.68" y1="274.32" x2="233.68" y2="266.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$34" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="53.34" y1="266.7" x2="53.34" y2="292.1" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="266.7" x2="53.34" y2="254" width="0.1524" layer="91"/>
-<junction x="53.34" y="266.7"/>
+<wire x1="53.34" y1="254" x2="53.34" y2="292.1" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="D@1"/>
 </segment>
 </net>
@@ -11660,10 +11530,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <net name="N$28" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
-<pinref part="LED5" gate="G$1" pin="C"/>
-<wire x1="96.52" y1="266.7" x2="96.52" y2="292.1" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="266.7" x2="96.52" y2="254" width="0.1524" layer="91"/>
-<junction x="96.52" y="266.7"/>
+<wire x1="96.52" y1="254" x2="96.52" y2="292.1" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="D@1"/>
 <junction x="96.52" y="254"/>
 </segment>
@@ -11671,10 +11538,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
-<pinref part="LED6" gate="G$1" pin="C"/>
-<wire x1="139.7" y1="266.7" x2="139.7" y2="292.1" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="266.7" x2="139.7" y2="254" width="0.1524" layer="91"/>
-<junction x="139.7" y="266.7"/>
+<wire x1="139.7" y1="254" x2="139.7" y2="292.1" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="G$1" pin="D@1"/>
 <junction x="139.7" y="254"/>
 </segment>
@@ -11682,7 +11546,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <net name="N$5" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="2"/>
-<pinref part="LED7" gate="G$1" pin="C"/>
 <wire x1="182.88" y1="266.7" x2="182.88" y2="292.1" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="266.7" x2="182.88" y2="266.7" width="0.1524" layer="91"/>
 <pinref part="Q5" gate="G$1" pin="D@1"/>
@@ -11694,10 +11557,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <net name="N$19" class="0">
 <segment>
 <pinref part="J5" gate="G$1" pin="2"/>
-<pinref part="LED8" gate="G$1" pin="C"/>
-<wire x1="226.06" y1="266.7" x2="226.06" y2="292.1" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="266.7" x2="226.06" y2="254" width="0.1524" layer="91"/>
-<junction x="226.06" y="266.7"/>
+<wire x1="226.06" y1="254" x2="226.06" y2="292.1" width="0.1524" layer="91"/>
 <pinref part="Q6" gate="G$1" pin="D@1"/>
 <junction x="226.06" y="254"/>
 </segment>
@@ -11789,13 +11649,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <pinref part="Q4" gate="G$1" pin="G"/>
 <wire x1="134.62" y1="246.38" x2="129.54" y2="246.38" width="0.1524" layer="91"/>
 <label x="129.54" y="243.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="269.24" x2="60.96" y2="266.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V/1" class="3">
@@ -11890,68 +11743,29 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <net name="N$50" class="4">
 <segment>
 <pinref part="RGB-J1" gate="G$1" pin="3"/>
-<wire x1="320.04" y1="289.56" x2="320.04" y2="271.78" width="0.1524" layer="91"/>
 <pinref part="Q9" gate="G$1" pin="D@1"/>
-<wire x1="320.04" y1="271.78" x2="320.04" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="271.78" x2="320.04" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="RL8" gate="G$1" pin="1"/>
-<junction x="320.04" y="271.78"/>
+<wire x1="320.04" y1="289.56" x2="320.04" y2="251.46" width="0.1524" layer="91"/>
 <junction x="320.04" y="251.46"/>
 </segment>
 </net>
 <net name="N$68" class="4">
 <segment>
 <pinref part="RGB-J1" gate="G$1" pin="2"/>
-<wire x1="317.5" y1="259.08" x2="317.5" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="259.08" x2="317.5" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="Q8" gate="G$1" pin="D@1"/>
-<wire x1="317.5" y1="276.86" x2="317.5" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="259.08" x2="307.34" y2="259.08" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="259.08" x2="307.34" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="276.86" x2="317.5" y2="276.86" width="0.1524" layer="91"/>
-<pinref part="RL2" gate="G$1" pin="1"/>
-<junction x="317.5" y="276.86"/>
 <junction x="307.34" y="251.46"/>
 </segment>
 </net>
 <net name="N$6" class="4">
 <segment>
 <pinref part="RGB-J1" gate="G$1" pin="4"/>
-<wire x1="322.58" y1="259.08" x2="322.58" y2="266.7" width="0.1524" layer="91"/>
 <pinref part="Q10" gate="G$1" pin="D@1"/>
-<wire x1="322.58" y1="266.7" x2="322.58" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="259.08" x2="322.58" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="259.08" x2="332.74" y2="259.08" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="259.08" x2="332.74" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="RL9" gate="G$1" pin="1"/>
-<wire x1="322.58" y1="266.7" x2="325.12" y2="266.7" width="0.1524" layer="91"/>
-<junction x="322.58" y="266.7"/>
 <junction x="332.74" y="251.46"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<wire x1="337.82" y1="276.86" x2="335.28" y2="276.86" width="0.1524" layer="91"/>
-<pinref part="RL2" gate="G$1" pin="2"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<junction x="337.82" y="276.86"/>
-<junction x="335.28" y="276.86"/>
-</segment>
-</net>
-<net name="N$37" class="0">
-<segment>
-<wire x1="335.28" y1="271.78" x2="337.82" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="RL8" gate="G$1" pin="2"/>
-<pinref part="LED13" gate="G$1" pin="C"/>
-<junction x="337.82" y="271.78"/>
-<junction x="335.28" y="271.78"/>
-</segment>
-</net>
-<net name="N$40" class="0">
-<segment>
-<wire x1="337.82" y1="266.7" x2="335.28" y2="266.7" width="0.1524" layer="91"/>
-<pinref part="RL9" gate="G$1" pin="2"/>
-<pinref part="LED14" gate="G$1" pin="C"/>
-<junction x="337.82" y="266.7"/>
-<junction x="335.28" y="266.7"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -12024,68 +11838,29 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <net name="N$10" class="4">
 <segment>
 <pinref part="RGB-J2" gate="G$1" pin="3"/>
-<wire x1="375.92" y1="289.56" x2="375.92" y2="271.78" width="0.1524" layer="91"/>
 <pinref part="Q11" gate="G$1" pin="D@1"/>
-<wire x1="375.92" y1="271.78" x2="375.92" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="381" y1="271.78" x2="375.92" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="RL11" gate="G$1" pin="1"/>
-<junction x="375.92" y="271.78"/>
+<wire x1="375.92" y1="289.56" x2="375.92" y2="251.46" width="0.1524" layer="91"/>
 <junction x="375.92" y="251.46"/>
 </segment>
 </net>
 <net name="N$20" class="4">
 <segment>
 <pinref part="RGB-J2" gate="G$1" pin="2"/>
-<wire x1="373.38" y1="259.08" x2="373.38" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="259.08" x2="373.38" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="Q7" gate="G$1" pin="D@1"/>
-<wire x1="373.38" y1="276.86" x2="373.38" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="259.08" x2="363.22" y2="259.08" width="0.1524" layer="91"/>
 <wire x1="363.22" y1="259.08" x2="363.22" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="381" y1="276.86" x2="373.38" y2="276.86" width="0.1524" layer="91"/>
-<pinref part="RL10" gate="G$1" pin="1"/>
-<junction x="373.38" y="276.86"/>
 <junction x="363.22" y="251.46"/>
 </segment>
 </net>
 <net name="N$23" class="4">
 <segment>
 <pinref part="RGB-J2" gate="G$1" pin="4"/>
-<wire x1="378.46" y1="259.08" x2="378.46" y2="266.7" width="0.1524" layer="91"/>
 <pinref part="Q12" gate="G$1" pin="D@1"/>
-<wire x1="378.46" y1="266.7" x2="378.46" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="259.08" x2="378.46" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="378.46" y1="259.08" x2="388.62" y2="259.08" width="0.1524" layer="91"/>
 <wire x1="388.62" y1="259.08" x2="388.62" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="RL12" gate="G$1" pin="1"/>
-<wire x1="378.46" y1="266.7" x2="381" y2="266.7" width="0.1524" layer="91"/>
-<junction x="378.46" y="266.7"/>
 <junction x="388.62" y="251.46"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<wire x1="393.7" y1="276.86" x2="391.16" y2="276.86" width="0.1524" layer="91"/>
-<pinref part="RL10" gate="G$1" pin="2"/>
-<pinref part="LED15" gate="G$1" pin="C"/>
-<junction x="393.7" y="276.86"/>
-<junction x="391.16" y="276.86"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
-<wire x1="391.16" y1="271.78" x2="393.7" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="RL11" gate="G$1" pin="2"/>
-<pinref part="LED16" gate="G$1" pin="C"/>
-<junction x="393.7" y="271.78"/>
-<junction x="391.16" y="271.78"/>
-</segment>
-</net>
-<net name="N$43" class="0">
-<segment>
-<wire x1="393.7" y1="266.7" x2="391.16" y2="266.7" width="0.1524" layer="91"/>
-<pinref part="RL12" gate="G$1" pin="2"/>
-<pinref part="LED17" gate="G$1" pin="C"/>
-<junction x="393.7" y="266.7"/>
-<junction x="391.16" y="266.7"/>
 </segment>
 </net>
 <net name="N$3" class="0">
