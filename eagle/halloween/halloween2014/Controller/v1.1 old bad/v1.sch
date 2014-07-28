@@ -5930,22 +5930,22 @@ Source: YH-55-10.pdf</description>
 <wire x1="-7.62" y1="12.7" x2="-7.62" y2="-10.16" width="0.4064" layer="94"/>
 <text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="BUSY" x="12.7" y="10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC" x="-12.7" y="10.16" length="middle" direction="in"/>
-<pin name="SPK1" x="-12.7" y="-2.54" length="middle" direction="nc"/>
-<pin name="RX" x="-12.7" y="7.62" length="middle" direction="out"/>
-<pin name="TX" x="-12.7" y="5.08" length="middle" direction="nc"/>
+<pin name="BUSY" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="-12.7" y="10.16" length="middle" direction="pwr"/>
+<pin name="SPK1" x="-12.7" y="-2.54" length="middle" direction="out"/>
+<pin name="RX" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="TX" x="-12.7" y="5.08" length="middle" direction="out"/>
 <pin name="DACR" x="-12.7" y="2.54" length="middle" direction="out"/>
-<pin name="IO1" x="12.7" y="-7.62" length="middle" direction="in" rot="R180"/>
-<pin name="GND1" x="12.7" y="-5.08" length="middle" direction="in" rot="R180"/>
-<pin name="IO2" x="12.7" y="-2.54" length="middle" direction="nc" rot="R180"/>
+<pin name="IO1" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND1" x="12.7" y="-5.08" length="middle" direction="sup" rot="R180"/>
+<pin name="IO2" x="12.7" y="-2.54" length="middle" rot="R180"/>
 <pin name="KEY1" x="12.7" y="0" length="middle" direction="in" rot="R180"/>
 <pin name="KEY2" x="12.7" y="2.54" length="middle" direction="in" rot="R180"/>
-<pin name="USB+" x="12.7" y="5.08" length="middle" direction="nc" rot="R180"/>
-<pin name="USB-" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
-<pin name="GND2" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="USB+" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="USB-" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="GND2" x="-12.7" y="-5.08" length="middle" direction="sup"/>
 <pin name="DACL" x="-12.7" y="0" length="middle" direction="out"/>
-<pin name="SPK2" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="SPK2" x="-12.7" y="-7.62" length="middle" direction="out"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10359,15 +10359,15 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.3048" drill="0">
+<class number="0" name="default" width="0.4064" drill="0">
 </class>
 <class number="1" name="power" width="0.4572" drill="0">
 </class>
 <class number="2" name="VIN" width="0.4572" drill="0">
 </class>
-<class number="3" name="fine" width="0.3048" drill="0">
+<class number="3" name="fine" width="0.4064" drill="0">
 </class>
-<class number="4" name="aref" width="0.3048" drill="0">
+<class number="4" name="aref" width="0.4064" drill="0">
 </class>
 </classes>
 <parts>
@@ -11066,6 +11066,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <wire x1="-27.94" y1="48.26" x2="-27.94" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="1"/>
 <wire x1="-27.94" y1="43.18" x2="-38.1" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-22.86" y="48.26"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND1"/>
@@ -11084,6 +11085,12 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <wire x1="208.28" y1="160.02" x2="200.66" y2="160.02" width="0.1524" layer="91"/>
 <label x="200.66" y="160.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="Q6" gate="G$1" pin="G"/>
+<wire x1="220.98" y1="246.38" x2="215.9" y2="246.38" width="0.1524" layer="91"/>
+<label x="215.9" y="243.84" size="1.778" layer="95"/>
+<junction x="220.98" y="246.38"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -11095,6 +11102,12 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <pinref part="CON1" gate="G$1" pin="MISO"/>
 <wire x1="208.28" y1="162.56" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
 <label x="200.66" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q5" gate="G$1" pin="G"/>
+<wire x1="177.8" y1="246.38" x2="172.72" y2="246.38" width="0.1524" layer="91"/>
+<label x="172.72" y="243.84" size="1.778" layer="95"/>
+<junction x="177.8" y="246.38"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -11146,11 +11159,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 </net>
 <net name="RD-" class="0">
 <segment>
-<pinref part="RL1" gate="G$1" pin="1"/>
-<wire x1="-83.82" y1="243.84" x2="-88.9" y2="243.84" width="0.1524" layer="91"/>
-<label x="-93.98" y="243.84" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$4" gate="G$1" pin="D-"/>
 <wire x1="198.12" y1="60.96" x2="180.34" y2="60.96" width="0.1524" layer="91"/>
 <label x="180.34" y="60.96" size="1.778" layer="95"/>
@@ -11162,11 +11170,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 </segment>
 </net>
 <net name="RD+" class="0">
-<segment>
-<pinref part="RL7" gate="G$1" pin="1"/>
-<wire x1="-83.82" y1="228.6" x2="-88.9" y2="228.6" width="0.1524" layer="91"/>
-<label x="-93.98" y="228.6" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="D+"/>
 <wire x1="198.12" y1="58.42" x2="180.34" y2="58.42" width="0.1524" layer="91"/>
@@ -11329,6 +11332,11 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <pinref part="U$4" gate="G$1" pin="PD5(XCK/CTS)"/>
 <wire x1="246.38" y1="27.94" x2="261.62" y2="27.94" width="0.1524" layer="91"/>
 <label x="256.54" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RL7" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="228.6" x2="-88.9" y2="228.6" width="0.1524" layer="91"/>
+<label x="-93.98" y="228.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -11589,6 +11597,11 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <pinref part="U$4" gate="G$1" pin="PB0(SS)"/>
 <wire x1="246.38" y1="38.1" x2="261.62" y2="38.1" width="0.1524" layer="91"/>
 <label x="256.54" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RL1" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="243.84" x2="-88.9" y2="243.84" width="0.1524" layer="91"/>
+<label x="-93.98" y="243.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D-USB" class="0">
@@ -11870,6 +11883,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <wire x1="-25.4" y1="60.96" x2="-25.4" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-25.4" y1="63.5" x2="-27.94" y2="63.5" width="0.1524" layer="91"/>
+<junction x="-15.24" y="60.96"/>
 </segment>
 </net>
 <net name="D4*" class="0">
@@ -11889,6 +11903,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <pinref part="U$1" gate="G$1" pin="TX"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="58.42" x2="-27.94" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-15.24" y="58.42"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -11909,32 +11924,9 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <wire x1="-33.02" y1="53.34" x2="-38.1" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D15*" class="0">
-<segment>
-<pinref part="Q6" gate="G$1" pin="G"/>
-<wire x1="220.98" y1="246.38" x2="215.9" y2="246.38" width="0.1524" layer="91"/>
-<label x="215.9" y="243.84" size="1.778" layer="95"/>
-<junction x="220.98" y="246.38"/>
-</segment>
-</net>
-<net name="D14*" class="0">
-<segment>
-<pinref part="Q5" gate="G$1" pin="G"/>
-<wire x1="177.8" y1="246.38" x2="172.72" y2="246.38" width="0.1524" layer="91"/>
-<label x="172.72" y="243.84" size="1.778" layer="95"/>
-<junction x="177.8" y="246.38"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="202,1,-27.94,162.56,X4,4,,,,"/>
-<approved hash="202,1,-7.62,71.12,U$2,EN1,,,,"/>
-<approved hash="202,1,15.24,63.5,U$2,EN2,,,,"/>
-<approved hash="202,1,15.24,78.74,U$2,EN4,,,,"/>
-<approved hash="202,1,15.24,71.12,U$2,EN3,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
