@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -721,7 +721,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <pad name="+5V" x="1.905" y="8.89" drill="0.9" diameter="1.4"/>
 <pad name="+12V" x="-3.175" y="8.89" drill="0.9" diameter="1.4"/>
 <pad name="GND1" x="3.175" y="6.35" drill="0.9" diameter="1.4"/>
-<text x="-5.08" y="-4.445" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.175" y="11.43" size="1.27" layer="21">&gt;NAME</text>
 <text x="2.2225" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
 <text x="-0.9525" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
 <text x="3.4925" y="8.5725" size="0.8128" layer="21" ratio="4">5V</text>
@@ -770,7 +770,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <pad name="+5V" x="1.905" y="8.89" drill="0.9" diameter="1.4"/>
 <pad name="+12V" x="-3.175" y="8.89" drill="0.9" diameter="1.4"/>
 <pad name="GND1" x="3.175" y="6.35" drill="0.9" diameter="1.4"/>
-<text x="-5.08" y="-4.445" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="11.43" size="1.27" layer="21">&gt;NAME</text>
 <text x="2.2225" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
 <text x="-0.9525" y="4.1275" size="0.8128" layer="21" ratio="4">GND</text>
 <text x="3.4925" y="8.5725" size="0.8128" layer="21" ratio="4">5V</text>
@@ -3122,6 +3122,12 @@ Source: Kingbright .. 2_colour_led_.pdf</description>
 <rectangle x1="4.8895" y1="7.0866" x2="5.3467" y2="8.1788" layer="21"/>
 <rectangle x1="5.6769" y1="7.0866" x2="6.1341" y2="8.1788" layer="21"/>
 </package>
+<package name="STAR">
+<smd name="AGND" x="0.635" y="-0.635" dx="0" dy="0" layer="1" roundness="5" rot="R90"/>
+<smd name="DGND" x="0.635" y="0.635" dx="0" dy="0" layer="1" roundness="5" rot="R90"/>
+<rectangle x1="0" y1="-1.27" x2="1.27" y2="1.27" layer="1"/>
+<smd name="GND" x="0.635" y="0" dx="0" dy="0" layer="1" roundness="5" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MAT-P">
@@ -4381,6 +4387,12 @@ Source: Kingbright .. 2_colour_led_.pdf</description>
 <pin name="AREF" x="22.86" y="22.86" length="middle" rot="R180"/>
 <pin name="GND2" x="22.86" y="25.4" length="middle" rot="R180"/>
 <pin name="AVCC" x="-25.4" y="45.72" length="middle"/>
+</symbol>
+<symbol name="STARGND">
+<pin name="GND" x="-5.08" y="0" length="middle" direction="sup"/>
+<pin name="AGND" x="7.62" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="DGND" x="7.62" y="-2.54" length="middle" direction="out" rot="R180"/>
+<rectangle x1="0" y1="-2.54" x2="2.54" y2="2.54" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5913,6 +5925,23 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="G$1" pin="VCC1" pad="52"/>
 <connect gate="G$1" pin="XTAL1" pad="24"/>
 <connect gate="G$1" pin="XTAL2" pad="23"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STARGND">
+<gates>
+<gate name="G$1" symbol="STARGND" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="STAR">
+<connects>
+<connect gate="G$1" pin="AGND" pad="AGND"/>
+<connect gate="G$1" pin="DGND" pad="DGND"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
