@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5475,7 +5475,7 @@ Source: http://www.infineon.com/dgdl/BSP613P_Rev2.4.pdf</description>
 </class>
 <class number="1" name="power" width="0.9144" drill="0">
 </class>
-<class number="2" name="highpower" width="1.3716" drill="0">
+<class number="2" name="highpower" width="0.9144" drill="0">
 </class>
 </classes>
 <parts>
@@ -5643,7 +5643,7 @@ Source: http://www.infineon.com/dgdl/BSP613P_Rev2.4.pdf</description>
 <wire x1="101.6" y1="162.56" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PWM" class="0">
+<net name="PWM" class="1">
 <segment>
 <pinref part="I/O_PWM" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="180.34" x2="111.76" y2="180.34" width="0.1524" layer="91"/>
