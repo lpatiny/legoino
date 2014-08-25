@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.0.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -18,7 +18,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -34,15 +34,15 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="12" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -6260,9 +6260,6 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="8mil"/>
-<param name="AutoGrid" value="0"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="0"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -6395,8 +6392,8 @@ design rules under a new name.</description>
 <attribute name="NAME" x="32.385" y="38.1" size="1.27" layer="25"/>
 <attribute name="VALUE" x="31.75" y="37.7825" size="1.27" layer="27"/>
 </element>
-<element name="F2" library="lpatiny" package="C1812" value="0.5A" x="2.54" y="62.23" rot="R90"/>
-<element name="F1" library="lpatiny" package="C1812" value="0.5A" x="2.54" y="5.08" rot="MR270"/>
+<element name="F2" library="lpatiny" package="C1812" value="1.2A" x="2.54" y="62.23" rot="R90"/>
+<element name="F1" library="lpatiny" package="C1812" value="1.2A" x="2.54" y="5.08" rot="MR270"/>
 <element name="C11" library="rcl" package="C1206" value="100nF" x="62.23" y="38.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="63.5" y="39.37" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="59.69" y="40.64" size="1.27" layer="27" rot="R270"/>
@@ -6447,7 +6444,10 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="100.33" y="127" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="100.33" y="127" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="U$4" library="adafruit" package="TQFP44" value="ATMEGA32U4-AU" x="52.07" y="35.56" rot="R270"/>
+<element name="U$4" library="adafruit" package="TQFP44" value="32U4" x="52.07" y="35.56" smashed="yes" rot="R270">
+<attribute name="NAME" x="59.055" y="39.37" size="1.778" layer="25" rot="R270"/>
+<attribute name="VALUE" x="49.6649" y="38.735" size="1.778" layer="27" rot="R270"/>
+</element>
 <element name="RESET1" library="lpatiny" package="TACTILE_SWITCH_SMD" value="Reset uC" x="29.21" y="31.75" rot="R180"/>
 <element name="C2" library="rcl" package="C1206" value="22pF" x="43.18" y="38.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="44.45" y="39.37" size="1.27" layer="26" rot="MR0"/>
@@ -6467,7 +6467,7 @@ design rules under a new name.</description>
 </element>
 <element name="R15" library="resistor" package="M0805" value="10k" x="26.67" y="31.75" smashed="yes" rot="MR90">
 <attribute name="NAME" x="27.686" y="30.734" size="1.27" layer="26" rot="MR90"/>
-<attribute name="VALUE" x="27.8765" y="30.4165" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="24.384" y="30.734" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="C3" library="rcl" package="C1206" value="100nF" x="50.4825" y="44.1325" smashed="yes" rot="R180">
 <attribute name="NAME" x="51.7525" y="42.8625" size="1.27" layer="25" rot="R180"/>
@@ -6485,11 +6485,11 @@ design rules under a new name.</description>
 </element>
 <element name="R24" library="resistor" package="M1206" value="22" x="16.51" y="39.37" smashed="yes" rot="R180">
 <attribute name="NAME" x="17.78" y="38.1" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="13.335" y="40.005" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="17.145" y="41.275" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R31" library="resistor" package="M1206" value="22" x="16.51" y="42.545" smashed="yes" rot="R180">
 <attribute name="NAME" x="17.78" y="41.275" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="13.335" y="42.8625" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="17.145" y="45.4025" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C7" library="rcl" package="C1206" value="10uF" x="16.51" y="40.64" smashed="yes" rot="MR90">
 <attribute name="NAME" x="17.78" y="39.37" size="1.27" layer="26" rot="MR90"/>
@@ -6518,23 +6518,23 @@ design rules under a new name.</description>
 <element name="I2C-J1" library="lpatiny" package="RJ12-STRAIGHT-I2C" value="RJ12STRAIGHT-I2C" x="60.96" y="15.24" rot="R180"/>
 <element name="R29" library="resistor" package="M0805" value="10K" x="58.42" y="19.05" smashed="yes" rot="MR180">
 <attribute name="NAME" x="57.404" y="18.034" size="1.27" layer="26" rot="MR180"/>
-<attribute name="VALUE" x="55.8165" y="58.801" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="56.769" y="21.336" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="R30" library="resistor" package="M0805" value="10K" x="63.5" y="19.05" smashed="yes" rot="MR0">
 <attribute name="NAME" x="64.516" y="20.066" size="1.27" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="66.7385" y="16.764" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="64.8335" y="20.2565" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="U$3" library="lpatiny" package="SZ05-ZIGBEE3" value="SZ05-ZIGBEESMD" x="62.23" y="36.83" smashed="yes" rot="MR270">
 <attribute name="NAME" x="51.027" y="42.0792" size="1.27" layer="26" rot="MR270"/>
-<attribute name="VALUE" x="48.614" y="43.0317" size="1.27" layer="28" rot="MR270"/>
+<attribute name="VALUE" x="74.014" y="44.3017" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="R8" library="rcl" package="R0805" value="1K" x="64.77" y="24.13" smashed="yes" rot="MR0">
 <attribute name="NAME" x="65.405" y="25.4" size="1.27" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="63.1825" y="23.495" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="65.7225" y="21.9075" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="R11" library="rcl" package="R0805" value="1K" x="59.69" y="24.13" smashed="yes" rot="MR180">
 <attribute name="NAME" x="59.055" y="22.86" size="1.27" layer="26" rot="MR180"/>
-<attribute name="VALUE" x="61.2775" y="24.765" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="58.7375" y="23.1775" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="LED9" library="adafruit" package="CHIP-LED0805" value="RED" x="81.28" y="40.64" smashed="yes">
 <attribute name="NAME" x="80.01" y="39.37" size="1.27" layer="25" rot="R90"/>
@@ -6580,16 +6580,30 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="67.31" y="24.13" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="67.31" y="24.13" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="LED18" library="adafruit" package="CHIPLED_1206" value="Blue" x="15.24" y="33.02" rot="R90"/>
-<element name="LED19" library="adafruit" package="CHIPLED_1206" value="Blue" x="15.24" y="35.56" rot="R90"/>
+<element name="LED18" library="adafruit" package="CHIPLED_1206" value="Blue" x="15.24" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.51" y="31.75" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="16.51" y="31.75" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="LED19" library="adafruit" package="CHIPLED_1206" value="Blue" x="15.24" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.51" y="34.29" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="16.51" y="38.1" size="1.27" layer="27" rot="R180"/>
+</element>
 <element name="U$1" library="lpatiny" package="DIL16-7" value="DFPLAYER_AUDIO" x="86.36" y="15.24"/>
-<element name="R1" library="rcl" package="R0805" value="1k" x="80.01" y="15.24" rot="R90"/>
-<element name="R2" library="rcl" package="R0805" value="1k" x="82.55" y="15.24" rot="R90"/>
-<element name="X1" library="con-lumberg" package="1503_09" value="1503_09" x="96.52" y="36.83" rot="R270">
+<element name="R1" library="rcl" package="R0805" value="1k" x="80.01" y="15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="78.74" y="14.605" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="78.74" y="14.605" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R2" library="rcl" package="R0805" value="1k" x="82.55" y="15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="81.28" y="14.605" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="85.09" y="14.605" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="X1" library="con-lumberg" package="1503_09" value="1503_09" x="96.52" y="36.83" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="96.52" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="96.52" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="96.52" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="1243244" x="96.52" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="103.76" y="36.83" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="88.71" y="40.3225" size="1.27" layer="27" rot="R270"/>
 </element>
 </elements>
 <signals>

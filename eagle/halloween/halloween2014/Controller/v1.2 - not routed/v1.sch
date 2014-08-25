@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.0.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -10399,8 +10399,8 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="U$6" library="lpatiny" deviceset="KPJX-4S-S" device=""/>
 <part name="LED10" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="RED"/>
 <part name="RL3" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
-<part name="F2" library="lpatiny" deviceset="POLYSWITCH" device="SMD1812" value="0.5A"/>
-<part name="F1" library="lpatiny" deviceset="POLYSWITCH" device="SMD1812" value="0.5A"/>
+<part name="F2" library="lpatiny" deviceset="POLYSWITCH" device="SMD1812" value="1.2A"/>
+<part name="F1" library="lpatiny" deviceset="POLYSWITCH" device="SMD1812" value="1.2A"/>
 <part name="P+17" library="supply1" deviceset="+12V" device=""/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
@@ -10425,7 +10425,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="Q6" library="infineon" deviceset="BSP613P" device="" value="BSP75"/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="+5VA2" library="supply1" deviceset="+5V" device=""/>
-<part name="U$4" library="adafruit" deviceset="ATMEGA32U4" device="-AU"/>
+<part name="U$4" library="adafruit" deviceset="ATMEGA32U4" device="-AU" value="32U4"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="RESET1" library="lpatiny" deviceset="TAC_SWITCH" device="SMD" value="Reset uC"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
