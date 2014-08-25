@@ -10397,7 +10397,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="P+15" library="supply1" deviceset="+12V" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="U$6" library="lpatiny" deviceset="KPJX-4S-S" device=""/>
-<part name="LED10" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="RED"/>
+<part name="LED10" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="RED"/>
 <part name="RL3" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="F2" library="lpatiny" deviceset="POLYSWITCH" device="SMD1812" value="1.2A"/>
 <part name="F1" library="lpatiny" deviceset="POLYSWITCH" device="SMD1812" value="1.2A"/>
@@ -10409,7 +10409,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
 <part name="D2" library="lpatiny" deviceset="1N581*" device="D1206" value="1N581D1206"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="LED4" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="RED"/>
+<part name="LED4" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="RED"/>
 <part name="RL4" library="resistor" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="D3" library="lpatiny" deviceset="1N581*" device="D1206" value="1N581D1206"/>
 <part name="U$7" library="MyPOW" deviceset="VUSB" device=""/>
@@ -10495,8 +10495,8 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="LED18" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="Blue"/>
-<part name="LED19" library="adafruit" deviceset="LED" device="CHIPLED_1206" value="Blue"/>
+<part name="LED18" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="Blue"/>
+<part name="LED19" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="Blue"/>
 <part name="U$1" library="lpatiny" deviceset="DFPLAYER_AUDIO" device=""/>
 <part name="+5VA1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
