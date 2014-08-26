@@ -5692,10 +5692,10 @@ Source: YH-55-10.pdf</description>
 <text x="19.0434" y="12.019" size="1.4" layer="25" font="vector" rot="R180">GND</text>
 </package>
 <package name="SZ05-ZIGBEE3">
-<wire x1="-8.8152" y1="10.971" x2="10.2298" y2="10.971" width="0.127" layer="21"/>
-<wire x1="10.2298" y1="10.971" x2="10.2298" y2="-12.399" width="0.127" layer="21"/>
+<wire x1="-8.8152" y1="16.051" x2="10.2298" y2="16.051" width="0.127" layer="21"/>
+<wire x1="10.2298" y1="16.051" x2="10.2298" y2="-12.399" width="0.127" layer="21"/>
 <wire x1="10.2298" y1="-12.399" x2="-8.8152" y2="-12.399" width="0.127" layer="21"/>
-<wire x1="-8.8152" y1="-12.399" x2="-8.8152" y2="10.971" width="0.127" layer="21"/>
+<wire x1="-8.8152" y1="-12.399" x2="-8.8152" y2="16.051" width="0.127" layer="21"/>
 <text x="-1.4392" y="8.663" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.7092" y="-11.784" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-9.5734" y="-6.0571" size="0.8128" layer="25" font="vector" rot="R180">IO9</text>
@@ -5714,34 +5714,41 @@ Source: YH-55-10.pdf</description>
 <text x="13.8634" y="-1.891" size="0.8128" layer="25" font="vector" rot="R180">SGND</text>
 <text x="13.3284" y="1.859" size="0.8128" layer="25" font="vector" rot="R180">VCC</text>
 <text x="13.3284" y="3.129" size="0.8128" layer="25" font="vector" rot="R180">GND</text>
-<smd name="IO3" x="8.89" y="8.89" dx="1.27" dy="0.635" layer="1"/>
-<smd name="IO4" x="8.89" y="7.62" dx="1.27" dy="0.635" layer="1"/>
-<smd name="IO5" x="8.89" y="6.35" dx="1.27" dy="0.635" layer="1"/>
-<smd name="IO6" x="8.89" y="5.08" dx="1.27" dy="0.635" layer="1"/>
-<smd name="IO7" x="8.89" y="3.81" dx="1.27" dy="0.635" layer="1"/>
-<smd name="GND" x="8.89" y="2.54" dx="1.27" dy="0.635" layer="1"/>
-<smd name="VCC" x="8.89" y="1.27" dx="1.27" dy="0.635" layer="1"/>
-<smd name="RX1" x="8.89" y="0" dx="1.27" dy="0.635" layer="1"/>
-<smd name="TX1" x="8.89" y="-1.27" dx="1.27" dy="0.635" layer="1"/>
-<smd name="SND" x="8.89" y="-2.54" dx="1.27" dy="0.635" layer="1"/>
-<smd name="TX2" x="8.89" y="-3.81" dx="1.27" dy="0.635" layer="1"/>
-<smd name="RX2" x="8.89" y="-5.08" dx="1.27" dy="0.635" layer="1"/>
-<smd name="MS" x="8.89" y="-6.35" dx="1.27" dy="0.635" layer="1"/>
-<smd name="RST" x="8.89" y="-7.62" dx="1.27" dy="0.635" layer="1"/>
-<smd name="IO1" x="-7.62" y="8.89" dx="1.27" dy="0.635" layer="1"/>
-<smd name="IO2" x="-7.62" y="7.62" dx="1.27" dy="0.635" layer="1"/>
-<smd name="AD1" x="-7.62" y="6.35" dx="1.27" dy="0.635" layer="1"/>
-<smd name="AD2" x="-7.62" y="5.08" dx="1.27" dy="0.635" layer="1"/>
-<smd name="AD3" x="-7.62" y="3.81" dx="1.27" dy="0.635" layer="1"/>
-<smd name="AD4" x="-7.62" y="2.54" dx="1.27" dy="0.635" layer="1"/>
-<smd name="RUN" x="-7.62" y="1.27" dx="1.27" dy="0.635" layer="1"/>
-<smd name="NET" x="-7.62" y="0" dx="1.27" dy="0.635" layer="1"/>
-<smd name="ALM" x="-7.62" y="-1.27" dx="1.27" dy="0.635" layer="1"/>
-<smd name="SLD" x="-7.62" y="-2.54" dx="1.27" dy="0.635" layer="1"/>
-<smd name="C485" x="-7.62" y="-3.81" dx="1.27" dy="0.635" layer="1"/>
-<smd name="IO8" x="-7.62" y="-5.08" dx="1.27" dy="0.635" layer="1"/>
-<smd name="IO9" x="-7.62" y="-6.35" dx="1.27" dy="0.635" layer="1"/>
-<smd name="CFG" x="-7.62" y="-7.62" dx="1.27" dy="0.635" layer="1"/>
+<smd name="IO3" x="8.89" y="8.89" dx="2.54" dy="0.635" layer="1"/>
+<smd name="IO4" x="8.89" y="7.62" dx="2.54" dy="0.635" layer="1"/>
+<smd name="IO5" x="8.89" y="6.35" dx="2.54" dy="0.635" layer="1"/>
+<smd name="IO6" x="8.89" y="5.08" dx="2.54" dy="0.635" layer="1"/>
+<smd name="IO7" x="8.89" y="3.81" dx="2.54" dy="0.635" layer="1"/>
+<smd name="GND" x="8.89" y="2.54" dx="2.54" dy="0.635" layer="1"/>
+<smd name="VCC" x="8.89" y="1.27" dx="2.54" dy="0.635" layer="1"/>
+<smd name="RX1" x="8.89" y="0" dx="2.54" dy="0.635" layer="1"/>
+<smd name="TX1" x="8.89" y="-1.27" dx="2.54" dy="0.635" layer="1"/>
+<smd name="SND" x="8.89" y="-2.54" dx="2.54" dy="0.635" layer="1"/>
+<smd name="TX2" x="8.89" y="-3.81" dx="2.54" dy="0.635" layer="1"/>
+<smd name="RX2" x="8.89" y="-5.08" dx="2.54" dy="0.635" layer="1"/>
+<smd name="MS" x="8.89" y="-6.35" dx="2.54" dy="0.635" layer="1"/>
+<smd name="RST" x="8.89" y="-7.62" dx="2.54" dy="0.635" layer="1"/>
+<smd name="IO1" x="-7.62" y="8.89" dx="2.54" dy="0.635" layer="1"/>
+<smd name="IO2" x="-7.62" y="7.62" dx="2.54" dy="0.635" layer="1"/>
+<smd name="AD1" x="-7.62" y="6.35" dx="2.54" dy="0.635" layer="1"/>
+<smd name="AD2" x="-7.62" y="5.08" dx="2.54" dy="0.635" layer="1"/>
+<smd name="AD3" x="-7.62" y="3.81" dx="2.54" dy="0.635" layer="1"/>
+<smd name="AD4" x="-7.62" y="2.54" dx="2.54" dy="0.635" layer="1"/>
+<smd name="RUN" x="-7.62" y="1.27" dx="2.54" dy="0.635" layer="1"/>
+<smd name="NET" x="-7.62" y="0" dx="2.54" dy="0.635" layer="1"/>
+<smd name="ALM" x="-7.62" y="-1.27" dx="2.54" dy="0.635" layer="1"/>
+<smd name="SLD" x="-7.62" y="-2.54" dx="2.54" dy="0.635" layer="1"/>
+<smd name="C485" x="-7.62" y="-3.81" dx="2.54" dy="0.635" layer="1"/>
+<smd name="IO8" x="-7.62" y="-5.08" dx="2.54" dy="0.635" layer="1"/>
+<smd name="IO9" x="-7.62" y="-6.35" dx="2.54" dy="0.635" layer="1"/>
+<smd name="CFG" x="-7.62" y="-7.62" dx="2.54" dy="0.635" layer="1"/>
+<rectangle x1="8.255" y1="-10.16" x2="9.525" y2="-8.89" layer="21"/>
+<rectangle x1="8.255" y1="-12.065" x2="9.525" y2="-11.43" layer="21"/>
+<rectangle x1="-8.255" y1="-10.16" x2="-6.985" y2="-8.89" layer="21"/>
+<rectangle x1="-8.255" y1="-12.065" x2="-6.985" y2="-11.43" layer="21"/>
+<rectangle x1="-8.89" y1="10.795" x2="-6.35" y2="15.875" layer="21"/>
+<rectangle x1="-5.08" y1="10.795" x2="-2.54" y2="15.875" layer="21"/>
+<rectangle x1="3.175" y1="12.065" x2="5.715" y2="17.145" layer="21" rot="R90"/>
 </package>
 <package name="DIL16-7">
 <wire x1="-10.033" y1="-1.27" x2="-10.033" y2="-7.874" width="0.1524" layer="21"/>
@@ -5750,23 +5757,80 @@ Source: YH-55-10.pdf</description>
 <wire x1="-10.033" y1="7.874" x2="-10.033" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="-10.033" y1="7.874" x2="10.033" y2="7.874" width="0.1524" layer="21"/>
 <wire x1="-10.033" y1="-7.874" x2="10.033" y2="-7.874" width="0.1524" layer="21"/>
-<pad name="1" x="-8.89" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="2" x="-6.35" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="3" x="-3.81" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="4" x="-1.27" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="5" x="1.27" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="6" x="3.81" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="7" x="6.35" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="8" x="8.89" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="9" x="8.89" y="8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="10" x="6.35" y="8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="11" x="3.81" y="8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="12" x="1.27" y="8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="13" x="-1.27" y="8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="14" x="-3.81" y="8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="15" x="-6.35" y="8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="16" x="-8.89" y="8.89" drill="0.9" shape="long" rot="R90"/>
+<pad name="1" x="-8.89" y="-8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="2" x="-6.35" y="-8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="3" x="-3.81" y="-8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="4" x="-1.27" y="-8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="5" x="1.27" y="-8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="6" x="3.81" y="-8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="7" x="6.35" y="-8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="8" x="8.89" y="-8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="11" x="3.81" y="8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="12" x="1.27" y="8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="13" x="-1.27" y="8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="14" x="-3.81" y="8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="15" x="-6.35" y="8.89" drill="1.1" shape="long" rot="R90"/>
+<pad name="16" x="-8.89" y="8.89" drill="1.1" shape="long" rot="R90"/>
 <rectangle x1="10.16" y1="-3.81" x2="11.43" y2="3.81" layer="21"/>
+</package>
+<package name="SZ05-ZIGBEE4">
+<wire x1="10.2298" y1="10.971" x2="10.2298" y2="-12.399" width="0.127" layer="21"/>
+<wire x1="10.2298" y1="-12.399" x2="-8.8152" y2="-12.399" width="0.127" layer="21"/>
+<wire x1="-8.8152" y1="-12.399" x2="-8.8152" y2="10.971" width="0.127" layer="21"/>
+<pad name="IO1" x="-6.985" y="8.89" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="IO2" x="-6.985" y="7.62" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="AD1" x="-6.985" y="6.35" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="AD2" x="-6.985" y="5.08" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="AD3" x="-6.985" y="3.81" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="AD4" x="-6.985" y="2.54" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="RUN" x="-6.985" y="1.27" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="NET" x="-6.985" y="0" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="ALM" x="-6.985" y="-1.27" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="SLD" x="-6.985" y="-2.54" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="C485" x="-6.985" y="-3.81" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="IO8" x="-6.985" y="-5.08" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="IO9" x="-6.985" y="-6.35" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="CFG" x="-6.985" y="-7.62" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="RST" x="8.255" y="-7.62" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="MS" x="8.255" y="-6.35" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="RX2" x="8.255" y="-5.08" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="TX2" x="8.255" y="-3.81" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="SND" x="8.255" y="-2.54" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="TX1" x="8.255" y="-1.27" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="RX1" x="8.255" y="0" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="VCC" x="8.255" y="1.27" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="GND" x="8.255" y="2.54" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="IO7" x="8.255" y="3.81" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="IO6" x="8.255" y="5.08" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="IO5" x="8.255" y="6.35" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="IO4" x="8.255" y="7.62" drill="0.7" diameter="1.016" shape="long"/>
+<pad name="IO3" x="8.255" y="8.89" drill="0.7" diameter="1.016" shape="long"/>
+<text x="-8.89" y="-6.0325" size="0.8128" layer="21" font="vector" rot="R180">IO9</text>
+<text x="-8.89" y="-4.7625" size="0.8128" layer="21" font="vector" rot="R180">IO8</text>
+<text x="-8.89" y="-7.3025" size="0.8128" layer="21" font="vector" rot="R180">CFG</text>
+<text x="-8.89" y="-0.9525" size="0.8128" layer="21" font="vector" rot="R180">ALM</text>
+<text x="-8.89" y="0.3175" size="0.8128" layer="21" font="vector" rot="R180">NET</text>
+<text x="-8.89" y="-2.2225" size="0.8128" layer="21" font="vector" rot="R180">SLP</text>
+<text x="-8.89" y="1.5875" size="0.8128" layer="21" font="vector" rot="R180">RUN</text>
+<text x="-8.89" y="2.8575" size="0.8128" layer="21" font="vector" rot="R180">AD4</text>
+<text x="12.7" y="-4.7625" size="0.8128" layer="21" font="vector" rot="R180">RX2</text>
+<text x="12.7" y="-3.4925" size="0.8128" layer="21" font="vector" rot="R180">TX2</text>
+<text x="12.7" y="-7.3025" size="0.8128" layer="21" font="vector" rot="R180">RST</text>
+<text x="12.7" y="-0.9525" size="0.8128" layer="21" font="vector" rot="R180">TX1</text>
+<text x="12.7" y="0.3175" size="0.8128" layer="21" font="vector" rot="R180">RX1</text>
+<text x="13.335" y="-2.2225" size="0.8128" layer="21" font="vector" rot="R180">SGND</text>
+<text x="12.7" y="1.5875" size="0.8128" layer="21" font="vector" rot="R180">VCC</text>
+<text x="12.7" y="2.8575" size="0.8128" layer="21" font="vector" rot="R180">GND</text>
+<text x="-2.7092" y="8.663" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.7092" y="-11.784" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-8.8152" y1="16.051" x2="10.2298" y2="16.051" width="0.127" layer="21"/>
+<wire x1="10.2298" y1="16.051" x2="10.2298" y2="-12.399" width="0.127" layer="21"/>
+<wire x1="-8.8152" y1="-12.399" x2="-8.8152" y2="16.051" width="0.127" layer="21"/>
+<rectangle x1="-8.89" y1="10.795" x2="-6.35" y2="15.875" layer="21"/>
+<rectangle x1="-5.08" y1="10.795" x2="-2.54" y2="15.875" layer="21"/>
+<rectangle x1="3.175" y1="12.065" x2="5.715" y2="17.145" layer="21" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -6330,6 +6394,23 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="NET" pad="NET"/>
 <connect gate="G$1" pin="RNU" pad="RUN"/>
 <connect gate="G$1" pin="RST" pad="RST" route="any"/>
+<connect gate="G$1" pin="RX1" pad="RX1"/>
+<connect gate="G$1" pin="SGND" pad="SND"/>
+<connect gate="G$1" pin="TX1" pad="TX1"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="THROUGHHOLE" package="SZ05-ZIGBEE4">
+<connects>
+<connect gate="G$1" pin="ALM" pad="ALM"/>
+<connect gate="G$1" pin="CFG" pad="CFG"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="NET" pad="NET"/>
+<connect gate="G$1" pin="RNU" pad="RUN"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
 <connect gate="G$1" pin="RX1" pad="RX1"/>
 <connect gate="G$1" pin="SGND" pad="SND"/>
 <connect gate="G$1" pin="TX1" pad="TX1"/>
@@ -10151,8 +10232,8 @@ Source: http://www.cypressindustries.com/pdf/32005-301.pdf</description>
 <wire x1="3.81" y1="-6.35" x2="3.81" y2="6.35" width="0.254" layer="94"/>
 <wire x1="3.81" y1="6.35" x2="1.27" y2="6.35" width="0.254" layer="94"/>
 <wire x1="1.27" y1="6.35" x2="0" y2="5.08" width="0.254" layer="94"/>
-<text x="-2.54" y="11.43" size="1.778" layer="95">&gt;NAME</text>
-<text x="10.16" y="-7.62" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<text x="-2.54" y="11.43" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="10.16" y="-7.62" size="1.778" layer="96" font="vector" rot="R90">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="5.08" visible="pin" direction="pas"/>
 <pin name="2" x="-5.08" y="2.54" visible="pin" direction="pas"/>
 <pin name="3" x="-5.08" y="0" visible="pin" direction="pas"/>
@@ -10170,7 +10251,7 @@ Source: http://www.cypressindustries.com/pdf/32005-301.pdf</description>
 <wire x1="7.62" y1="2.54" x2="7.62" y2="17.78" width="0.254" layer="94" style="shortdash"/>
 <wire x1="7.62" y1="17.78" x2="5.08" y2="20.32" width="0.254" layer="94" style="shortdash" curve="90"/>
 <wire x1="5.08" y1="20.32" x2="0" y2="20.32" width="0.254" layer="94" style="shortdash"/>
-<text x="7.62" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <pin name="S1" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="S2" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="S3" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
