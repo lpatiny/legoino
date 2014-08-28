@@ -23,15 +23,35 @@ void setup () {
 //
 void loop () {
 
- // mp3tf.increaseVolume();
-  delay(500);
-  // mp3tf.setVolume (20);
-  //delay(100);
-  mp3tf.play (1);	
-  delay (2000);
+  // mp3tf.increaseVolume();
+test1();
+
+
+}
+
+void test2 () {
+   mp3tf.setVolume (30);
+  delay(200);
+  mp3tf.play (4);	
+  delay (10000);
   mp3tf.pause ();
   delay (500);	
 
+}
+
+void test1 () {
+   mp3tf.setVolume (3);
+  delay(200);
+  mp3tf.play (1);	
+  delay (5000);
+  mp3tf.pause ();
+  delay (500);	
+  mp3tf.setVolume (30);
+  delay(200);
+  mp3tf.play (1);	
+  delay (5000);
+  mp3tf.pause ();
+  delay (500);	 
 }
 
 /****************************************************************
@@ -52,6 +72,7 @@ void loop () {
  *		mp3tf.next ();		next
  *		mp3tf.previous ();	previous
  *****************************************************************/
+
 
 
 
