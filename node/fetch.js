@@ -34,10 +34,11 @@ function processLines(lines) {
 function processStatusLine(statusLine) {
 	// this line contains the 26 parameters as well as the check digit. We should
 	// only consider the line if the check digit is ok
+console.log(statusLine);
 	
 }
 
-var delay=1000;	// delay in ms
+var delay=250;	// delay in ms
 var sendEvent=function() {
     serialPort.write("c\n", function(err, results) {
 	console.log(i++);
