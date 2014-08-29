@@ -31,16 +31,48 @@ function processLines(lines) {
 	}
 }
 
-function processStatusLine(statusLine) {
+function processStatusLine(line) {
 	// this line contains the 26 parameters as well as the check digit. We should
 	// only consider the line if the check digit is ok
-console.log(statusLine);
-	
+  console.log(line);
+  var entry={};
+  if (line.length!=26*4+2) {
+    console.log("Not correct length: "+line);
+  } else {
+    if (checkDigit(line)) {
+      for (var j=0; j<26; j++) {
+        var value=convertSignedIntHexa(line.substring((j*4),4+(j*4)));
+        if (value==-32768) value=null;
+        entry[String.fromCharCode(65+j)]=value;
+      }
+      //  entry.mac=line.substring(128,132);
+    } else {
+      console.log("Check digit error: "+line);
+    }
+  }
+  console.log(entry);
+
+  function checkDigit(line) {
+    var checkDigit=0;
+    for (var i=0; i<line.length; i=i+2) {
+      checkDigit^=parseInt("0x"+line[i]+line[i+1]);
+    }
+    if (checkDigit==0) return true;
+    return false;
+  }
+
+  function convertSignedIntHexa(hexa) {
+    var value=parseInt("0x"+hexa);
+    if (value>32767) {
+      return (65536-value)*-1;
+    } 
+    return value;
+  }
 }
 
 var delay=250;	// delay in ms
 var sendEvent=function() {
-    serialPort.write("c\n", function(err, results) {
+    serialPort.write("$Ac\n", function(err, results) {
 	console.log(i++);
 	if (err) {
 		console.log('err ' + err);
