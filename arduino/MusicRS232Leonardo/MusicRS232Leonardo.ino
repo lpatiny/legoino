@@ -1,9 +1,3 @@
-/*
-  Blink
- Turns on an LED on for one second, then off for one second, repeatedly.
- 
- This example code is in the public domain.
- */
 
 // CHAIN000.OGG
 // THUNDER1.OGGSerial11
