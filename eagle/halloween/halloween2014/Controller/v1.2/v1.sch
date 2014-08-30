@@ -10478,7 +10478,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="P+15" library="supply1" deviceset="+12V" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="U$6" library="lpatiny" deviceset="KPJX-4S-S" device=""/>
-<part name="LED10" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="RED"/>
+<part name="LED10" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
 <part name="RL3" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="F2" library="lpatiny" deviceset="POLYSWITCH" device="SMD1812" value="1.2A"/>
 <part name="F1" library="lpatiny" deviceset="POLYSWITCH" device="SMD1812" value="1.2A"/>
@@ -10490,7 +10490,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
 <part name="D2" library="lpatiny" deviceset="1N581*" device="D1206" value="1N581D1206"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="LED4" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="RED"/>
+<part name="LED4" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
 <part name="RL4" library="resistor" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="D3" library="lpatiny" deviceset="1N581*" device="D1206" value="1N581D1206"/>
 <part name="U$7" library="MyPOW" deviceset="VUSB" device=""/>
@@ -10585,6 +10585,9 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="X1" library="con-lumberg" deviceset="1503_09" device=""/>
+<part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="RED"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10677,7 +10680,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <instance part="GND31" gate="1" x="139.7" y="48.26"/>
 <instance part="U$8" gate="G$1" x="177.8" y="86.36"/>
 <instance part="R3" gate="G$1" x="266.7" y="71.12" rot="R180"/>
-<instance part="GND4" gate="1" x="279.4" y="66.04"/>
+<instance part="GND4" gate="1" x="279.4" y="68.58"/>
 <instance part="R15" gate="G$1" x="137.16" y="101.6" rot="R90"/>
 <instance part="C3" gate="G$1" x="144.78" y="53.34" rot="R90"/>
 <instance part="X3" gate="G$1" x="170.18" y="38.1" rot="R90"/>
@@ -10771,6 +10774,9 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <instance part="R2" gate="G$1" x="-33.02" y="58.42" rot="R180"/>
 <instance part="GND19" gate="1" x="17.78" y="45.72"/>
 <instance part="X1" gate="G$1" x="-43.18" y="48.26" rot="MR0"/>
+<instance part="LED1" gate="G$1" x="276.86" y="60.96" rot="MR270"/>
+<instance part="R4" gate="G$1" x="266.7" y="60.96" rot="MR0"/>
+<instance part="GND20" gate="1" x="287.02" y="58.42"/>
 </instances>
 <busses>
 </busses>
@@ -11017,7 +11023,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="271.78" y1="71.12" x2="279.4" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="71.12" x2="279.4" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X4" gate="G$1" pin="5"/>
@@ -11153,6 +11158,11 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <pinref part="U$1" gate="G$1" pin="GND1"/>
 <wire x1="10.16" y1="48.26" x2="17.78" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="281.94" y1="60.96" x2="287.02" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -11656,6 +11666,7 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <pinref part="U$4" gate="G$1" pin="PC7(ICP3/CLK0/OC4A)"/>
 <wire x1="246.38" y1="60.96" x2="261.62" y2="60.96" width="0.1524" layer="91"/>
 <label x="256.54" y="60.96" size="1.778" layer="95"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -12003,6 +12014,13 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <wire x1="-33.02" y1="55.88" x2="-33.02" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="3"/>
 <wire x1="-33.02" y1="53.34" x2="-38.1" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<wire x1="271.78" y1="60.96" x2="274.32" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>
