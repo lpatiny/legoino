@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -11409,6 +11409,11 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <wire x1="246.38" y1="53.34" x2="261.62" y2="53.34" width="0.1524" layer="91"/>
 <label x="256.54" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="91.44" y1="246.38" x2="86.36" y2="246.38" width="0.1524" layer="91"/>
+<label x="86.36" y="243.84" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="HWB" class="0">
 <segment>
@@ -11813,11 +11818,6 @@ Source: http://www.lumberg.com/Produkte/PDFs/1503_09.pdf</description>
 <pinref part="U$4" gate="G$1" pin="PB4(ADC11)"/>
 <wire x1="246.38" y1="48.26" x2="261.62" y2="48.26" width="0.1524" layer="91"/>
 <label x="256.54" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="Q2" gate="G$1" pin="G"/>
-<wire x1="91.44" y1="246.38" x2="86.36" y2="246.38" width="0.1524" layer="91"/>
-<label x="86.36" y="243.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R35" gate="G$1" pin="1"/>

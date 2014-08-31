@@ -120,7 +120,8 @@ OBJDIR = .
 
 
 # Path to the LUFA library
-LUFA_PATH = LUFA-111009
+#LUFA_PATH = LUFA-111009
+LUFA_PATH = /Users/music/Downloads/LUFA-111009
 
 
 # LUFA library compile-time options and predefined tokens
@@ -487,14 +488,14 @@ ALL_ASFLAGS = -mmcu=$(MCU) -I. -x assembler-with-cpp $(ASFLAGS)
 all: begin gccversion sizebefore build sizeafter end
 
 # Change the build target to build a HEX file or a library.
-build: elf hex eep lss sym
-#build: lib
+#build: elf hex eep lss sym
+build: hex
 
-elf: $(TARGET).elf
+#elf: $(TARGET).elf
 hex: $(TARGET).hex
-eep: $(TARGET).eep
-lss: $(TARGET).lss
-sym: $(TARGET).sym
+#eep: $(TARGET).eep
+#lss: $(TARGET).lss
+#sym: $(TARGET).sym
 LIBNAME=lib$(TARGET).a
 lib: $(LIBNAME)
 
@@ -514,7 +515,7 @@ end:
 
 # Display size of file.
 HEXSIZE = $(SIZE) --target=$(FORMAT) $(TARGET).hex
-ELFSIZE = $(SIZE) $(MCU_FLAG) $(FORMAT_FLAG) $(TARGET).elf
+#ELFSIZE = $(SIZE) $(MCU_FLAG) $(FORMAT_FLAG) $(TARGET).elf
 MCU_FLAG = $(shell $(SIZE) --help | grep -- --mcu > /dev/null && echo --mcu=$(MCU) )
 FORMAT_FLAG = $(shell $(SIZE) --help | grep -- --format=.*avr > /dev/null && echo --format=avr )
 
