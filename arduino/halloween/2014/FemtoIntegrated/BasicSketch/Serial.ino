@@ -106,6 +106,15 @@ void printResult(char* data, Print* output) {
           output->println(now());
         }
       }
+      else if (data[0]=='q') {
+        if (paramValuePosition>0) {
+          setQualifier(atoi(paramValue));
+        } 
+        else {
+          uint16_t a=getQualifier();
+          output->println(a);
+        }
+      }
       // this is a carriage return;
       else if (paramCurrent>0) {
         if (paramValuePosition>0) {
@@ -142,9 +151,7 @@ void serialPrintHelp(Print* output) {
   output->println(F("(h)elp"));
   output->println(F("(i)2c"));
   output->println(F("(l)og"));
-#ifdef ONE_WIRE_BUS1
-  output->println(F("(o)ne wire"));
-#endif
+  output->println(F("(q)ualifier"));
   output->println(F("(s)ettings"));
 
   output->println(F("(z) eeprom"));

@@ -31,6 +31,10 @@ byte eventTypes[MAX_NUMBER_EVENTS];
 unsigned long eventTimestamps[MAX_NUMBER_EVENTS];
 float eventParameters[MAX_NUMBER_EVENTS];
 
+void writeLog(int a, int b) {
+
+}
+
 void logger(byte eventType) {
   logger(eventType, FLOAT_MIN_VALUE);
 }
