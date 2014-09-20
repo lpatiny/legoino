@@ -7,12 +7,6 @@
 #include <EXROM.h>
 
 
-#define EE_IP_ADDRESS              0 // array of 4 bytes
-#define EE_NTP_IP_ADDRESS          4 // array of 4 bytes
-
-#define EE_TARGET_TEMP            48 // target temperature - float on 4 bytes
-#define EE_TARGET_PH              52 // target pH - float on 4 bytes
-
 #define EE_PARAMETERS            140 // 32 bytes
 
 #define EE_TARGET_EVENT_TYPES    224 // 32 bytes

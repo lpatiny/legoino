@@ -10,25 +10,26 @@ NIL_THREAD(ThreadAction3, arg) {
 
   // action block
   int action3Step=0;
+
+
   while (TRUE) {
-
-    analogWrite(RED1,127);
-    nilThdSleepMilliseconds(500);
-        analogWrite(RED1,0);
-    nilThdSleepMilliseconds(0);
-    analogWrite(GREEN1,127);
-    nilThdSleepMilliseconds(500);
-        analogWrite(GREEN1,0);
-    nilThdSleepMilliseconds(0);
-    analogWrite(BLUE1,127);
-    nilThdSleepMilliseconds(500);
-    analogWrite(BLUE1,0);
-    nilThdSleepMilliseconds(500);
-
-
+   upAndDown(RED1,20);
+     upAndDown(GREEN1,20);
+       upAndDown(BLUE1,20);
   }
+
 }
 
+void upAndDown(byte output, byte step) {
+      for (int i=0;i<255; i=i+step) {
+       analogWrite(output,i);
+       nilThdSleepMilliseconds(40);
+    }
+      for (int i=255;i>0; i=i-step) {
+       analogWrite(output,i);
+       nilThdSleepMilliseconds(40);
+    }
+}
 
 
 

@@ -1,30 +1,39 @@
 NIL_WORKING_AREA(waThreadAction2, 0);
 NIL_THREAD(ThreadAction2, arg) {
 
-  // Initialisation bloc
 
-
-
-
-
-  // action block
-  int action2Step=0;
-
-  for (byte i=0; i<sizeof(IO); i++) {
-    pinMode(IO[i], OUTPUT);   
-  }
 
   while (TRUE) {
-    for (byte i=0; i<sizeof(IO); i++) {
-      digitalWrite(IO[i], HIGH);   
-      nilThdSleepMilliseconds(500);  // 25 times per seconds
-      digitalWrite(IO[i], LOW);   
-      nilThdSleepMilliseconds(500);  // 25 times per seconds
+    if (getParameter(25)<sizeof(IO)){
+      byte i=(byte)getParameter(25);
+
+      pinMode(IO[i], OUTPUT); 
+      pinMode(OUT[i], OUTPUT); 
+
+
+      digitalWrite(IO[i], HIGH); 
+      digitalWrite(OUT[i], LOW);
+      nilThdSleepMilliseconds(250);
+      digitalWrite(IO[i], LOW); 
+      digitalWrite(OUT[i], HIGH);
+      nilThdSleepMilliseconds(750);
+      digitalWrite(OUT[i], LOW); 
     }
+    nilThdSleepMilliseconds(50);
   }
+
+
 
 
 }
+
+
+
+
+
+
+
+
 
 
 

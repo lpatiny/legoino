@@ -10,22 +10,17 @@ NIL_THREAD(ThreadAction4, arg) {
 
   // action block
   int action4Step=0;
-  while (TRUE) {
 
+  while (TRUE) {
     digitalWrite(RED2,HIGH);
     nilThdSleepMilliseconds(500);
-    digitalWrite(RED2,LOW);
-    nilThdSleepMilliseconds(0);
+        digitalWrite(RED2,LOW);
     digitalWrite(GREEN2,HIGH);
     nilThdSleepMilliseconds(500);
     digitalWrite(GREEN2,LOW);
-    nilThdSleepMilliseconds(0);
     digitalWrite(BLUE2,HIGH);
     nilThdSleepMilliseconds(500);
     digitalWrite(BLUE2,LOW);
-    nilThdSleepMilliseconds(500);
-
-
   }
 }
 

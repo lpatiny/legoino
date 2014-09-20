@@ -14,42 +14,24 @@ NIL_THREAD(ThreadAction1, arg) {
   mp3tf.init (&mySerial);
 
   while (TRUE) {
-    testAudio3();
+    playAudio();
+
+
+
+nilThdSleepMilliseconds(40);
+
   }
 }
 
-void testAudio1() {
+
+void playAudio() {
   mp3tf.setVolume (20);
   nilThdSleepMilliseconds(200);
-  mp3tf.play (1);	
-  nilThdSleepMilliseconds (5000);
-  mp3tf.pause ();
-  nilThdSleepMilliseconds (500);	
-  mp3tf.setVolume (10);
-  nilThdSleepMilliseconds(200);
-  mp3tf.play (1);
-  nilThdSleepMilliseconds (5000);
-  mp3tf.pause ();
-  nilThdSleepMilliseconds (500);
-
-}
-
-void testAudio2() {
-  mp3tf.setVolume (20);
-  nilThdSleepMilliseconds(200);
-  mp3tf.play (5);	
-  nilThdSleepMilliseconds (10000);
-  mp3tf.pause ();
-  nilThdSleepMilliseconds (500);		
-}
-
-void testAudio3() {
-  mp3tf.setVolume (20);
-  nilThdSleepMilliseconds(200);
-  mp3tf.play (getParameter(PARAM_SOUND));	
-  nilThdSleepMilliseconds (5000);
-  mp3tf.pause ();
-  nilThdSleepMilliseconds (500);		
+  mp3tf.play ((int)random(getParameter(PARAM_FIRST_SOUND),getParameter(PARAM_LAST_SOUND+1)));	
+  if (getParameter(PARAM_SOUND_LENGTH)>0) {
+    nilThdSleepMilliseconds (getParameter(PARAM_SOUND_LENGTH)*1000);
+    mp3tf.pause (); 
+  }
 }
 
 

@@ -12,9 +12,6 @@ MCP23008:
  - B00100011 - EXT_2 (35)
  */
 
-#define WIRE_LCD_16_2 B00100111
-#define WIRE_LCD_20_4 B00100110
-
 #define WIRE_EXT_1 B00100010
 #define WIRE_EXT_2 B00100011
 
@@ -36,9 +33,8 @@ ADS7823
  */
 
 
-#define WIRE_PHMETER_ID 0b01001000 // pH-meter v1.3
 #define REGISTER_RELAY_COMMAND 0b00010001 // = 17 = R (elay)
-#define REGISTER_PH_METER_READOUT 0b00001111 // = 15 = P 
+
 
 
 #define WIRE_MAX_DEVICES 10
@@ -53,7 +49,6 @@ NIL_THREAD(ThreadWire, arg) {
   boolean relayInitialized = false;
   // TODO: PLUG IN / OUT CRASH THE SYSTEM !!! {
   Wire.begin();
-  LiquidCrystal lcd(WIRE_LCD_16_2);
 
 
   while(TRUE) {
@@ -85,69 +80,6 @@ NIL_THREAD(ThreadWire, arg) {
     sendRelay(WIRE_RELAY_1, getParameter(PARAM_RELAY_1), wireFlag32);
     sendRelay(WIRE_RELAY_2, getParameter(PARAM_RELAY_2), wireFlag32);
 
-    if (wireEventStatus%10==0) {
-      if (wireDeviceExists(WIRE_LCD_16_2)) {
-        if (! wireFlagStatus(wireFlag32, WIRE_LCD_16_2)) {
-          // we should be able to dynamically change the LCD I2C bus address
-          setWireFlag(wireFlag32, WIRE_LCD_16_2);
-          lcd.begin(16,2);
-          // Print a message to the LCD.
-          lcd.setCursor(0,0);
-          lcd.print(F("IO1:"));
-          lcd.setCursor(0,1);
-          lcd.print(F("IO2:"));
-        }
-        lcd.setCursor(4,0);
-        lcd.print(((float)getParameter(PARAM_TEMP1))/100);
-        lcd.print(F("C "));
-        lcd.setCursor(4,1);
-        lcd.print(getParameter(PARAM_DISTANCE));
-        lcd.print(F("mm  "));
-        
-        lcd.setCursor(12,1);
-        lcd.print(getParameter(PARAM_IRCODE));
-        lcd.print(F("   "));
-        /*
-
-         */
-      } 
-      else {
-        clearWireFlag(wireFlag32, WIRE_LCD_16_2); 
-      }
-    }
-
-    if (wireEventStatus%10==5) {
-      if (wireDeviceExists(WIRE_LCD_20_4)) {
-        if (! wireFlagStatus(wireFlag32, WIRE_LCD_20_4)) {
-          // we should be able to dynamically change the LCD I2C bus address
-          setWireFlag(wireFlag32, WIRE_LCD_20_4);
-          lcd.begin(20, 4);
-          // Print a message to the LCD.
-          lcd.setCursor(0,0);
-          lcd.print(F("Temperature A1!"));
-          lcd.setCursor(0,2);
-          lcd.print(F("Distance A2!"));
-        }
-        lcd.setCursor(0,1);
-        lcd.print(((float)getParameter(PARAM_TEMP1))/100);
-        lcd.print(F(" C   "));
-        lcd.setCursor(0,3);
-        lcd.print(getParameter(PARAM_DISTANCE));
-        lcd.print(F(" mm    "));
-      } 
-      else {
-        clearWireFlag(wireFlag32, WIRE_LCD_20_4); 
-      }
-    }
-
-
-
-
-
-    if (wireDeviceExists(WIRE_PHMETER_ID)) {
-      wireWrite(WIRE_PHMETER_ID, 0b00010000); // initialize A/D conversion with 5th bit
-      setParameter(REGISTER_PH_METER_READOUT, wireReadTwoBytesToInt(WIRE_PHMETER_ID)); // save pH value into 
-    }
     nilThdSleepMilliseconds(100);
 
   }

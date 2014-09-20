@@ -25,35 +25,14 @@
 
 #include <OneWire.h>
 
-byte oneWireAddress[8];
-
 void getTemperature(OneWire &ow, int parameter);
-
-byte errorTemperature=0;
 
 NIL_WORKING_AREA(waThreadOneWire, 50);  // should be 50 without Serial.println
 NIL_THREAD(ThreadOneWire, arg) {
   nilThdSleepMilliseconds(200);
-
-
-#ifdef TEMPERATURE_1
-  OneWire oneWire1(TEMPERATURE_1);
-#endif
-
-#ifdef TEMPERATURE_2
-  OneWire oneWire2(TEMPERATURE_2);
-#endif
-
-
+  OneWire oneWire(THR_ONE_WIRE);
   while(true){
-#ifdef TEMPERATURE_1
-    getTemperature(oneWire1, PARAM_TEMP1);
-#endif
-
-#ifdef TEMPERATURE_2
-    getTemperature(oneWire2, PARAM_TEMP2);
-#endif
-
+    getTemperature(oneWire, PARAM_TEMPERATURE);
     nilThdSleepMilliseconds(5000);
   }
 }
@@ -67,10 +46,6 @@ void getTemperature(OneWire &ow, int parameter) {
   ow.write(0x44);   
   // conversion of 12 bits takes 750mS, just wait here to be sure
   nilThdSleepMilliseconds(750);
-
-  //We use the return of the reset function to check if the device is present
-  // if(present == 0) => one error occured
-  // if(*errorTemp) == false => The error has not been logged
 
   if (present != 0) {  //no error
     //We get the new temperature

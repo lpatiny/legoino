@@ -36,66 +36,7 @@ static void printFreeMemory(Print* output)
 }
 
 
-
-// The idea is to have 2 sounds on the SD card:
-// ZZZZZZZZ: 30s silent
-// YYYYYYYY: the sound to play
-
-void initSound() {
-
-  Serial1.begin(115200);
-  delay(2000);  // this is the minimal value for reliable process. Depends of devices !!!!
-
-  fileMode();
-
-  for (byte i=0; i<20; i++) {
-    increaseVolume();
-  }
-  delay(200);
-  cancelSound(); 
-}
-
-
-void playSound() {
-  Serial.print("PLAY");
-  Serial1.print("PYYYYYYYYOGG\n"); // problem to concatenate strings apparently ...
-  Serial1.flush();
-  while (Serial1.available()) {
-    Serial1.read();
-  }
-}
-
-void increaseVolume() {
-  Serial1.print("+"); // we cancelthe sound
-  Serial1.flush();
-  while (Serial1.available()) {
-    Serial1.read();
-  }
-  delay(10);
-}
-
-void cancelSound() {
-  Serial1.print("C"); // we cancelthe sound
-  Serial1.flush(); // was print ??
-  while (Serial1.available()) {
-    Serial1.read();
-  }
-}
-
-void fileMode() {
-  // we need to switch to file mode each time !
-  // we may only do it once otherwise it would crash
-  Serial1.print("f");
-  Serial1.flush();
-  delay(10);
-  /*
-    while (Serial1.available()) {
-   Serial1.read();
-   }
-   */
-}
-
-/* Fucntions to convert a number to hexadeciam */
+/* Functions to convert a number to hexadeciam */
 
 const char hex[] = "0123456789ABCDEF";
 
