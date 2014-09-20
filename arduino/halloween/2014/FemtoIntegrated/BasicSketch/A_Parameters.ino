@@ -17,7 +17,7 @@
 #include <avr/eeprom.h>
 
 
-#define MAX_PARAM 26   // If the MAX_PARAM change you need to change the pointer in the EEPROM
+#define MAX_PARAM 52   // If the MAX_PARAM change you need to change the pointer in the EEPROM
 
 
 //When parameters are set (and saved) an event is recorded (256-281 : A-Z + .... (if more parameters than 26))

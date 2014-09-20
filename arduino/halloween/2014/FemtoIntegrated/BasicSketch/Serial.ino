@@ -134,10 +134,17 @@ void printResult(char* data, Print* output) {
         }
       }
     } 
-    else if (inChar>64 && inChar<(66+MAX_PARAM)) { // a character so we define the field
-      paramCurrent=inChar-64;
-    }
-
+    else if (inChar>64 && inChar<92) { // a character so we define the field
+      // we extend however the code to allow 2 letters fields !!!
+      // we extend however the code to allow 2 letters fields !!
+      if (paramCurrent>0) {
+        paramCurrent*=26;
+      }
+      paramCurrent+=inChar-64;
+      if (paramCurrent>MAX_PARAM) {
+        paramCurrent=0; 
+      }
+    } 
 
   }
 }
@@ -156,6 +163,7 @@ void serialPrintHelp(Print* output) {
 
   output->println(F("(z) eeprom"));
 }
+
 
 
 

@@ -21,6 +21,10 @@ NIL_THREAD(ThreadAction4, arg) {
     digitalWrite(BLUE2,HIGH);
     nilThdSleepMilliseconds(500);
     digitalWrite(BLUE2,LOW);
+    
+    action4Step++;
+    
+    setParameter(PARAM_ACTION4, action4Step);
   }
 }
 

@@ -1,11 +1,11 @@
 NIL_WORKING_AREA(waThreadAction2, 0);
 NIL_THREAD(ThreadAction2, arg) {
 
-
+  int action2Step=0;
 
   while (TRUE) {
-    if (getParameter(PARAM_TEST_OUTPUT)<sizeof(IO)){
-      byte i=(byte)getParameter(PARAM_TEST_OUTPUT);
+    if (getParameter(PARAM_STATUS)<sizeof(IO)){
+      byte i=(byte)getParameter(PARAM_STATUS);
 
       pinMode(IO[i], OUTPUT); 
       pinMode(OUT[i], OUTPUT); 
@@ -19,13 +19,16 @@ NIL_THREAD(ThreadAction2, arg) {
       nilThdSleepMilliseconds(750);
       digitalWrite(OUT[i], LOW); 
     }
-    nilThdSleepMilliseconds(50);
+
+    setParameter(PARAM_ACTION2, action2Step);
+    nilThdSleepMilliseconds(40);
   }
 
 
 
 
 }
+
 
 
 

@@ -13,23 +13,27 @@ NIL_THREAD(ThreadAction3, arg) {
 
 
   while (TRUE) {
-   upAndDown(RED1,20);
-     upAndDown(GREEN1,20);
-       upAndDown(BLUE1,20);
+    upAndDown(RED1,20);
+    upAndDown(GREEN1,20);
+    upAndDown(BLUE1,20);
+    
+    action3Step++;
+    setParameter(PARAM_ACTION3, action3Step);
   }
 
 }
 
 void upAndDown(byte output, byte step) {
-      for (int i=0;i<255; i=i+step) {
-       analogWrite(output,i);
-       nilThdSleepMilliseconds(40);
-    }
-      for (int i=255;i>0; i=i-step) {
-       analogWrite(output,i);
-       nilThdSleepMilliseconds(40);
-    }
+  for (int i=0;i<255; i=i+step) {
+    analogWrite(output,i);
+    nilThdSleepMilliseconds(40);
+  }
+  for (int i=255;i>0; i=i-step) {
+    analogWrite(output,i);
+    nilThdSleepMilliseconds(40);
+  }
 }
+
 
 
 

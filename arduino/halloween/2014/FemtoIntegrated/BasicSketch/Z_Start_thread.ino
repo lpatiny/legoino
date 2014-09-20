@@ -13,10 +13,15 @@ NIL_THREAD(ThreadMonitoring, arg) {
   byte turnOn=0;
   pinMode(THR_MONITORING, OUTPUT);   
   while (TRUE) {
-  turnOn=~turnOn;
-  digitalWrite(THR_MONITORING,turnOn);
+    turnOn=~turnOn;
+    digitalWrite(THR_MONITORING,turnOn);
     nilThdSleepMilliseconds(250);
-    wdt_reset();
+    if (getParameter(PARAM_STATUS)!=99) {
+      wdt_reset();
+    } 
+    else {
+      nilThdSleepMilliseconds(750);
+    }
   }
 }
 #endif
@@ -61,6 +66,8 @@ NIL_THREADS_TABLE_ENTRY(NULL, ThreadMonitoring, NULL, waThreadMonitoring, sizeof
 
 
 NIL_THREADS_TABLE_END()
+
+
 
 
 

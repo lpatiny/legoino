@@ -59,11 +59,10 @@
 
 #define PARAM_FIRST_SOUND     4 // we are able to play a random sound between FIRST and LAST
 #define PARAM_LAST_SOUND      5
-#define PARAM_SOUND_LENGTH    6 // and stop the sound after a define time
 
-#define PARAM_SERVO_FROM      7
-#define PARAM_SERVO_TO        8
-#define PARAM_SERVO_SPEED     9
+#define PARAM_SERVO_FROM      6
+#define PARAM_SERVO_TO        7
+#define PARAM_SERVO_SPEED     8
 
 #define PARAM_DELAY0         10
 #define PARAM_DELAY1         11
@@ -80,10 +79,16 @@
 #define PARAM_TEMPERATURE    21  // just for fun we could register temperature
 #define PARAM_IRCODE         22  // we could add a IR receiver
 
-#define PARAM_RELAY_1        23
-#define PARAM_RELAY_2        24
+#define PARAM_ACTION1        26
+#define PARAM_ACTION2        27
+#define PARAM_ACTION3        28
+#define PARAM_ACTION4        29
 
-#define PARAM_TEST_OUTPUT    25
+
+#define PARAM_RELAY_1        49
+#define PARAM_RELAY_2        50
+
+#define PARAM_STATUS         51
 
 byte IO[]={
   IO1, IO2, IO3, IO4, IO5};
@@ -96,6 +101,7 @@ void setup() {
   setupLogger();
   setupDebugger();
   setupParameters();
+  setAndSaveParameter(PARAM_STATUS,0);
   nilSysBegin();
 }
 
