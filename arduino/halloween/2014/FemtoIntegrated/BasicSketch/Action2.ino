@@ -4,8 +4,8 @@ NIL_THREAD(ThreadAction2, arg) {
 
 
   while (TRUE) {
-    if (getParameter(25)<sizeof(IO)){
-      byte i=(byte)getParameter(25);
+    if (getParameter(PARAM_TEST_OUTPUT)<sizeof(IO)){
+      byte i=(byte)getParameter(PARAM_TEST_OUTPUT);
 
       pinMode(IO[i], OUTPUT); 
       pinMode(OUT[i], OUTPUT); 

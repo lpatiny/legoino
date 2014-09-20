@@ -51,28 +51,39 @@
 //#define THR_ONE_WIRE	IO5	// we can put a one wire temperature probe on the bus
 
 
-#define PARAM_RGB1      0
-#define PARAM_RGB2      1
-#define PARAM_SCAN      2
-#define PARAM_SERVO     3
+
+#define PARAM_DETECTOR1       0   // set to one if something is detected
+#define PARAM_DETECTOR2       1   // set to one if something is detected
+#define PARAM_DISTANCE        2
+#define PARAM_ALERT_DISTANCE  3
 
 #define PARAM_FIRST_SOUND     4 // we are able to play a random sound between FIRST and LAST
 #define PARAM_LAST_SOUND      5
 #define PARAM_SOUND_LENGTH    6 // and stop the sound after a define time
 
+#define PARAM_SERVO_FROM      7
+#define PARAM_SERVO_TO        8
+#define PARAM_SERVO_SPEED     9
 
-#define PARAM_DETECTOR1   7   // set to one if something is detected
-#define PARAM_DETECTOR2   8   // set to one if something is detected
-#define PARAM_DISTANCE    9
+#define PARAM_DELAY0         10
+#define PARAM_DELAY1         11
+#define PARAM_DELAY2         12
+#define PARAM_DELAY3         13
+#define PARAM_DELAY4         14
+#define PARAM_DELAY5         15
+#define PARAM_DELAY6         16
+#define PARAM_DELAY7         17
+#define PARAM_DELAY8         18
+#define PARAM_DELAY9         19
 
 
-#define PARAM_TEMPERATURE   10  // just for fun we could register temperature
+#define PARAM_TEMPERATURE    21  // just for fun we could register temperature
+#define PARAM_IRCODE         22  // we could add a IR receiver
 
-#define PARAM_IRCODE        11  // we could add a IR receiver
+#define PARAM_RELAY_1        23
+#define PARAM_RELAY_2        24
 
-#define PARAM_RELAY_1   17    // 17 = R (elay)
-#define PARAM_RELAY_2   18
-
+#define PARAM_TEST_OUTPUT    25
 
 byte IO[]={
   IO1, IO2, IO3, IO4, IO5};
