@@ -39,7 +39,6 @@
 #define BLUE2   23
 
 
-
 //#define THR_DISTANCE  IO1
 #define THR_DETECTION1  IO1
 //#define THR_DETECTION2  IO2
@@ -47,9 +46,7 @@
 #define THR_MONITORING     13  // will also take care of the watch dog
 //#define THR_STEPPER      OUT3, IO3
 //#define THR_SERVO        IO4
-
-//#define THR_ONE_WIRE	IO5	// we can put a one wire temperature probe on the bus
-
+//#define THR_ONE_WIRE	   IO5	// we can put a one wire temperature probe on the bus
 
 
 #define PARAM_DETECTOR1       0   // set to one if something is detected
@@ -59,10 +56,11 @@
 
 #define PARAM_FIRST_SOUND     4 // we are able to play a random sound between FIRST and LAST
 #define PARAM_LAST_SOUND      5
+#define PARAM_SOUND_LENGTH    6 // and stop the sound after a define time
 
-#define PARAM_SERVO_FROM      6
-#define PARAM_SERVO_TO        7
-#define PARAM_SERVO_SPEED     8
+#define PARAM_SERVO_FROM      7
+#define PARAM_SERVO_TO        8
+#define PARAM_SERVO_SPEED     9
 
 #define PARAM_DELAY0         10
 #define PARAM_DELAY1         11
@@ -75,20 +73,33 @@
 #define PARAM_DELAY8         18
 #define PARAM_DELAY9         19
 
-
-#define PARAM_TEMPERATURE    21  // just for fun we could register temperature
-#define PARAM_IRCODE         22  // we could add a IR receiver
-
 #define PARAM_ACTION1        26
 #define PARAM_ACTION2        27
 #define PARAM_ACTION3        28
 #define PARAM_ACTION4        29
 
+#define PARAM_VAR0           30
+#define PARAM_VAR1           31
+#define PARAM_VAR2           32
+#define PARAM_VAR3           33
+#define PARAM_VAR4           34
+#define PARAM_VAR5           35
+#define PARAM_VAR6           36
+#define PARAM_VAR7           37
+#define PARAM_VAR8           38
+#define PARAM_VAR9           39
+
+
+#define PARAM_TEMPERATURE    47  // just for fun we could register temperature
+#define PARAM_IRCODE         48  // we could add a IR receiver
+
 
 #define PARAM_RELAY_1        49
 #define PARAM_RELAY_2        50
 
-#define PARAM_STATUS         51
+#define PARAM_TEST_OUTPUT    51
+
+
 
 byte IO[]={
   IO1, IO2, IO3, IO4, IO5};
