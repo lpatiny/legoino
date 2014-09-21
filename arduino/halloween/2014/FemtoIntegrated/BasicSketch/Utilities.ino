@@ -59,6 +59,8 @@ uint8_t toHex(Print* output, long value) {
 }
 
 
-
-
-
+#ifdef KEYBOARD_EVENT
+void sendKey() {
+  Keyboard.print(KEYBOARD_EVENT);
+}
+#endif

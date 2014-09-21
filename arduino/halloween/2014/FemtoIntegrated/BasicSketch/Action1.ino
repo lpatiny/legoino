@@ -23,6 +23,9 @@ NIL_THREAD(ThreadAction1, arg) {
 
     if (action1Step==getParameter(PARAM_DELAY0)) {
       playAudio();
+      #ifdef KEYBOARD_EVENT
+      sendKey();
+      #endif
     }
 
     if (getParameter(PARAM_DELAY8)==action1Step) {

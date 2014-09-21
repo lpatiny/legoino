@@ -48,6 +48,9 @@
 //#define THR_SERVO        IO4
 //#define THR_ONE_WIRE	   IO5	// we can put a one wire temperature probe on the bus
 
+// #define KEYBOARD_EVENT   "X"
+
+
 
 #define PARAM_DETECTOR1       0   // set to one if something is detected
 #define PARAM_DETECTOR2       1   // set to one if something is detected
@@ -97,7 +100,7 @@
 #define PARAM_RELAY_1        49
 #define PARAM_RELAY_2        50
 
-#define PARAM_TEST_OUTPUT    51
+#define PARAM_STATUS         51 // allow to test the arduino
 
 
 
@@ -113,12 +116,18 @@ void setup() {
   setupDebugger();
   setupParameters();
   setAndSaveParameter(PARAM_STATUS,0);
+
+#ifdef KEYBOARD_EVENT
+  Keyboard.begin();
+#endif
+
   nilSysBegin();
 }
 
 
 void loop() {
 }
+
 
 
 
