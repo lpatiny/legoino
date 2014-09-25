@@ -52,56 +52,6 @@
 
 
 
-#define PARAM_DETECTOR1       0   // set to one if something is detected
-#define PARAM_DETECTOR2       1   // set to one if something is detected
-#define PARAM_DISTANCE        2
-#define PARAM_ALERT_DISTANCE  3
-
-#define PARAM_FIRST_SOUND     4 // we are able to play a random sound between FIRST and LAST
-#define PARAM_LAST_SOUND      5
-#define PARAM_SOUND_LENGTH    6 // and stop the sound after a define time
-
-#define PARAM_SERVO_FROM      7
-#define PARAM_SERVO_TO        8
-#define PARAM_SERVO_SPEED     9
-
-#define PARAM_DELAY0         10
-#define PARAM_DELAY1         11
-#define PARAM_DELAY2         12
-#define PARAM_DELAY3         13
-#define PARAM_DELAY4         14
-#define PARAM_DELAY5         15
-#define PARAM_DELAY6         16
-#define PARAM_DELAY7         17
-#define PARAM_DELAY8         18
-#define PARAM_DELAY9         19
-
-#define PARAM_ACTION1        26
-#define PARAM_ACTION2        27
-#define PARAM_ACTION3        28
-#define PARAM_ACTION4        29
-
-#define PARAM_VAR0           30
-#define PARAM_VAR1           31
-#define PARAM_VAR2           32
-#define PARAM_VAR3           33
-#define PARAM_VAR4           34
-#define PARAM_VAR5           35
-#define PARAM_VAR6           36
-#define PARAM_VAR7           37
-#define PARAM_VAR8           38
-#define PARAM_VAR9           39
-
-
-#define PARAM_TEMPERATURE    47  // just for fun we could register temperature
-#define PARAM_IRCODE         48  // we could add a IR receiver
-
-
-#define PARAM_RELAY_1        49
-#define PARAM_RELAY_2        50
-
-#define PARAM_STATUS         51 // allow to test the arduino
-
 
 
 byte IO[]={
@@ -115,7 +65,6 @@ void setup() {
   setupLogger();
   setupDebugger();
   setupParameters();
-  setAndSaveParameter(PARAM_STATUS,0);
 
 #ifdef KEYBOARD_EVENT
   Keyboard.begin();

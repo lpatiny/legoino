@@ -106,6 +106,17 @@ void printResult(char* data, Print* output) {
           output->println(now());
         }
       }
+      else if (data[0]=='r') {
+        if (paramValuePosition>0) {
+          if (atol(paramValue)==1234) {
+            resetParameter();
+            output->println(F("Done"));
+          }
+        } 
+        else {
+          output->println(F("To reset enter r1234"));
+        }
+      }
       else if (data[0]=='q') {
         if (paramValuePosition>0) {
           setQualifier(atoi(paramValue));
@@ -159,10 +170,13 @@ void serialPrintHelp(Print* output) {
   output->println(F("(i)2c"));
   output->println(F("(l)og"));
   output->println(F("(q)ualifier"));
+  output->println(F("(r)eset"));
   output->println(F("(s)ettings"));
 
   output->println(F("(z) eeprom"));
 }
+
+
 
 
 
