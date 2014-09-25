@@ -23,17 +23,18 @@ NIL_THREAD(ThreadAction1, arg) {
 
     if (action1Step==getParameter(PARAM_DELAY0)) {
       playAudio();
-      #ifdef KEYBOARD_EVENT
+#ifdef KEYBOARD_EVENT
       sendKey();
-      #endif
+#endif
     }
 
     if (getParameter(PARAM_DELAY8)==action1Step) {
-      mp3tf.pause (); 
+      stopAudio();
     }
 
     if (getParameter(PARAM_DELAY9)==action1Step) {
       action1Step=0;
+      stopAudio();
     }
 
     setParameter(PARAM_ACTION1, action1Step);
@@ -42,29 +43,16 @@ NIL_THREAD(ThreadAction1, arg) {
   }
 }
 
+void stopAudio() {
+  mp3tf.pause ();
+  setParameter(PARAM_CURRENT_SONG, -1);
+}
 
 void playAudio() {
   mp3tf.setVolume (20);
   nilThdSleepMilliseconds(200);
-  mp3tf.play ((int)random(getParameter(PARAM_FIRST_SOUND),getParameter(PARAM_LAST_SOUND+1)));	
+  int song=(int)random(getParameter(PARAM_FIRST_SONG),getParameter(PARAM_LAST_SONG)+1);
+  setParameter(PARAM_CURRENT_SONG, song);
+  mp3tf.play (song);	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

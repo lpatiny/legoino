@@ -21,13 +21,14 @@
 #define PARAM_DISTANCE        2
 #define PARAM_ALERT_DISTANCE  3
 
-#define PARAM_FIRST_SOUND     4 // we are able to play a random sound between FIRST and LAST
-#define PARAM_LAST_SOUND      5
-#define PARAM_SOUND_LENGTH    6 // and stop the sound after a define time
+#define PARAM_FIRST_SONG      4 // we are able to play a random sound between FIRST and LAST
+#define PARAM_LAST_SONG       5
+#define PARAM_CURRENT_SONG    6
 
 #define PARAM_SERVO_FROM      7
 #define PARAM_SERVO_TO        8
 #define PARAM_SERVO_SPEED     9
+
 
 #define PARAM_DELAY0         10
 #define PARAM_DELAY1         11
@@ -40,10 +41,16 @@
 #define PARAM_DELAY8         18
 #define PARAM_DELAY9         19
 
-#define PARAM_ACTION1        26
-#define PARAM_ACTION2        27
-#define PARAM_ACTION3        28
-#define PARAM_ACTION4        29
+#define PARAM_STATUS0        20
+#define PARAM_STATUS1        21
+#define PARAM_STATUS2        22
+#define PARAM_STATUS3        23
+#define PARAM_STATUS4        24
+#define PARAM_STATUS5        25
+#define PARAM_STATUS6        26
+#define PARAM_STATUS7        27
+#define PARAM_STATUS8        28
+#define PARAM_STATUS9        29
 
 #define PARAM_VAR0           30
 #define PARAM_VAR1           31
@@ -55,6 +62,11 @@
 #define PARAM_VAR7           37
 #define PARAM_VAR8           38
 #define PARAM_VAR9           39
+
+#define PARAM_ACTION1        40
+#define PARAM_ACTION2        41
+#define PARAM_ACTION3        42
+#define PARAM_ACTION4        43
 
 
 #define PARAM_TEMPERATURE    47  // just for fun we could register temperature
@@ -91,10 +103,6 @@ void resetParameter() {
   setAndSaveParameter(PARAM_VAR8,8);
   setAndSaveParameter(PARAM_VAR9,9);
 }
-
-
-
-
 
 
 
