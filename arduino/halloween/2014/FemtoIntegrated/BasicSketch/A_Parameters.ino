@@ -27,7 +27,7 @@
 
 #define PARAM_SERVO_FROM      7
 #define PARAM_SERVO_TO        8
-#define PARAM_SERVO_SPEED     9
+#define PARAM_SERVO_DELAY     9
 
 
 #define PARAM_DELAY0         10
@@ -68,10 +68,9 @@
 #define PARAM_ACTION3        42
 #define PARAM_ACTION4        43
 
-
+#define PARAM_SERVO_ACTIVE   46
 #define PARAM_TEMPERATURE    47  // just for fun we could register temperature
 #define PARAM_IRCODE         48  // we could add a IR receiver
-
 
 #define PARAM_RELAY_1        49
 #define PARAM_RELAY_2        50
@@ -81,7 +80,17 @@
 
 
 void resetParameter() {
-  setAndSaveParameter(PARAM_DELAY0,0);
+
+  setAndSaveParameter(PARAM_FIRST_SONG,4); // first event may not be zero, it would never starts
+  setAndSaveParameter(PARAM_LAST_SONG,7);
+
+  setAndSaveParameter(PARAM_SERVO_FROM,60);
+  setAndSaveParameter(PARAM_SERVO_TO,120);
+  setAndSaveParameter(PARAM_SERVO_DELAY,15);
+  setAndSaveParameter(PARAM_SERVO_ACTIVE,0);
+
+
+  setAndSaveParameter(PARAM_DELAY0,1); // first event may not be zero, it would never starts
   setAndSaveParameter(PARAM_DELAY1,25);
   setAndSaveParameter(PARAM_DELAY2,50);
   setAndSaveParameter(PARAM_DELAY3,75);
@@ -224,6 +233,9 @@ uint16_t getQualifier() {
 void setQualifier(uint16_t value) {
   eeprom_write_word((uint16_t*)(EE_START_PARAM+MAX_PARAM*2), value);
 }
+
+
+
 
 
 

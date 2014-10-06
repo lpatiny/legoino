@@ -1,3 +1,6 @@
+#define THR_ACTION3 1
+
+
 NIL_WORKING_AREA(waThreadAction3, 0);
 NIL_THREAD(ThreadAction3, arg) {
 

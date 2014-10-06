@@ -9,21 +9,33 @@ NIL_THREAD(ThreadServo, arg) {
 
     int servoEventStatus=0;
   int servoIncrease=1; // if we put a byte the increment does not work correctly
-  myservo.attach(THR_SERVO);  // attaches the servo on pin IO6 to the servo object 
 
 
   while (TRUE) {
-    servoEventStatus+=getParameter(PARAM_SERVO)*servoIncrease;
-    if ((servoEventStatus>180 && servoIncrease>0) || (servoEventStatus<1 && servoIncrease<0)) {
-      servoIncrease*=-1;
+    if (getParameter(PARAM_SERVO_ACTIVE)==1) {
+      myservo.attach(THR_SERVO);
+      servoEventStatus+=servoIncrease;
+      if ((servoEventStatus>getParameter(PARAM_SERVO_TO) && servoIncrease>0) || (servoEventStatus<getParameter(PARAM_SERVO_FROM) && servoIncrease<0)) {
+        servoIncrease*=-1;
+      }
+      myservo.write(servoEventStatus); 
+    } 
+    else {
+      myservo.detach();
     }
-    myservo.write(servoEventStatus); 
-
-    nilThdSleepMilliseconds(20);
+    if (getParameter(PARAM_SERVO_DELAY)>0) {
+      nilThdSleepMilliseconds(getParameter(PARAM_SERVO_DELAY));
+    } 
+    else {
+      nilThdSleepMilliseconds(5);
+    }
   }
 }
 
 #endif
+
+
+
 
 
 

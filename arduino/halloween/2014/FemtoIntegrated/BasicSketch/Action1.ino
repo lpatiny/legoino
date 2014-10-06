@@ -1,13 +1,11 @@
+#define THR_ACTION1 1
 
-
-
-mp3TF mp3tf = mp3TF ();
 
 // SoftwareSerial mySerial(4, 8); // RX, TX
 
 SoftwareSerial mySerial(7, 4);
 
-NIL_WORKING_AREA(waThreadAction1, 0);
+NIL_WORKING_AREA(waThreadAction1, 100);
 NIL_THREAD(ThreadAction1, arg) {
 
   int action1Step=0;
@@ -39,20 +37,7 @@ NIL_THREAD(ThreadAction1, arg) {
 
     setParameter(PARAM_ACTION1, action1Step);
     nilThdSleepMilliseconds(40);
-
   }
 }
 
-void stopAudio() {
-  mp3tf.pause ();
-  setParameter(PARAM_CURRENT_SONG, -1);
-}
-
-void playAudio() {
-  mp3tf.setVolume (20);
-  nilThdSleepMilliseconds(200);
-  int song=(int)random(getParameter(PARAM_FIRST_SONG),getParameter(PARAM_LAST_SONG)+1);
-  setParameter(PARAM_CURRENT_SONG, song);
-  mp3tf.play (song);	
-}
 

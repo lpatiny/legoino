@@ -41,8 +41,10 @@ ADS7823
 byte numberI2CDevices=0;
 byte wireDeviceID[WIRE_MAX_DEVICES];
 
-NIL_WORKING_AREA(waThreadWire, 100);
+NIL_WORKING_AREA(waThreadWire, 150);
 NIL_THREAD(ThreadWire, arg) {
+  nilThdSleepMilliseconds(2000);
+
   byte aByte=0;
   byte* wireFlag32=&aByte;
   unsigned int wireEventStatus=0;
@@ -84,6 +86,7 @@ NIL_THREAD(ThreadWire, arg) {
 
   }
 }
+
 
 
 

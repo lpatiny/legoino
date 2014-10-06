@@ -45,10 +45,25 @@ NIL_THREADS_TABLE_ENTRY(NULL, ThreadDetection1, NULL, waThreadDetection1, sizeof
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadDetection2, NULL, waThreadDetection2, sizeof(waThreadDetection2))
 #endif
 
+#ifdef THR_SERVO
+NIL_THREADS_TABLE_ENTRY(NULL, ThreadServo, NULL, waThreadServo, sizeof(waThreadServo))
+#endif
+
+#ifdef THR_ACTION1
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadAction1, NULL, waThreadAction1, sizeof(waThreadAction1))
+#endif
+
+#ifdef THR_ACTION2
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadAction2, NULL, waThreadAction2, sizeof(waThreadAction2))
+#endif
+
+#ifdef THR_ACTION3
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadAction3, NULL, waThreadAction3, sizeof(waThreadAction3))
+#endif
+
+#ifdef THR_ACTION4
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadAction4, NULL, waThreadAction4, sizeof(waThreadAction4))
+#endif
 
 #ifdef THR_ONE_WIRE
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadOneWire, NULL, waThreadOneWire, sizeof(waThreadOneWire))                           
