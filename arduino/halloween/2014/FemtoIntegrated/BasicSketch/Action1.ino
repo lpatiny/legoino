@@ -26,9 +26,6 @@ NIL_THREAD(ThreadAction1, arg) {
 #endif
     }
 
-    if (getParameter(PARAM_DELAY8)==action1Step) {
-      stopAudio();
-    }
 
     if (getParameter(PARAM_DELAY9)==action1Step) {
       action1Step=0;

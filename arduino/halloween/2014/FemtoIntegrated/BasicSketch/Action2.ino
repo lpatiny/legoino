@@ -5,23 +5,18 @@ NIL_THREAD(ThreadAction2, arg) {
 
   int action2Step=0;
 
+  pinMode(RED1, OUTPUT);   
+  pinMode(GREEN1, OUTPUT);  
+  pinMode(BLUE1, OUTPUT); 
+
   while (TRUE) {
-    if (getParameter(PARAM_STATUS)<sizeof(IO)){
-      byte i=(byte)getParameter(PARAM_STATUS);
 
-      pinMode(IO[i], OUTPUT); 
-      pinMode(OUT[i], OUTPUT); 
+    analogWrite(RED1, getParameter(PARAM_VAR1));
+    analogWrite(GREEN1, getParameter(PARAM_VAR1));
+    analogWrite(BLUE1, getParameter(PARAM_VAR1));
 
 
-      digitalWrite(IO[i], HIGH); 
-      digitalWrite(OUT[i], LOW);
-      nilThdSleepMilliseconds(250);
-      digitalWrite(IO[i], LOW); 
-      digitalWrite(OUT[i], HIGH);
-      nilThdSleepMilliseconds(750);
-      digitalWrite(OUT[i], LOW); 
-    }
-
+    action2Step++;
     setParameter(PARAM_ACTION2, action2Step);
     nilThdSleepMilliseconds(40);
   }
@@ -30,6 +25,7 @@ NIL_THREAD(ThreadAction2, arg) {
 
 
 }
+
 
 
 

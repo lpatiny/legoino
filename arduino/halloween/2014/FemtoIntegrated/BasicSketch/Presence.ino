@@ -14,14 +14,18 @@ NIL_THREAD(ThreadMeasure, arg) {
 NIL_WORKING_AREA(waThreadDetection1, 0);
 NIL_THREAD(ThreadDetection1, arg) {
 
-#if DETECTION_PIN1
   pinMode(THR_DETECTION1, INPUT); 
-#endif
-
+  boolean needToWait=true;
   while (TRUE) {
     byte status=digitalRead(THR_DETECTION1);
     setParameter(PARAM_DETECTOR1,status);
-    if (status==1) nilThdSleepMilliseconds(5000); // we keep this status for a while to be sure we catch this event
+    if ((status==1) && needToWait) {
+      nilThdSleepMilliseconds(5000); // we keep this status for a while to be sure we catch this event
+      needToWait=false;
+    }
+    if (status!=1) {
+      needToWait=true;
+    }
     nilThdSleepMilliseconds(100);
   }
 }
@@ -31,18 +35,23 @@ NIL_THREAD(ThreadDetection1, arg) {
 NIL_WORKING_AREA(waThreadDetection2, 0);
 NIL_THREAD(ThreadDetection2, arg) {
 
-#if DETECTION_PIN1
   pinMode(THR_DETECTION2, INPUT); 
-#endif
-
+  boolean needToWait=true;
   while (TRUE) {
     byte status=digitalRead(THR_DETECTION2);
     setParameter(PARAM_DETECTOR2,status);
-    if (status==1) nilThdSleepMilliseconds(5000); // we keep this status for a while to be sure we catch this event
+    if ((status==1) && needToWait) {
+      nilThdSleepMilliseconds(5000); // we keep this status for a while to be sure we catch this event
+      needToWait=false;
+    }
+    if (status!=1) {
+      needToWait=true;
+    }    
     nilThdSleepMilliseconds(100);
   }
 }
 #endif
+
 
 
 

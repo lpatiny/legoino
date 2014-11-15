@@ -24,10 +24,8 @@
 #define PARAM_FIRST_SONG      4 // we are able to play a random sound between FIRST and LAST
 #define PARAM_LAST_SONG       5
 #define PARAM_CURRENT_SONG    6
+#define PARAM_VOLUME          7
 
-#define PARAM_SERVO_FROM      7
-#define PARAM_SERVO_TO        8
-#define PARAM_SERVO_DELAY     9
 
 
 #define PARAM_DELAY0         10
@@ -41,34 +39,35 @@
 #define PARAM_DELAY8         18
 #define PARAM_DELAY9         19
 
-#define PARAM_STATUS0        20
-#define PARAM_STATUS1        21
-#define PARAM_STATUS2        22
-#define PARAM_STATUS3        23
-#define PARAM_STATUS4        24
-#define PARAM_STATUS5        25
-#define PARAM_STATUS6        26
-#define PARAM_STATUS7        27
-#define PARAM_STATUS8        28
-#define PARAM_STATUS9        29
+#define PARAM_VAR0           20
+#define PARAM_VAR1           21
+#define PARAM_VAR2           22
+#define PARAM_VAR3           23
+#define PARAM_VAR4           24
+#define PARAM_VAR5           25
+#define PARAM_VAR6           26
+#define PARAM_VAR7           27
+#define PARAM_VAR8           28
+#define PARAM_VAR9           29
 
-#define PARAM_VAR0           30
-#define PARAM_VAR1           31
-#define PARAM_VAR2           32
-#define PARAM_VAR3           33
-#define PARAM_VAR4           34
-#define PARAM_VAR5           35
-#define PARAM_VAR6           36
-#define PARAM_VAR7           37
-#define PARAM_VAR8           38
-#define PARAM_VAR9           39
+#define PARAM_STATUS0        30
+#define PARAM_STATUS1        31
+#define PARAM_STATUS2        32
+#define PARAM_STATUS3        33
+#define PARAM_STATUS4        34
+
+#define PARAM_SERVO_FROM     35
+#define PARAM_SERVO_TO       36
+#define PARAM_SERVO_DELAY    37
+#define PARAM_SERVO_ACTIVE   38
 
 #define PARAM_ACTION1        40
 #define PARAM_ACTION2        41
 #define PARAM_ACTION3        42
 #define PARAM_ACTION4        43
 
-#define PARAM_SERVO_ACTIVE   46
+
+
 #define PARAM_TEMPERATURE    47  // just for fun we could register temperature
 #define PARAM_IRCODE         48  // we could add a IR receiver
 
@@ -83,6 +82,7 @@ void resetParameter() {
 
   setAndSaveParameter(PARAM_FIRST_SONG,4); // first event may not be zero, it would never starts
   setAndSaveParameter(PARAM_LAST_SONG,7);
+  setAndSaveParameter(PARAM_VOLUME,10);
 
   setAndSaveParameter(PARAM_SERVO_FROM,60);
   setAndSaveParameter(PARAM_SERVO_TO,120);
@@ -102,7 +102,7 @@ void resetParameter() {
   setAndSaveParameter(PARAM_DELAY9,225);
 
   setAndSaveParameter(PARAM_VAR0,0);
-  setAndSaveParameter(PARAM_VAR1,1);
+  setAndSaveParameter(PARAM_VAR1,100);
   setAndSaveParameter(PARAM_VAR2,2);
   setAndSaveParameter(PARAM_VAR3,3);
   setAndSaveParameter(PARAM_VAR4,4);
@@ -160,6 +160,10 @@ byte getParameterBit(byte number, byte bitToRead) {
 
 void setParameter(byte number, int value) {
   parameters[number]=value;
+}
+
+void incrementParameter(byte number) {
+  parameters[number]++;
 }
 
 void saveParameters() {
@@ -233,6 +237,7 @@ uint16_t getQualifier() {
 void setQualifier(uint16_t value) {
   eeprom_write_word((uint16_t*)(EE_START_PARAM+MAX_PARAM*2), value);
 }
+
 
 
 

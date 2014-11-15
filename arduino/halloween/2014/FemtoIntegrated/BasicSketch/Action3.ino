@@ -1,4 +1,4 @@
-#define THR_ACTION3 1
+// #define THR_ACTION3 1
 
 
 NIL_WORKING_AREA(waThreadAction3, 0);
