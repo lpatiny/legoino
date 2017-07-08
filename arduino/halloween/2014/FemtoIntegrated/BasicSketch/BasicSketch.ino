@@ -101,7 +101,7 @@ byte OUT[]={OUT1, OUT2, OUT3, OUT4, OUT5};
 //#define THR_STEPPER      OUT3, IO3
 //#define THR_SERVO        IO5
 //#define THR_ONE_WIRE	   IO5	// we can put a one wire temperature probe on the bus
-//#define THR_WIRE 1
+#define THR_WIRE 1
 
 
 // #define KEYBOARD_EVENT   "X"
